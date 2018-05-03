@@ -1,0 +1,160 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+	<div class="col-lg-12">
+	<p><h1>Representante Técnico</h1></p>
+	<div class="col-lg-12">
+		<h2>Actividades</h2>
+		<p><ol>
+			{% for actividad in acti %}
+			<li>{{ actividad.activity }}</li>
+			{% endfor %}
+
+		</ol>
+		</p>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-lg-6">
+			<h1>Deberes</h1>
+			<p>
+				<ol>
+					<li>Deber 1</li>
+					<li>Deber 2</li>
+					<li>Deber 3</li>
+				</ol>
+			</p>
+		</div>
+		<div class="col-lg-6">
+			<h1>Responsabilidades</h1>
+			<p>
+				<ol>
+					<li>Responsabilidad 1</li>
+					<li>Responsabilidad 2</li>
+					<li>Responsabilidad 3</li>
+				</ol>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>Otras Actividades</h1>
+		</div>
+		<div class="col-lg-12">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#GO">Gerente Operacional</a></li>
+				<li><a data-toggle="tab" href="#GA">Gerente Administrativo</a></li>
+				<li><a data-toggle="tab" href="#JM">Jefe de Mantenimiento</a></li>
+				<li><a data-toggle="tab" href="#JT">Jefe de Turno</a></li>
+				<li><a data-toggle="tab" href="#JA">Auxiliar Administrativo</a></li>
+				<li><a data-toggle="tab" href="#DE">Despachador</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="GO" class="tab-pane fade in active">
+					<h3>Actividades Gerente Operacional</h3>
+					<hr>
+					<div class="col-lg-12">
+
+
+
+							<p>
+                                {% for actividad in acti %}
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label" for="defaultCheck1">
+											{{ actividad.activity }}
+										</label>
+									</div>
+
+                                {% endfor %}
+
+
+							</p>
+
+						<hr>
+						<div class="row">
+							<div class="col-lg-6">
+								<h1>Deberes</h1>
+								<p>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Deber 1
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Deber 2
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Deber 3
+									</label>
+								</div>
+								</p>
+							</div>
+							<div class="col-lg-6">
+								<h1>Responsabilidades</h1>
+								<p>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Responsabilidad 1
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Responsabilidad 2
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Responsabilidad 3
+									</label>
+								</div>
+								</p>
+							</div>
+						</div>
+
+						<button type="button" class="btn btn-primary">Aplicar Tareas</button>
+				</div>
+				<div id="GA" class="tab-pane fade">
+					<h3>Actividades Gerente Administrativo</h3>
+					<p> </p>
+				</div>
+				<div id="JM" class="tab-pane fade">
+					<h3>Actividades Jefe de Mantenimiento</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+				<div id="JT" class="tab-pane fade">
+					<h3>Actividades Jefe de Mantenimiento</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+				<div id="JA" class="tab-pane fade">
+					<h3>Actividades Jefe de Mantenimiento</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+				<div id="DE" class="tab-pane fade">
+					<h3>Actividades Jefe de Mantenimiento</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+	</div>
+	</div>
+
+
+
+
+{% endblock %}

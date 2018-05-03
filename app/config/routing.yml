@@ -1,0 +1,12 @@
+logout:
+    path: /logout
+
+core:
+    resource: "@CoreBundle/Controller/"
+    type:     annotation
+    prefix:   /core
+
+dashboard:
+    resource: "@DashBundle/Controller/"
+    type:     annotation
+    prefix:   /

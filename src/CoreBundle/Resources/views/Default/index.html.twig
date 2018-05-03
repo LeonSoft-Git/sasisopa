@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th>Nombre</th><th>Code</th><th>Level</th>
+    </tr>
+    {% for usuario in grupo %}
+        <tr>
+            <td>{{ usuario.user }}</td><td>{{ usuario.code }}</td><td>{{ usuario.level.level }}</td>
+        </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,47 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+	
+	<div class="col-lg-12">
+	<p><h1>Representante Técnico</h1></p>
+	<div class="col-lg-12">
+		<h2>Actividades</h2>
+		<p><ol>
+			{% for actividad in acti %}
+			<li>{{ actividad.activity }}</li>
+			{% endfor %}
+
+		</ol>
+		</p>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-lg-6">
+			<h1>Deberes</h1>
+			<p>
+				<ol>
+					<li>Deber 1</li>
+					<li>Deber 2</li>
+					<li>Deber 3</li>
+				</ol>
+			</p>
+		</div>
+		<div class="col-lg-6">
+			<h1>Responsabilidades</h1>
+			<p>
+				<ol>
+					<li>Responsabilidad 1</li>
+					<li>Responsabilidad 2</li>
+					<li>Responsabilidad 3</li>
+				</ol>
+			</p>
+		</div>
+	</div>
+
+
+	<hr>
+
+
+
+
+{% endblock %}

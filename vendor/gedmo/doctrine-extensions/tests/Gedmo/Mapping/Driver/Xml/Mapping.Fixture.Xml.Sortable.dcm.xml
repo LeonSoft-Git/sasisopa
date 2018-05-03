@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:gedmo="http://Atlantic18.github.io/DoctrineExtensions/schemas/orm/doctrine-extensions-3.0.xsd">
+    <entity name="Mapping\Fixture\Xml\Sortable" table="sortables">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+
+        <field name="title" type="string" length="128"/>
+        <field name="position" type="integer">
+            <gedmo:sortable groups="grouping,sortable_group"/>
+        </field>
+        <field name="grouping" type="string" length="128"/>
+        <many-to-one field="sortable_group" target-entity="Mapping\Fixture\SortableGroup" orphan-removal="true">
+            <join-columns>
+                <join-column name="sortable_group_id" referenced-column-name="id" nullable="false"/>
+            </join-columns>
+        </many-to-one>
+    </entity>
+</doctrine-mapping>
