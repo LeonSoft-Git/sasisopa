@@ -1,0 +1,68 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+    {{ form_start(form,  {'action':path('newuser')}) }}
+        <div class="form-group">
+            {{ form_label(form.user) }}
+            {{ form_widget(form.user, {'attr': {'class': 'form-control'} }) }}
+            {% if form.user.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.user.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.password) }}
+            {{ form_widget(form.password, {'attr': {'class': 'form-control'} }) }}
+            {% if form.password.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.password.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.mail) }}
+            {{ form_widget(form.mail, {'attr': {'class': 'form-control'} }) }}
+            {% if form.mail.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.mail.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.code) }}
+            {{ form_widget(form.code, {'attr': {'class': 'form-control'} }) }}
+            {% if form.code.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.code.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.level) }}
+            {{ form_widget(form.level, {'attr': {'class': 'form-control'} }) }}
+            {% if form.level.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.level.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.active) }}
+            {{ form_widget(form.active) }}
+        </div>
+        {{ form_widget(form.crear, {'attr': {'class ': 'btn btn-primary'} }) }}
+    {{ form_end(form) }}
+
+{% endblock %}

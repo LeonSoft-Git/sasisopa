@@ -118,6 +118,10 @@ class Level
         return $this->usuarios;
     }
 
+    public function __toString() {
+        return $this->level;
+    }
+
     public function __sleep()
     {
         return array('idl', 'level');

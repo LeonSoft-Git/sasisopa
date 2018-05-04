@@ -48,7 +48,7 @@ class Usuarios implements UserInterface, \Serializable
     protected $salt;
 
     /**
-     * @ORM\Column(type="string", length=2, nullable=true)
+     * @ORM\Column(type="boolean", nullable=true)
      */
     protected $active;
 
