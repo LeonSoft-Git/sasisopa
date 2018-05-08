@@ -16,4 +16,6 @@ class DefaultController extends Controller
         $usuario =  $query->getRepository('CoreBundle:Usuarios')->findAll();
         return $this->render('CoreBundle:Default:index.html.twig',array('grupo'=>$usuario));
     }
+
+
 }

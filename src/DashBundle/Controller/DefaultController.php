@@ -5,8 +5,11 @@ namespace DashBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use CoreBundle\Entity\Usuarios;
+use CoreBundle\Entity\LegalRequirements;
+use CoreBundle\Entity\Archivos;
 use Symfony\Component\HttpFoundation\Request;
+
+
 
 
 class DefaultController extends Controller
@@ -32,6 +35,8 @@ class DefaultController extends Controller
      * @Route("/politica-I", name="politica")
      */
     public function politicaAction(){
+
+
         return $this->render('@Dash/Default/formato.html.twig' , array('id'=>1));
     }
 
@@ -48,13 +53,74 @@ class DefaultController extends Controller
     public function gpmAction(){
         return $this->render('@Dash/Default/formato.html.twig' , array('id'=>3));
     }
-
     /**
-     * @Route("/funciones-responsabilidades-y-autoridad", name="fra")
+     * @Route("/Carta_Poder", name="carta")
      */
-    public function fraAction(){
+    public function cartaAction(){
         return $this->render('@Dash/Default/formato.html.twig' , array('id'=>4));
     }
+
+    /**
+     * @Route("/Poder" , name="newfile")
+     * @Method({"GET", "POST"})
+     */
+    public function newFileAction(Request $request){
+        $archivo = new Archivos();
+        $form = $this->createForm('CoreBundle\Form\ArchivosType', $archivo);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            if($archivo->getCartaPoder()){
+                $file = $archivo->getCartaPoder();
+
+                $fileName = md5(uniqid()).'.'.$file->guessExtension();
+                $file->move($this->getParameter('cp_directory'),$fileName);
+                $archivo->setCartaPoder($fileName);
+
+            }
+
+            $em->persist($archivo);
+            $em->flush();
+        }
+
+        return $this->render('@Dash/Default/carta.html.twig',array(
+            'archivo' => $archivo,
+            'form' => $form->createView()
+        ));
+    }
+
+
+    /**
+     * @Route("/Reporte-de-Aspectos-Ambientales" , name="newfile")
+     * @Method({"GET", "POST"})
+     */
+    public function newFileAction(Request $request){
+        $archivo = new Archivos();
+        $form = $this->createForm('CoreBundle\Form\ArchivosType', $archivo);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            if($archivo->getCartaPoder()){
+                $file = $archivo->getCartaPoder();
+
+                $fileName = md5(uniqid()).'.'.$file->guessExtension();
+                $file->move($this->getParameter('cp_directory'),$fileName);
+                $archivo->setCartaPoder($fileName);
+
+            }
+
+            $em->persist($archivo);
+            $em->flush();
+        }
+
+        return $this->render('@Dash/Default/carta.html.twig',array(
+            'archivo' => $archivo,
+            'form' => $form->createView()
+        ));
+    }
+
 
     /**
      * @Route("/deberes-y-responsabilidades", name="dr")
@@ -62,94 +128,45 @@ class DefaultController extends Controller
     public function drAction(){
         $query = $this->getDoctrine()->getManager();
         $acti =  $query->getRepository('CoreBundle:Activities')->findAll();
-        return $this->render('@Dash/Default/formato6.html.twig',array('acti'=>$acti));
+        $respo =  $query->getRepository('CoreBundle:Responsibilities')->findAll();
+        $deb =  $query->getRepository('CoreBundle:Deberes')->findAll();
+        return $this->render('@Dash/Default/formato6.html.twig',array('acti'=>$acti , 'respo'=>$respo , 'deb'=>$deb));
     }
 
     /**
-     * @Route("/nuevo-usuario" , name="newuser")
-     * @Method({"GET", "POST"})
-     */
-    public function newUsuarioAction(Request $request){
-        $usuario = new Usuarios();
-        $form = $this->createForm('CoreBundle\Form\UsuarioType', $usuario);
-        $form->handleRequest($request);
+    +     * @Route("/nuevo-requerimiento", name="new")
+    +     * @Method({"GET", "POST"})
+    +     */
+    public function newRequerimientoAction(Request $request){
+            $requerimiento = new LegalRequirements();
+            $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($usuario);
-            $em->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($requerimiento);
+                  $em->flush();
 
-            return $this->redirectToRoute('dashboard' );
+        return $this->redirectToRoute('rlv' );
         }
 
-        return $this->render('@Dash/Default/newuser.html.twig',array(
-            'usuario' => $usuario,
-            'form' => $form->createView()
-        ));
+        return $this->render('@Dash/Default/newrequirement.html.twig',array(
+                    'requerimiento' => $requerimiento,
+                    'form' => $form->createView()
+                    ));
     }
+
 
     /**
-     * Displays a form to edit an existing Usuarios entity.
-     *
-     * @Route("/{id}/edit", name="usuarios_edit")
-     * @Method({"GET", "POST"})
+     * @Route("/Reporte-de-aspectos-ambientales", name="raa")
      */
-    public function editAction(Request $request, Usuarios $usuario)
+    public function raaAction()
     {
-            $deleteForm = $this->createDeleteForm($usuario);
-            $editForm = $this->createForm('CoreBundle\Form\UsuarioType', $usuario);
-            $editForm->handleRequest($request);
-
-            if ($editForm->isSubmitted() && $editForm->isValid()) {
-                $em = $this->getDoctrine()->getManager();
-                $em->persist($usuario);
-                $em->flush();
-
-                return $this->redirectToRoute('login');
-
-            }
-
-            return $this->render('@Dash/Default/edituser.html.twig', array(
-                'usuario' => $usuario,
-                'edit_form' => $editForm->createView(),
-                'delete_form' => $deleteForm->createView(),
-            ));
+        return $this->render('DashBundle:Default:formato7.html.twig');
     }
 
-    /**
-     * Deletes a Usuarios entity.
-     *
-     * @Route("/{id}", name="usuarios_delete")
-     * @Method("DELETE")
-     */
-    public function deleteAction(Request $request, Usuarios $usuario)
-    {
-        $form = $this->createDeleteForm($usuario);
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($usuario);
-            $em->flush();
-        }
 
-        return $this->redirectToRoute('login');
-    }
 
-    /**
-     * Creates a form to delete a Usuarios entity.
-     *
-     * @param Usuarios $usuario The Usuarios entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm(Usuarios $usuario)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('usuarios_delete', array('id' => $usuario->getIdu())))
-            ->setMethod('DELETE')
-            ->getForm()
-            ;
-    }
 
 }

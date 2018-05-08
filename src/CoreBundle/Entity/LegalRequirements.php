@@ -32,7 +32,7 @@ class LegalRequirements
     /**
      * @ORM\Column(type="string", length=50, nullable=true)
      */
-    protected $codificiacion;
+    protected $codificacion;
 
     /**
      * @ORM\Column(type="string", length=50, nullable=true)
@@ -153,26 +153,26 @@ class LegalRequirements
     }
 
     /**
-     * Set the value of codificiacion.
+     * Set the value of codificacion.
      *
-     * @param string $codificiacion
+     * @param string $codificacion
      * @return \CoreBundle\Entity\LegalRequirements
      */
-    public function setCodificiacion($codificiacion)
+    public function setCodificacion($codificacion)
     {
-        $this->codificiacion = $codificiacion;
+        $this->codificacion = $codificacion;
 
         return $this;
     }
 
     /**
-     * Get the value of codificiacion.
+     * Get the value of codificacion.
      *
      * @return string
      */
-    public function getCodificiacion()
+    public function getCodificacion()
     {
-        return $this->codificiacion;
+        return $this->codificacion;
     }
 
     /**
@@ -382,8 +382,9 @@ class LegalRequirements
         return $this->link;
     }
 
+
     public function __sleep()
     {
-        return array('idlr', 'dependencia', 'clasificiacion', 'titulo', 'ano_emision', 'patron', 'trabajadores', 'generales', 'disposiciones_especificas', 'articulos_aplicables', 'descripcion_requisito', 'link');
+        return array('idlr', 'dependencia', 'clasificicacion', 'codificacion',  'titulo', 'ano_emision', 'patron', 'trabajadores', 'generales', 'disposiciones_especificas', 'articulos_aplicables', 'descripcion_requisito', 'link');
     }
 }

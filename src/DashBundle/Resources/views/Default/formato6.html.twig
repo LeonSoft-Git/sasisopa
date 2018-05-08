@@ -20,9 +20,9 @@
 			<h1>Deberes</h1>
 			<p>
 				<ol>
-					<li>Deber 1</li>
-					<li>Deber 2</li>
-					<li>Deber 3</li>
+                {% for deberes in deb %}
+					<li>{{ deberes.deber }}</li>
+                {% endfor %}
 				</ol>
 			</p>
 		</div>
@@ -30,9 +30,9 @@
 			<h1>Responsabilidades</h1>
 			<p>
 				<ol>
-					<li>Responsabilidad 1</li>
-					<li>Responsabilidad 2</li>
-					<li>Responsabilidad 3</li>
+                {% for responsabilidades in respo %}
+					<li>{{ responsabilidades.responsability }}</li>
+                {% endfor %}
 				</ol>
 			</p>
 		</div>
@@ -55,21 +55,13 @@
 				<div id="GO" class="tab-pane fade in active">
 					<h3>Actividades Gerente Operacional</h3>
 					<hr>
-					<div class="col-lg-12">
-
-
+					<div class="col-lg-12"
 
 							<p>
+
                                 {% for actividad in acti %}
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-										<label class="form-check-label" for="defaultCheck1">
-											{{ actividad.activity }}
-										</label>
-									</div>
-
-                                {% endfor %}
-
+									<li>{{ actividad.activity }}</li>
+								{% endfor %}
 
 							</p>
 
@@ -101,24 +93,9 @@
 							<div class="col-lg-6">
 								<h1>Responsabilidades</h1>
 								<p>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<label class="form-check-label" for="defaultCheck1">
-										Responsabilidad 1
-									</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<label class="form-check-label" for="defaultCheck1">
-										Responsabilidad 2
-									</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<label class="form-check-label" for="defaultCheck1">
-										Responsabilidad 3
-									</label>
-								</div>
+                                    {% for responsabilidades in respo %}
+										<li>{{ responsabilidades.responsability }}</li>
+                                	{% endfor %}
 								</p>
 							</div>
 						</div>

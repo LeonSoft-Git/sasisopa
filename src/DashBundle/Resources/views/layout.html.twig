@@ -17,6 +17,7 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
     <link href="{{ asset('assets/plugins/pace/pace-theme-flash.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/mio.css') }}">
     <link href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/plugins/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/plugins/jquery-scrollbar/jquery.scrollbar.css') }}" rel="stylesheet" type="text/css" media="screen" />
@@ -26,9 +27,13 @@
     <link href="{{ asset('assets/plugins/mapplic/css/mapplic.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/plugins/rickshaw/rickshaw.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/pages-icons.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/plugins/datatables-responsive/css/datatables.responsive.css') }}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ asset('assets/css/pages-icons.css') }}" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="{{ asset('assets/css/corporate.css') }}" rel="stylesheet" type="text/css" />
-    {% block stylesheets %}
-    {% endblock %}
+
+
 </head>
 <body class="fixed-header dashboard menu-pin menu-behind">
 
@@ -130,7 +135,7 @@
                         <span class="icon-thumbnail">V</span>
                         <ul class="sub-menu">
                             <li class="">
-                                <a href="{{ path('fra') }}">Carta Poder</a>
+                                <a href="{{ path('carta') }}">Carta Poder</a>
 
                             </li>
                         </ul>
@@ -154,8 +159,15 @@
                 <span class="icon-thumbnail"><i class="pg-form"></i></span>
                 <ul class="sub-menu">
                     <li class="">
-                        <a href="color.html">Comunicación, Participación y Consulta</a>
+                        <a href="javascript:;"><span class="tittle">Comunicación, participación y consulta</span>
+                            <span class="arrow"></span></a>
                         <span class="icon-thumbnail">VII</span>
+                        <ul class="sub-menu">
+                            <li class="">
+                                <a href="{{ path('raa') }}">Reporte de aspectos ambientales</a>
+
+                            </li>
+                        </ul>
                     </li>
                     <li class="">
                         <a href="typography.html">Control de documentos</a>
@@ -362,7 +374,7 @@
         <div class="d-flex align-items-center">
 
             <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
-                <span class="semi-bold">David</span> <span class="text-master">Nest</span>
+                <span class="semi-bold">{{ app.user.user }}</span>
             </div>
             <div class="dropdown pull-right hidden-md-down">
                 <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1627,6 +1639,12 @@
 <script src="{{ asset('assets/plugins/jquery-sparkline/jquery.sparkline.min.js')}}" type="text/javascript"></script>
 <script src="{{ asset('assets/plugins/skycons/skycons.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/js/pages.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('assets/plugins/datatables-responsive/js/datatables.responsive.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/plugins/datatables-responsive/js/lodash.min.js') }}"></script>
 
 
 <script src="{{ asset('assets/js/dashboard.js')}}" type="text/javascript"></script>

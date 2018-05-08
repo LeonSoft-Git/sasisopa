@@ -48,7 +48,7 @@ class Usuarios implements UserInterface, \Serializable
     protected $salt;
 
     /**
-     * @ORM\Column(type="boolean", nullable=true)
+     * @ORM\Column(type="string", length=2, nullable=true)
      */
     protected $active;
 
@@ -202,6 +202,7 @@ class Usuarios implements UserInterface, \Serializable
         $this->salt = $salt;
         return $this;
     }
+
     /**
      * Get the value of salt.
      *
@@ -381,6 +382,7 @@ class Usuarios implements UserInterface, \Serializable
     public function getUsername()
     {
         return $this->user;
+
     }
 
     public function __sleep()
@@ -388,3 +390,6 @@ class Usuarios implements UserInterface, \Serializable
         return array('idu', 'user', 'password', 'mail', 'idl', 'salt', 'code', 'active', 'created_at');
     }
 }
+
+
+

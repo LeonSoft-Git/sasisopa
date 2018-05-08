@@ -11,6 +11,8 @@
 		<embed src="{{asset('assets/documentos/Gestión-de-Objetivos-y-Metas.pdf')}}" width="1050" height="650">
     {% elseif id==4 %}
 		<embed src="{{asset('assets/documentos/CARTAPODER.pdf')}}" width="1050" height="650">
+
+		<a class="btn btn-primary btn-cons m-t-10" href="{{ path('newfile') }}">Adjuntar Carta</a>
 	{% endif %}
 
 {% endblock %}

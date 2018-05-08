@@ -12,58 +12,68 @@
 
 {% block body %}
 
-<div class="container-fluid padding-25 sm-padding-10">	
-	<div class="card card-transparent">
-		<div class="card-header ">
-			<div class="card-title">Requerimientos Legales
-			</div>
-			<div class="tools">
-				<a class="collapse" href="javascript:;"></a>
-				<a class="config" data-toggle="modal" href="#grid-config"></a>
-				<a class="reload" href="javascript:;"></a>
-				<a class="remove" href="javascript:;"></a>
-			</div>
-		</div>
-			<div class="card-block">
-			<div class="table-responsive" style="overflow-x: scroll;">
-			<table class="table table-hover" id="condensedTable" >
+<div class="container-fluid padding-25 sm-padding-10">
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-hover" id="basicTable"">
 				<thead>
-					<tr>
-						<th style="width:auto">Dependencia</th>
-						<th style="width:30%">Clasificación</th>
-						<th style="width:40%">Codificación</th>
-                        <th style="width:40%">Título</th>
-                        <th style="width:40%">Año de Emisión</th>
-                        <th style="width: 200px;">Patrón</th>
-                        <th style="width:40%">Trabajadores</th>
-                        <th style="width:40%">Generales</th>
-                        <th style="width:40%">Disposiciones Específicas</th>
-                        <th style="width:40%">Artículos Aplicables</th>
-                        <th style="width:40%">Descripción</th>
-                        <th style="width:40%">Enlace</th>
-					</tr>
+				<tr>
+					<th style="width:1%" class="text-center">
+						<button class="btn btn-link"><i class="pg-trash"></i>
+						</button>
+					</th>
+					<th>Dependencia</th>
+					<th>Clasificación</th>
+					<th>Codificación</th>
+					<th>Título</th>
+					<th>Año de Emisión</th>
+					<th style="width: 120px" >Patrón</th>
+					<th>Trabajadores</th>
+					<th>Generales</th>
+					<th>Disposiciones Específicas</th>
+					<th>Artículos Aplicables</th>
+					<th>Descripción</th>
+					<th>Enlace</th>
+				</tr>
 				</thead>
-			<tbody>
-            {% for requisito in data %}
-                <tr>
-                    <td class="v-align-middle semi-bold">{{ requisito.dependencia }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.clasificacion }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.codificiacion }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.titulo }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.anoEmision }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.patron }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.trabajadores }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.generales }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.disposicionesEspecificas }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.articulosAplicables }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.descripcionRequisito }}</td>
-					<td class="v-align-middle semi-bold">{{ requisito.link }}</td>
-                </tr>
-            {% endfor %}
-			</tbody>
+				<tbody>
+
+                {% for requisito in data %}
+					<tr>
+						<td class="v-align-middle">
+							<div class="checkbox text-center">
+								<input type="checkbox" value="3" id="checkbox1">
+								<label for="checkbox1" class="no-padding no-margin"></label>
+							</div>
+						</td>
+						<td >{{ requisito.dependencia }}</td>
+						<td>{{ requisito.clasificacion }}</td>
+						<td>{{ requisito.codificacion }}</td>
+						<td>{{ requisito.titulo }}</td>
+						<td>{{ requisito.anoEmision }}</td>
+						<td>{{ requisito.patron }}</td>
+						<td>{{ requisito.trabajadores }}</td>
+						<td>{{ requisito.generales }}</td>
+						<td>{{ requisito.disposicionesEspecificas }}</td>
+						<td>{{ requisito.articulosAplicables }}</td>
+						<td>{{ requisito.descripcionRequisito }}</td>
+						<td>{{ requisito.link }}</td>
+						<td>
+							<div class="btn-group btn-group-xs">
+
+
+									<a href="#" data-toggle="tooltip" title="Editar" class="btn btn-default"><i class="fa fa-edit"></i></a>
+
+							</div>
+						</td>
+					</tr>
+
+                {% endfor %}
+				</tbody>
 			</table>
-			</div>
+            <a class="btn btn-primary btn-cons m-t-10" href="{{ path('new') }}">Insertar Nuevo Requerimiento</a>
 		</div>
+	</div>
 </div>
 </div>
 

@@ -1,0 +1,142 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+    {{ form_start(form,  {'action':path('new')}) }}
+        <div class="form-group">
+            {{ form_label(form.dependencia) }}
+            {{ form_widget(form.dependencia, {'attr': {'class': 'form-control'} }) }}
+            {% if form.dependencia.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.dependencia.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.clasificacion) }}
+            {{ form_widget(form.clasificacion, {'attr': {'class': 'form-control'} }) }}
+            {% if form.clasificacion.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.clasificacion.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.codificacion) }}
+            {{ form_widget(form.codificacion, {'attr': {'class': 'form-control'} }) }}
+            {% if form.codificacion.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.codificacion.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.titulo) }}
+            {{ form_widget(form.titulo, {'attr': {'class': 'form-control'} }) }}
+            {% if form.titulo.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.titulo.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.ano_emision) }}
+            {{ form_widget(form.ano_emision, {'attr': {'class': 'form-control'} }) }}
+            {% if form.ano_emision.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.ano_emision.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.patron) }}
+            {{ form_widget(form.patron, {'attr': {'class': 'form-control'} }) }}
+            {% if form.patron.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.patron.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.trabajadores) }}
+            {{ form_widget(form.trabajadores, {'attr': {'class': 'form-control'} }) }}
+            {% if form.trabajadores.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.trabajadores.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.generales) }}
+            {{ form_widget(form.generales, {'attr': {'class': 'form-control'} }) }}
+            {% if form.generales.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.generales.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.disposiciones_especificas) }}
+            {{ form_widget(form.disposiciones_especificas, {'attr': {'class': 'form-control'} }) }}
+            {% if form.disposiciones_especificas.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.disposiciones_especificas.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.articulos_aplicables) }}
+            {{ form_widget(form.articulos_aplicables, {'attr': {'class': 'form-control'} }) }}
+            {% if form.articulos_aplicables.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.articulos_aplicables.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.descripcion_requisito) }}
+            {{ form_widget(form.descripcion_requisito, {'attr': {'class': 'form-control'} }) }}
+            {% if form.descripcion_requisito.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.descripcion_requisito.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.link) }}
+            {{ form_widget(form.link, {'attr': {'class': 'form-control'} }) }}
+            {% if form.link.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.link.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+
+        {{ form_widget(form.crear, {'attr': {'class ': 'btn btn-primary'} }) }}
+    {{ form_end(form) }}
+
+{% endblock %}

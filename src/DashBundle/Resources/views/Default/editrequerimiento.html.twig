@@ -1,0 +1,13 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+    {{ form_start(edit_form) }}
+    {{ form_widget(edit_form) }}
+    <a class="btn btn-inverse waves-effect waves-light m-t-10" style="float:left; margin:5px;" href="{{ path('login') }}">Regresar</a><button type="submit" class="btn btn-success waves-effect waves-light m-t-10" style="float:left;  margin:5px;" >Guardar</button>
+    {{ form_end(edit_form) }}
+    {{ form_start(delete_form) }}
+    <button type="submit" class="btn btn-red waves-effect waves-light m-t-10">Borrar</button>
+    {{ form_end(delete_form) }}
+
+{% endblock %}

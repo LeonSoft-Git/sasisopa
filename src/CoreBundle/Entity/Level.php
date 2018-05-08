@@ -122,6 +122,7 @@ class Level
         return $this->level;
     }
 
+
     public function __sleep()
     {
         return array('idl', 'level');

@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" line="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f1fb1576-9fac-4779-ab1e-749f1a0c57c7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/UsuarioType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Listener/DoctrineExtensionListener.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/edituser.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newuser.html.twig" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
       <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/LegalRequirements.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/LegalRequirements.php" />
       <change beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Level.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Level.php" />
       <change beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Listener/DoctrineExtensionListener.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Listener/DoctrineExtensionListener.php" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/DashBundle/Controller/SecurityController.php" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
       <change beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/doctrine" afterPath="$PROJECT_DIR$/vendor/bin/doctrine" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/doctrine-dbal" afterPath="$PROJECT_DIR$/vendor/bin/doctrine-dbal" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/doctrine.php" afterPath="$PROJECT_DIR$/vendor/bin/doctrine.php" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
@@ -52,9 +60,14 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/SimpleAnnotationReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/SimpleAnnotationReader.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/TokenParser.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/TokenParser.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/phpstan.neon" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/phpstan.neon" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.coveralls.yml" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/.gitignore" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/.travis.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.travis.yml" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/LICENSE" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/README.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/UPGRADE.md" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/UPGRADE.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/build.properties" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/build.properties" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/build.xml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/build.xml" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/composer.json" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/composer.json" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php" />
@@ -64,17 +77,13 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ChainCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ChainCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ClearableCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ClearableCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CouchbaseCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CouchbaseCache.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ExtMongoDBCache.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FileCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FlushableCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FlushableCache.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/LegacyMongoDBCache.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MemcacheCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MemcacheCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MemcachedCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MemcachedCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MongoDBCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MongoDBCache.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiDeleteCache.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiGetCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiGetCache.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiOperationCache.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiPutCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/MultiPutCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PhpFileCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PhpFileCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/PredisCache.php" />
@@ -86,6 +95,32 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/WinCacheCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/WinCacheCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/XcacheCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/XcacheCache.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ZendDataCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ZendDataCache.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/phpunit.xml.dist" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ApcCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ApcCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ApcuCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ApcuCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ArrayCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ArrayCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/BaseFileCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/BaseFileCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/CacheProviderTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/CacheProviderTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/CacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/CacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ChainCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ChainCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/CouchbaseCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/CouchbaseCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/FileCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/FileCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/FilesystemCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/FilesystemCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/MemcacheCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/MemcacheCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/MemcachedCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/MemcachedCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/MongoDBCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/MongoDBCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/PhpFileCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/PhpFileCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/PredisCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/PredisCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/RedisCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/RedisCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/RiakCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/RiakCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/SQLite3CacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/SQLite3CacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/VoidCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/VoidCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/WinCacheCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/WinCacheCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/XcacheCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/XcacheCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ZendDataCacheTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/Common/Cache/ZendDataCacheTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/DoctrineTestCase.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/DoctrineTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/travis/php.ini" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/travis/php.ini" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/travis/phpunit.travis.xml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/travis/phpunit.travis.xml" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/CONTRIBUTING.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/LICENSE" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/collections/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/README.md" />
@@ -168,8 +203,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Util/Debug.php" afterPath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Util/Debug.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Util/Inflector.php" afterPath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Util/Inflector.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Version.php" afterPath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Version.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/common/phpstan.neon" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/.scrutinizer.yml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/LICENSE" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/README.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/SECURITY.md" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/SECURITY.md" />
@@ -181,7 +214,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Cache/CacheException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Cache/CacheException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Cache/QueryCacheProfile.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Cache/QueryCacheProfile.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Cache/ResultCacheStatement.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Cache/ResultCacheStatement.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/ColumnCase.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Configuration.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Configuration.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/ConnectionException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/ConnectionException.php" />
@@ -237,7 +269,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvStatement.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvStatement.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/ServerInfoAwareConnection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/ServerInfoAwareConnection.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Statement.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Statement.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/StatementIterator.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/DriverManager.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/DriverManager.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Event/ConnectionEventArgs.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Event/ConnectionEventArgs.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Event/Listeners/MysqlSessionInit.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Event/Listeners/MysqlSessionInit.php" />
@@ -259,22 +290,18 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ConstraintViolationException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ConstraintViolationException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DatabaseObjectExistsException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DatabaseObjectExistsException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DatabaseObjectNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DatabaseObjectNotFoundException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DeadlockException.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DriverException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/DriverException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ForeignKeyConstraintViolationException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ForeignKeyConstraintViolationException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/InvalidArgumentException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/InvalidArgumentException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/InvalidFieldNameException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/InvalidFieldNameException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/LockWaitTimeoutException.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/NonUniqueFieldNameException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/NonUniqueFieldNameException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/NotNullConstraintViolationException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/NotNullConstraintViolationException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ReadOnlyException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ReadOnlyException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/RetryableException.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ServerException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/ServerException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/SyntaxErrorException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/SyntaxErrorException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/TableExistsException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/TableExistsException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/TableNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/TableNotFoundException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/UniqueConstraintViolationException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Exception/UniqueConstraintViolationException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/FetchMode.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Id/TableGenerator.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Id/TableGenerator.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Id/TableGeneratorSchemaVisitor.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Id/TableGeneratorSchemaVisitor.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/LockMode.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/LockMode.php" />
@@ -282,23 +309,18 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/EchoSQLLogger.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/EchoSQLLogger.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/LoggerChain.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/LoggerChain.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/SQLLogger.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Logging/SQLLogger.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/ParameterType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/AbstractPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/AbstractPlatform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/DB2Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/DB2Platform.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/DateIntervalUnit.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/DrizzlePlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/DrizzlePlatform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/DB2Keywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/DB2Keywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/DrizzleKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/DrizzleKeywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/KeywordList.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/KeywordList.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MariaDb102Keywords.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MsSQLKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MsSQLKeywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MySQL57Keywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MySQL57Keywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MySQLKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/MySQLKeywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/OracleKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/OracleKeywords.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQL100Keywords.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQL91Keywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQL91Keywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQL92Keywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQL92Keywords.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQL94Keywords.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQLKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/PostgreSQLKeywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/ReservedKeywordsValidator.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/ReservedKeywordsValidator.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLAnywhere11Keywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLAnywhere11Keywords.php" />
@@ -310,14 +332,11 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLServer2012Keywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLServer2012Keywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLServerKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLServerKeywords.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLiteKeywords.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/Keywords/SQLiteKeywords.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/MariaDb1027Platform.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/MySQL57Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/MySQL57Platform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/MySqlPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/MySqlPlatform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/OraclePlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/OraclePlatform.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSQL100Platform.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSQL91Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSQL91Platform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSQL92Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSQL92Platform.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSQL94Platform.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSqlPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/PostgreSqlPlatform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLAnywhere11Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLAnywhere11Platform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLAnywhere12Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLAnywhere12Platform.php" />
@@ -329,7 +348,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServer2012Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServer2012Platform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SqlitePlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SqlitePlatform.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/TrimMode.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Portability/Connection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Portability/Connection.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Portability/Statement.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Portability/Statement.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/Expression/CompositeExpression.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/Expression/CompositeExpression.php" />
@@ -389,18 +407,13 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Tools/Console/Command/RunSqlCommand.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Tools/Console/Command/RunSqlCommand.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Tools/Console/ConsoleRunner.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Tools/Console/ConsoleRunner.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Tools/Console/Helper/ConnectionHelper.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Tools/Console/Helper/ConnectionHelper.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/TransactionIsolationLevel.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ArrayType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ArrayType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BigIntType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BigIntType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BinaryType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BinaryType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BlobType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BlobType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BooleanType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BooleanType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ConversionException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ConversionException.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateImmutableType.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateIntervalType.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeImmutableType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeType.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeTzImmutableType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeTzType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeTzType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DecimalType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DecimalType.php" />
@@ -408,37 +421,61 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/GuidType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/GuidType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/IntegerType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/IntegerType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/JsonArrayType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/JsonArrayType.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/JsonType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ObjectType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ObjectType.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/PhpDateTimeMappingType.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/PhpIntegerMappingType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/SimpleArrayType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/SimpleArrayType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/SmallIntType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/SmallIntType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/StringType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/StringType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/TextType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/TextType.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/TimeImmutableType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/TimeType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/TimeType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/Type.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/Type.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/VarDateTimeImmutableType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/VarDateTimeType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/VarDateTimeType.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Version.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Version.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/VersionAwarePlatformDriver.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/VersionAwarePlatformDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/.gitignore" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/.travis.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/.travis.yml" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/LICENSE" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/README.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/composer.json" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/composer.json" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/Common/Inflector/InflectorTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/Common/Inflector/InflectorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/DoctrineTestCase.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/DoctrineTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/TestInit.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/TestInit.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/.gitignore" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/.scrutinizer.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/.scrutinizer.yml" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/.travis.install.sh" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/.travis.install.sh" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/.travis.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/.travis.yml" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/CONTRIBUTING.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/LICENSE" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/README.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/composer.json" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/composer.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/phpmd.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/phpmd.xml.dist" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/phpunit.xml.dist" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/.scrutinizer.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorPerformance/InstantiatorPerformanceEvent.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorPerformance/InstantiatorPerformanceEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/InvalidArgumentExceptionTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/InvalidArgumentExceptionTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/UnexpectedValueExceptionTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/UnexpectedValueExceptionTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/InstantiatorTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/InstantiatorTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/AbstractClassAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/AbstractClassAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ArrayObjectAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ArrayObjectAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ExceptionAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ExceptionAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/FinalExceptionAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/FinalExceptionAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharExceptionAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharExceptionAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleTraitAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleTraitAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnCloneableAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnCloneableAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnserializeExceptionArrayObjectAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnserializeExceptionArrayObjectAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/WakeUpNoticesAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/WakeUpNoticesAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/XMLReaderAsset.php" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/XMLReaderAsset.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/.coveralls.yml" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/README.markdown" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/README.markdown" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/SECURITY.md" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/SECURITY.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/UPGRADE.md" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/UPGRADE.md" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/bin/doctrine" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/bin/doctrine" />
@@ -729,11 +766,9 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/ExistsExpression.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/ExistsExpression.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/FromClause.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/FromClause.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/AbsFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/AbsFunction.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/AvgFunction.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/BitAndFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/BitAndFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/BitOrFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/BitOrFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/ConcatFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/ConcatFunction.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CountFunction.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CurrentDateFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CurrentDateFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CurrentTimeFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CurrentTimeFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CurrentTimestampFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/CurrentTimestampFunction.php" />
@@ -745,13 +780,10 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/LengthFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/LengthFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/LocateFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/LocateFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/LowerFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/LowerFunction.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/MaxFunction.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/MinFunction.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/ModFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/ModFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SizeFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SizeFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SqrtFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SqrtFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SubstringFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SubstringFunction.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/SumFunction.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/TrimFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/TrimFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/UpperFunction.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/Functions/UpperFunction.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/GeneralCaseExpression.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/AST/GeneralCaseExpression.php" />
@@ -889,12 +921,9 @@
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/TransactionRequiredException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/TransactionRequiredException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/UnexpectedResultException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/UnexpectedResultException.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Utility/HierarchyDiscriminatorResolver.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Utility/IdentifierFlattener.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Utility/IdentifierFlattener.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Utility/PersisterHelper.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Utility/PersisterHelper.php" />
       <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Version.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Version.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/phpbench.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/orm/phpstan.neon" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/.editorconfig" afterPath="$PROJECT_DIR$/vendor/twig/twig/.editorconfig" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/.gitignore" afterPath="$PROJECT_DIR$/vendor/twig/twig/.gitignore" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/.php_cs.dist" afterPath="$PROJECT_DIR$/vendor/twig/twig/.php_cs.dist" />
@@ -904,6 +933,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/README.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/README.rst" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/composer.json" afterPath="$PROJECT_DIR$/vendor/twig/twig/composer.json" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/advanced.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/advanced.rst" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/advanced_legacy.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/advanced_legacy.rst" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/api.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/api.rst" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/coding_standards.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/coding_standards.rst" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/deprecated.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/deprecated.rst" />
@@ -990,11 +1020,18 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/tests/null.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/tests/null.rst" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/tests/odd.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/tests/odd.rst" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/tests/sameas.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/tests/sameas.rst" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/.gitignore" afterPath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/config.m4" afterPath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/config.m4" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/config.w32" afterPath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/config.w32" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/php_twig.h" afterPath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/php_twig.h" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/twig.c" afterPath="$PROJECT_DIR$/vendor/twig/twig/ext/twig/twig.c" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Autoloader.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Autoloader.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/BaseNodeVisitor.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/BaseNodeVisitor.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Cache/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Cache/Filesystem.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Cache/Null.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Cache/Null.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/CacheInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/CacheInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Compiler.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Compiler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/CompilerInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/CompilerInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ContainerRuntimeLoader.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ContainerRuntimeLoader.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Error.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Error.php" />
@@ -1015,15 +1052,26 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/Staging.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/Staging.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/StringLoader.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/StringLoader.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ExtensionInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ExtensionInterface.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ExtensionSet.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FactoryRuntimeLoader.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FactoryRuntimeLoader.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FileExtensionEscapingStrategy.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FileExtensionEscapingStrategy.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter/Function.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter/Function.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter/Method.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter/Method.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter/Node.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Filter/Node.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FilterCallableInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FilterCallableInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FilterInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FilterInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function/Function.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function/Function.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function/Method.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function/Method.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function/Node.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Function/Node.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FunctionCallableInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FunctionCallableInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FunctionInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/FunctionInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Lexer.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Lexer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/LexerInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/LexerInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Array.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Array.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Chain.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Chain.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Filesystem.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/String.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/String.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/LoaderInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/LoaderInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Markup.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Markup.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node.php" />
@@ -1067,6 +1115,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Call.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Call.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Conditional.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Conditional.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Constant.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Constant.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/ExtensionReference.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/ExtensionReference.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Filter.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Filter.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Filter/Default.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Filter/Default.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Function.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Expression/Function.php" />
@@ -1100,10 +1149,12 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Sandbox.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Sandbox.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/SandboxedPrint.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/SandboxedPrint.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Set.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Set.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/SetTemp.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/SetTemp.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Spaceless.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Spaceless.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Text.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/Text.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/With.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Node/With.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeCaptureInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeCaptureInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeOutputInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeOutputInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeTraverser.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeTraverser.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeVisitor/Escaper.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeVisitor/Escaper.php" />
@@ -1112,6 +1163,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeVisitor/Sandbox.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeVisitor/Sandbox.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeVisitorInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/NodeVisitorInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Parser.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Parser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ParserInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ParserInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Base.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Base.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Blackfire.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Blackfire.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Html.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Html.php" />
@@ -1135,10 +1187,16 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Source.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Source.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/SourceContextLoaderInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/SourceContextLoaderInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Template.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Template.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TemplateInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TemplateInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TemplateWrapper.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TemplateWrapper.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/Function.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/Function.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/IntegrationTestCase.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/IntegrationTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/Method.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/Method.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/Node.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/Node.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/NodeTestCase.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/NodeTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TestCallableInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TestCallableInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TestInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TestInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Token.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Token.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/AutoEscape.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/AutoEscape.php" />
@@ -1159,6 +1217,8 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/Spaceless.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/Spaceless.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/Use.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/Use.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/With.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/With.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParserBroker.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParserBroker.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParserBrokerInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParserBrokerInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParserInterface.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParserInterface.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenStream.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenStream.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Util/DeprecationCollector.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Util/DeprecationCollector.php" />
@@ -1187,7 +1247,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Extension/SandboxExtension.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Extension/SandboxExtension.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Extension/StagingExtension.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Extension/StagingExtension.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Extension/StringLoaderExtension.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Extension/StringLoaderExtension.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/ExtensionSet.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/FileExtensionEscapingStrategy.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/FileExtensionEscapingStrategy.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Lexer.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Lexer.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Loader/ArrayLoader.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Loader/ArrayLoader.php" />
@@ -1273,6 +1332,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SandboxNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SandboxNode.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SandboxedPrintNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SandboxedPrintNode.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SetNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SetNode.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SetTempNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SetTempNode.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SpacelessNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/SpacelessNode.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/TextNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/TextNode.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Node/WithNode.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Node/WithNode.php" />
@@ -1335,6 +1395,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/TwigTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/TwigTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Util/DeprecationCollector.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Util/DeprecationCollector.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Util/TemplateDirIterator.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Util/TemplateDirIterator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/AutoloaderTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/AutoloaderTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Cache/FilesystemTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Cache/FilesystemTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/CompilerTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/CompilerTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ContainerRuntimeLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ContainerRuntimeLoaderTest.php" />
@@ -1345,6 +1406,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/CoreTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/CoreTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/SandboxTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/SandboxTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FactoryRuntimeLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FactoryRuntimeLoaderTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FileCachingTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FileCachingTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FileExtensionEscapingStrategyTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FileExtensionEscapingStrategyTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FilesystemHelper.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FilesystemHelper.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/autoescape/block.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/autoescape/block.test" />
@@ -1391,7 +1453,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/expressions/unary.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/expressions/unary.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/expressions/unary_macro_arguments.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/expressions/unary_macro_arguments.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/expressions/unary_precedence.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/expressions/unary_precedence.test" />
-      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/extensions/anonymous_functions.test" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/abs.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/abs.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch_float.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/batch_float.test" />
@@ -1438,11 +1499,11 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/static_calls.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/static_calls.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/trim.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/trim.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/urlencode.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/urlencode.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/urlencode_deprecated.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/filters/urlencode_deprecated.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/attribute.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/attribute.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block_with_template.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block_with_template.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block_without_name.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block_without_name.test" />
-      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/block_without_parent.test" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/constant.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/constant.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/cycle.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/cycle.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/date.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/date.test" />
@@ -1465,7 +1526,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include/with_context.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include/with_context.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include/with_variables.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/include/with_variables.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/magic_call.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/magic_call.test" />
-      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/magic_static_call.test" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/magic_call53.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/magic_call53.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/max.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/max.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/min.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/min.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/range.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/functions/range.test" />
@@ -1496,6 +1557,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/nested.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/nested.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/objects.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/objects.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/raw.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/raw.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/strategy.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/strategy.legacy.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/strategy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/strategy.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/type.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/type.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/with_filters.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/autoescape/with_filters.test" />
@@ -1572,10 +1634,16 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/endmacro_name.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/endmacro_name.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/external.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/external.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/from.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/from.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/from_with_reserved_name.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/from_with_reserved_name.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/global.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/global.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/import_with_reserved_nam.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/import_with_reserved_nam.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/reserved_name.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/reserved_name.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/self_import.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/self_import.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/special_chars.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/special_chars.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/super_globals.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/macro/super_globals.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/raw/basic.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/raw/basic.legacy.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/raw/mixed_usage_with_raw.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/raw/mixed_usage_with_raw.legacy.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/raw/whitespace_control.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/raw/whitespace_control.legacy.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/sandbox/not_valid1.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/sandbox/not_valid1.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/sandbox/not_valid2.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/sandbox/not_valid2.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/sandbox/simple.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/sandbox/simple.test" />
@@ -1599,6 +1667,7 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/use/parent_block3.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/use/parent_block3.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/use/use_with_parent.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/use/use_with_parent.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/verbatim/basic.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/verbatim/basic.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/verbatim/mixed_usage_with_raw.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/verbatim/mixed_usage_with_raw.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/verbatim/whitespace_control.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/verbatim/whitespace_control.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/with/basic.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/with/basic.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/with/expression.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Fixtures/tags/with/expression.test" />
@@ -1622,6 +1691,8 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/IntegrationTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/IntegrationTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyFixtures/autoescape/filename.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyFixtures/autoescape/filename.legacy.test" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyFixtures/functions/undefined_block.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyFixtures/functions/undefined_block.legacy.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyFixtures/test.legacy.test" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyFixtures/test.legacy.test" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyIntegrationTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LegacyIntegrationTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LexerTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LexerTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ArrayTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ArrayTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ChainTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ChainTest.php" />
@@ -1667,6 +1738,9 @@
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/GetAttrTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/GetAttrTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/NameTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/NameTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/NullCoalesceTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/NullCoalesceTest.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/PHP53/FilterInclude.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/PHP53/FilterInclude.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/PHP53/FunctionInclude.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/PHP53/FunctionInclude.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/PHP53/TestInclude.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/PHP53/TestInclude.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/ParentTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/ParentTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/TestTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/TestTest.php" />
       <change beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/Unary/NegTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/Unary/NegTest.php" />
@@ -1710,49 +1784,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newuser.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newuser.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+            <state relative-caret-position="1632">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
-                <element signature="e#3451#3485#0#PHP" expanded="true" />
+                <element signature="e#41#98#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edituser.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/edituser.html.twig">
+      <file leaf-file-name="ArchivosType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ArchivosType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig">
+      <file leaf-file-name="formato7.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato7.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="78" column="146" lean-forward="false" selection-start-line="78" selection-start-column="146" selection-end-line="78" selection-end-column="146" />
+            <state relative-caret-position="272">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carta.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/carta.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReporteAspAmbType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmbType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="e#35#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reporte1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Reporte1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -1776,11 +1879,23 @@
       <find>lv</find>
       <find>dr</find>
       <find>HAND</find>
+      <find>user</find>
+      <find>codificia</find>
+      <find>newreq</find>
+      <find>basicTab</find>
+      <find>body</find>
+      <find>fra</find>
+      <find>ar</find>
+      <find>archiv</find>
+      <find>carta</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;{{ asset('assets/images/profiles/5x.jpg') }}&quot;</replace>
       <replace>&quot;{{ asset('assets/images/profiles/4x.jpg') }}&quot;</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\sasisopa</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -1789,21 +1904,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/contacto.html.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/AddedResponsabilities.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Bitacora.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/EvidenciaBitacora.php" />
-        <option value="$PROJECT_DIR$/web/assets/css/pages-icons.css" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig" />
         <option value="$PROJECT_DIR$/../../phpMyAdmin/config.inc.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/LegalRequirements.php" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/login.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Admin/login.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Admin/Default/formulario.html.twig" />
@@ -1815,25 +1919,41 @@
         <option value="$USER_HOME$/Downloads/UsuariosRepository.php" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.1.html.twig" />
         <option value="$USER_HOME$/Downloads/SecurityController.php" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/UsuariosRepository.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.en.xlf" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/var/logs/dev.log" />
-        <option value="$PROJECT_DIR$/var/logs/prod.log" />
         <option value="$PROJECT_DIR$/src/DashBundle/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Controller/UsuariosController.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/CoreBundle.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Level.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/UsuariosRepository.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/UsuarioType.php" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newuser.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/edituser.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/LegalRequirements.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Twig/Extension/formato7.php" />
+        <option value="$PROJECT_DIR$/web/assets/css/mio.css" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Controller/ArchivosTypeController.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/AdjuntarType.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/RequirementType.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Deberes.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/documento1.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Archivos.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/ArchivosType.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmb.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmbType.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/carta.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato7.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -1893,6 +2013,28 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -1912,6 +2054,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1927,63 +2070,33 @@
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CoreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CoreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Security_Login" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1991,11 +2104,11 @@
       <recent name="C:\xampp\htdocs\sasisopa\src\DashBundle\Resources\views\Admin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp56\htdocs\sasisopa\src\DashBundle\Resources\views\Default" />
-      <recent name="C:\xampp56\htdocs\sasisopa\src\CoreBundle" />
-      <recent name="C:\xampp56\htdocs\sasisopa\app\config" />
-      <recent name="C:\xampp\htdocs\sasisopa\src\DashBundle\Controller" />
       <recent name="C:\xampp\htdocs\sasisopa\src\CoreBundle\Entity" />
+      <recent name="C:\xampp\htdocs\sasisopa\src\CoreBundle\Form" />
+      <recent name="C:\xampp\htdocs\sasisopa\src\DashBundle\Resources\views\Default" />
+      <recent name="C:\xampp\htdocs\sasisopa\src\CoreBundle" />
+      <recent name="C:\xampp\htdocs\sasisopa\src\DashBundle\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2033,29 +2146,35 @@
       <workItem from="1525282810945" duration="1775000" />
       <workItem from="1525311308145" duration="2104000" />
       <workItem from="1525321245480" duration="9835000" />
-      <workItem from="1525356222709" duration="3274000" />
-      <workItem from="1525361120642" duration="2393000" />
-      <workItem from="1525398375321" duration="1374000" />
-      <workItem from="1525405360227" duration="3596000" />
+      <workItem from="1525356354375" duration="8914000" />
+      <workItem from="1525378285658" duration="9795000" />
+      <workItem from="1525439889636" duration="11545000" />
+      <workItem from="1525452010899" duration="9360000" />
+      <workItem from="1525465449147" duration="2426000" />
+      <workItem from="1525698715458" duration="9111000" />
+      <workItem from="1525715889548" duration="14950000" />
+      <workItem from="1525785068132" duration="2075000" />
+      <workItem from="1525789018520" duration="2251000" />
+      <workItem from="1525791356935" duration="358000" />
+      <workItem from="1525794488255" duration="1163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83595000" />
+    <option name="totallyTimeSpent" value="144906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19969743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2193646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21546052" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21546052" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2075,29 +2194,107 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Admin/Default/formulario.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Admin/base.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/AdminBundle/Resources/views/layout.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/AdminBundle/Resources/views/base.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/AdminBundle/DashBundle.php" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/CoreBundle.php">
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/AddedResponsabilities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdminBundle/Controller/DefaultController.php" />
-    <entry file="file://$PROJECT_DIR$/src/AdminBundle/AdminBundle.php" />
-    <entry file="file://D:/usuario.sql" />
-    <entry file="file://D:/base/sasisopa.sql" />
-    <entry file="file://D:/sasisopa_lar/app/Http/Controllers/usuarioController.php" />
-    <entry file="file://F:/sasisopa.sql" />
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Activities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/UsuariosController.php" />
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/CoreBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/UserController.php" />
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/UsuarioType.php" />
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Level.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="50" column="82" lean-forward="false" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Listener/DoctrineExtensionListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="37" column="66" lean-forward="true" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/supaadmindashboard1212/pages.revox.io/dashboard/3.0.0/html/corporate/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="1975" column="17" lean-forward="false" selection-start-line="1975" selection-start-column="17" selection-end-line="1975" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Twig/Extension/formato7.php" />
+    <entry file="file://$PROJECT_DIR$/web/assets/css/mio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/AdjuntarType.php" />
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -2105,273 +2302,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/security.yml" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="116" column="42" lean-forward="false" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/SecurityController.php" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.1.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/login.html.twig" />
-    <entry file="file://$USER_HOME$/Downloads/UsuariosRepository.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="-30">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/DashBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="376" column="44" lean-forward="false" selection-start-line="376" selection-start-column="44" selection-end-line="376" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/SPL/SPL.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.en.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/AuthenticationException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/logs/prod.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="801" lean-forward="true" selection-start-line="1" selection-start-column="801" selection-end-line="1" selection-end-column="801" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
-          <folding>
-            <element signature="e#41#98#0#PHP" expanded="false" />
-            <element signature="e#757#788#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Level.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="121" column="27" lean-forward="false" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/UsuariosRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/UsuarioType.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#35#75#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="69" column="7" lean-forward="false" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Security/User/UserLoaderInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="106">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/logs/dev.log">
+    <entry file="file://$PROJECT_DIR$/../exporter/composer.lock" />
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="470" column="249" lean-forward="true" selection-start-line="470" selection-start-column="249" selection-end-line="470" selection-end-column="249" />
-          <folding />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.1.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/documento1.php" />
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Controller/ArchivosTypeController.php" />
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Deberes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/RequirementType.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/EvidenciaBitacora.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/editrequerimiento.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/LegalRequirements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/doctrine_extensions.yml">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Responsibilities.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state relative-caret-position="85">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="132" column="87" lean-forward="false" selection-start-line="132" selection-start-column="87" selection-end-line="132" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Archivos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="135" column="22" lean-forward="false" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Listener/DoctrineExtensionListener.php">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Bitacora.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#96#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Reporte1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ArchivosType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="265" column="1" lean-forward="true" selection-start-line="265" selection-start-column="1" selection-end-line="265" selection-end-column="1" />
-          <folding>
-            <element signature="e#37#69#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newuser.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="272">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/edituser.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/carta.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmbType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="78" column="146" lean-forward="false" selection-start-line="78" selection-start-column="146" selection-end-line="78" selection-end-column="146" />
-          <folding />
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#35#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+        <state relative-caret-position="1632">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
-            <element signature="e#3451#3485#0#PHP" expanded="true" />
+            <element signature="e#41#98#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato7.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

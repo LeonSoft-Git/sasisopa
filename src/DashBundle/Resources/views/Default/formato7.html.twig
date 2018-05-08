@@ -1,0 +1,33 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+
+<div class="col-lg-12">
+<h2>Datos del observador</h2>
+
+        {{ form_start(form,  {'action':path('reporte1')}) }}
+        <div class="form-group">
+            {{ form_label(form.nombre) }}
+            {{ form_widget(form.nombre, {'attr': {'class': 'form-control'} }) }}
+            {% if form.nombre.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.nombre.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}
