@@ -2,11 +2,13 @@
 
 namespace DashBundle\Controller;
 
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use CoreBundle\Entity\LegalRequirements;
 use CoreBundle\Entity\Archivos;
+use CoreBundle\Entity\Reporte1;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -92,31 +94,24 @@ class DefaultController extends Controller
 
 
     /**
-     * @Route("/Reporte-de-Aspectos-Ambientales" , name="newfile")
+     * @Route("/Reporte-de-aspectos-ambientales", name="newrepo")
      * @Method({"GET", "POST"})
      */
-    public function newFileAction(Request $request){
-        $archivo = new Archivos();
-        $form = $this->createForm('CoreBundle\Form\ArchivosType', $archivo);
+    public function newReporteAction(Request $request){
+        $reporte1 = new Reporte1();
+        $form = $this->createForm('CoreBundle\Form\ReporteAspAmbType', $reporte1);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            if($archivo->getCartaPoder()){
-                $file = $archivo->getCartaPoder();
+            $rep = $this->getDoctrine()->getManager();
+            $rep->persist($reporte1);
+            $rep->flush();
 
-                $fileName = md5(uniqid()).'.'.$file->guessExtension();
-                $file->move($this->getParameter('cp_directory'),$fileName);
-                $archivo->setCartaPoder($fileName);
-
-            }
-
-            $em->persist($archivo);
-            $em->flush();
+            return $this->redirectToRoute('newrepo' );
         }
 
-        return $this->render('@Dash/Default/carta.html.twig',array(
-            'archivo' => $archivo,
+        return $this->render('@Dash/Default/formato7.html.twig',array(
+            'reporte1' => $reporte1,
             'form' => $form->createView()
         ));
     }
@@ -134,9 +129,9 @@ class DefaultController extends Controller
     }
 
     /**
-    +     * @Route("/nuevo-requerimiento", name="new")
-    +     * @Method({"GET", "POST"})
-    +     */
+         * @Route("/nuevo-requerimiento", name="new")
+         * @Method({"GET", "POST"})
+         */
     public function newRequerimientoAction(Request $request){
             $requerimiento = new LegalRequirements();
             $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);

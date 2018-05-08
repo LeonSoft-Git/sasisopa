@@ -27,6 +27,6 @@ class ArchivosType extends AbstractType
 
     public function getBlockPrefix()
     {
-        return 'coreBundle_archivo';
+        return 'coreBundle_reporte';
     }
 }
