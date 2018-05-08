@@ -4,43 +4,23 @@
 
 
 <div class="col-lg-12">
-<h2>Datos del observador</h2>
+    <h2>Datos del observador</h2>
+    <hr>
 
-    {{ form_start(form,  {'action':path('newrepo')}) }}
-    <div class="form-group">
-        {{ form_label(form.nombre) }}
-        {{ form_widget(form.nombre, {'attr': {'class': 'form-control'} }) }}
-        {% if form.nombre.vars.errors|length > 0 %}
-            <p class="help-block">
-                {% for error in form.nombre.vars.errors %}
-                    {{ error.message }} <br/>
-                {% endfor %}
-            </p>
-        {% endif %}
-    </div>
-    <div class="form-group">
-        {{ form_label(form.titulo) }}
-        {{ form_widget(form.titulo, {'attr': {'class': 'form-control'} }) }}
-        {% if form.titulo.vars.errors|length > 0 %}
-            <p class="help-block">
-                {% for error in form.titulo.vars.errors %}
-                    {{ error.message }} <br/>
-                {% endfor %}
-            </p>
-        {% endif %}
-    </div>
-    <div class="form-group">
-        {{ form_label(form.turno) }}
-        {{ form_widget(form.turno) }}
 
+    <div class="row">
+        <div class="col-lg-3">
+            Nombre del Observador: {{ nombre }}
+        </div>
     </div>
-    <div class="form-group">
-        {{ form_widget(form.fecha) }}
+    {% endfor %}
+    <hr>
+    <h2>Identificacón del hallazgo</h2>
 
+    <div class="">
     </div>
 
-    {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}
-    {{ form_end(form) }}
+
 
 
 

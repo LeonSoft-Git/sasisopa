@@ -3,7 +3,7 @@
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Gedmo\Mapping\Annotation as Gedmo;
+
 /**
  * CoreBundle\Entity\Reporte1
  *
@@ -15,7 +15,6 @@ class Reporte1
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $idreporte1;
 
@@ -23,6 +22,7 @@ class Reporte1
      * @ORM\Column(type="string", length=50, nullable=true)
      */
     protected $nombre;
+
     /**
      * @ORM\Column(type="string", length=50, nullable=true)
      */
@@ -144,7 +144,6 @@ class Reporte1
     {
         return $this->titulo;
     }
-
 
     /**
      * Set the value of fecha.

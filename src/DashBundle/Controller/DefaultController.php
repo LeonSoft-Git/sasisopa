@@ -33,6 +33,8 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/formato3.html.twig',array('data'=>$req));
     }
 
+    //Cada controlador manda llamar una vista que ya esta predefinida en la vista de formato
+
     /**
      * @Route("/politica-I", name="politica")
      */
@@ -62,6 +64,12 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/formato.html.twig' , array('id'=>4));
     }
 
+
+
+
+
+
+    //Controlador para guardar la consulta y mostrar el formulario de insertar archivo dentro de newfile
     /**
      * @Route("/Poder" , name="newfile")
      * @Method({"GET", "POST"})
@@ -92,9 +100,10 @@ class DefaultController extends Controller
         ));
     }
 
+    //Controlador para guardar la consulta y mostrar el formulario dentro de newreporte1
 
     /**
-     * @Route("/Reporte-de-aspectos-ambientales", name="newrepo")
+     * @Route("/insertar-reporte-de-aspectos-ambientales", name="newrepo")
      * @Method({"GET", "POST"})
      */
     public function newReporteAction(Request $request){
@@ -107,10 +116,10 @@ class DefaultController extends Controller
             $rep->persist($reporte1);
             $rep->flush();
 
-            return $this->redirectToRoute('newrepo' );
+            return $this->redirectToRoute('raa' );
         }
 
-        return $this->render('@Dash/Default/formato7.html.twig',array(
+        return $this->render('@Dash/Default/newreporte1.html.twig',array(
             'reporte1' => $reporte1,
             'form' => $form->createView()
         ));
@@ -157,9 +166,12 @@ class DefaultController extends Controller
      */
     public function raaAction()
     {
-        return $this->render('DashBundle:Default:formato7.html.twig');
-    }
+        $query = $this->getDoctrine()->getManager();
+        $reporte =  $query->getRepository('CoreBundle:Reporte1');
+        $nombre = $reporte->find($idreporte1);
 
+        return $this->render('DashBundle:Default:formato7.html.twig',array('repo'=>$nombre));
+    }
 
 
 
