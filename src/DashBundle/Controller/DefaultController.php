@@ -166,11 +166,11 @@ class DefaultController extends Controller
      */
     public function raaAction()
     {
-        $query = $this->getDoctrine()->getManager();
-        $reporte =  $query->getRepository('CoreBundle:Reporte1');
-        $nombre = $reporte->find($idreporte1);
+        //$query = $this->getDoctrine()->getManager();
+        //$reporte =  $query->getRepository('CoreBundle:Reporte1');
+        //$nombre = $reporte->find($idreporte1);
 
-        return $this->render('DashBundle:Default:formato7.html.twig',array('repo'=>$nombre));
+        return $this->render('DashBundle:Default:formato7.html.twig');
     }
 
 

@@ -4,28 +4,8 @@
 
 
 <div class="col-lg-12">
-    <h2>Datos del observador</h2>
-    <hr>
-
-
-    <div class="row">
-        <div class="col-lg-3">
-            Nombre del Observador: {{ nombre }}
-        </div>
-    </div>
-    {% endfor %}
-    <hr>
-    <h2>Identificacón del hallazgo</h2>
-
-    <div class="">
-    </div>
-
-
-
-
-
-
-
+    <embed src="{{asset('assets/documentos/Reporte-aspectos-ambientales.pdf')}}" width="1050" height="650">
+    <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newrepo') }}">Ingresar Reporte</a>
 </div>
 
 
