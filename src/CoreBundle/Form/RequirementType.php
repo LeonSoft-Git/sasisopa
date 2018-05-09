@@ -19,8 +19,8 @@ class RequirementType extends AbstractType
             ->add('codificacion',TextType::class,array('label'=>'Codificación'))
             ->add('titulo',TextType::class,array('label'=>'Título'))
             ->add('ano_emision', DateType::class, array(
-                'widget' => 'single_text',
-                'format' => 'yyyy-MM-dd',
+                        'widget' => 'single_text',
+                        'format' => 'yyyy-MM-dd',
             ))
             ->add('patron',TextType::class,array('label'=>'Patrón'))
             ->add('trabajadores',TextType::class,array('label'=>'Trabajadores'))
