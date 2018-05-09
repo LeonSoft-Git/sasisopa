@@ -4,7 +4,7 @@ namespace DashBundle\Controller;
 
 
 use CoreBundle\Entity\Organigrama;
-use DashBundle\DashBundle;
+use CoreBundle\Form\ReporteAspAmbType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -138,11 +138,14 @@ class DefaultController extends Controller
     //Controlador para la vista del apartado 7 (PDF)
     /**
      * @Route("/Reporte-de-aspectos-ambientales", name="raa")
+     * @Method("GET")
+     *
      */
     public function raaAction()
     {
-
-        return $this->render('DashBundle:Default:formato7.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $reportes = $em->getRepository('CoreBundle:Reporte1')->findAll();
+        return $this->render('DashBundle:Default:formato7.html.twig',array('reportes'=>$reportes));
     }
 
     //Controlador para guardar la consulta y mostrar el formulario dentro de newreporte1
@@ -167,6 +170,29 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/newreporte1.html.twig',array(
             'reporte1' => $reporte1,
             'form' => $form->createView()
+        ));
+    }
+
+    /**
+     * @Route("/{id}/editar-reporte", name="editrepo")
+     * @Method({"GET", "POST"})
+     */
+    public function editReporteAction(Request $request, Reporte1 $reporte1){
+        $editForm = $this->createForm('CoreBundle\Form\ReporteAspAmbType', $reporte1);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($reporte1);
+            $em->flush();
+
+            return $this->redirectToRoute('raa');
+
+        }
+
+        return $this->render('@Dash/Default/editreporte1.html.twig', array(
+            'reporte1' => $reporte1,
+            'edit_form' => $editForm->createView()
         ));
     }
 
