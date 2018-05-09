@@ -1,0 +1,33 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+
+<div class="col-lg-12">
+    <h2>Datos del Observador</h2>
+
+    <div class="row">
+        {{ form_start(form, {'method': 'GET'}) }}
+        <div class="col-lg-3">
+            Nombre del Colaborador:
+        </div>
+        <div class="col-lg-3">
+            colaborador: {{ form_widget(form.colaborador) }}
+
+        </div>
+        <div class="col-lg-3">
+            Contratista:
+        </div>
+        <div class="col-lg-3">
+            Visitante:
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}

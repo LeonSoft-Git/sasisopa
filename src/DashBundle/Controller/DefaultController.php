@@ -3,6 +3,8 @@
 namespace DashBundle\Controller;
 
 
+use CoreBundle\Entity\Organigrama;
+use DashBundle\DashBundle;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -65,10 +67,6 @@ class DefaultController extends Controller
     }
 
 
-
-
-
-
     //Controlador para guardar la consulta y mostrar el formulario de insertar archivo dentro de newfile
     /**
      * @Route("/Poder" , name="newfile")
@@ -100,6 +98,53 @@ class DefaultController extends Controller
         ));
     }
 
+
+
+    //Controlador para mostrar deberes y responsabilidades
+    /**
+     * @Route("/deberes-y-responsabilidades", name="dr")
+     */
+    public function drAction(){
+        $query = $this->getDoctrine()->getManager();
+        $acti =  $query->getRepository('CoreBundle:Activities')->findAll();
+        $respo =  $query->getRepository('CoreBundle:Responsibilities')->findAll();
+        $deb =  $query->getRepository('CoreBundle:Deberes')->findAll();
+        return $this->render('@Dash/Default/formato6.html.twig',array('acti'=>$acti , 'respo'=>$respo , 'deb'=>$deb));
+    }
+    //Controlador de generar un nuevo requerimiento
+    /**
+         * @Route("/nuevo-requerimiento", name="new")
+         * @Method({"GET", "POST"})
+         */
+    public function newRequerimientoAction(Request $request){
+            $requerimiento = new LegalRequirements();
+            $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($requerimiento);
+                  $em->flush();
+
+        return $this->redirectToRoute('rlv' );
+        }
+
+        return $this->render('@Dash/Default/newrequirement.html.twig',array(
+                    'requerimiento' => $requerimiento,
+                    'form' => $form->createView()
+                    ));
+    }
+
+    //Controlador para la vista del apartado 7 (PDF)
+    /**
+     * @Route("/Reporte-de-aspectos-ambientales", name="raa")
+     */
+    public function raaAction()
+    {
+
+        return $this->render('DashBundle:Default:formato7.html.twig');
+    }
+
     //Controlador para guardar la consulta y mostrar el formulario dentro de newreporte1
 
     /**
@@ -125,54 +170,50 @@ class DefaultController extends Controller
         ));
     }
 
-
+    //Controlador para la vista de los reportes del apartado 7
     /**
-     * @Route("/deberes-y-responsabilidades", name="dr")
+     * @Route("/View-Reportes-de-aspectos-ambientales", name="vraa")
      */
-    public function drAction(){
-        $query = $this->getDoctrine()->getManager();
-        $acti =  $query->getRepository('CoreBundle:Activities')->findAll();
-        $respo =  $query->getRepository('CoreBundle:Responsibilities')->findAll();
-        $deb =  $query->getRepository('CoreBundle:Deberes')->findAll();
-        return $this->render('@Dash/Default/formato6.html.twig',array('acti'=>$acti , 'respo'=>$respo , 'deb'=>$deb));
+    public function vraaAction()
+    {
+
+        return $this->render('DashBundle:Default:viewreportesambientales.html.twig');
     }
 
+    //Controlador para la vista de el organigrama del apartado 7
     /**
-         * @Route("/nuevo-requerimiento", name="new")
-         * @Method({"GET", "POST"})
-         */
-    public function newRequerimientoAction(Request $request){
-            $requerimiento = new LegalRequirements();
-            $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
-            $form->handleRequest($request);
+     * @Route("/Comunicacion-Organigrama", name="org")
+     */
+    public function orgAction()
+    {
 
-            if ($form->isSubmitted() && $form->isValid()) {
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($requerimiento);
-                  $em->flush();
+        return $this->render('DashBundle:Default:organigrama.html.twig');
+    }
 
-        return $this->redirectToRoute('rlv' );
+    //Controlador para guardar la consulta y mostrar el formulario del organigrama
+
+    /**
+     * @Route("/insertar-Organigrama", name="neworg")
+     * @Method({"GET", "POST"})
+     */
+    public function newOrgAction(Request $request){
+        $org = new Organigrama();
+        $form = $this->createForm('CoreBundle\Form\OrganigramaType', $org);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $rep = $this->getDoctrine()->getManager();
+            $rep->persist($org);
+            $rep->flush();
+
+            return $this->redirectToRoute('org' );
         }
 
-        return $this->render('@Dash/Default/newrequirement.html.twig',array(
-                    'requerimiento' => $requerimiento,
-                    'form' => $form->createView()
-                    ));
+        return $this->render('@Dash/Default/organigrama.html.twig',array(
+            'organigrama' => $organigrama,
+            'form' => $form->createView()
+        ));
     }
-
-
-    /**
-     * @Route("/Reporte-de-aspectos-ambientales", name="raa")
-     */
-    public function raaAction()
-    {
-        //$query = $this->getDoctrine()->getManager();
-        //$reporte =  $query->getRepository('CoreBundle:Reporte1');
-        //$nombre = $reporte->find($idreporte1);
-
-        return $this->render('DashBundle:Default:formato7.html.twig');
-    }
-
 
 
 

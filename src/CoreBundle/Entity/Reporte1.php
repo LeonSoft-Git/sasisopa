@@ -15,6 +15,7 @@ class Reporte1
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $idreporte1;
 

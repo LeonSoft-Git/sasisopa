@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-05-2018 a las 09:05:38
+-- Tiempo de generación: 09-05-2018 a las 17:34:32
 -- Versión del servidor: 10.1.31-MariaDB
--- Versión de PHP: 7.2.4
+-- Versión de PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -38,7 +38,7 @@ CREATE TABLE `activities` (
 --
 
 INSERT INTO `activities` (`idac`, `activity`) VALUES
-(1, 'Deberá asegurar que el sistema de Deberá asegurar que el Sistema de Administración tiene conformidad con los requisitos establecidos en los lineamientos emitidos por la agencia y con la normatividad aplicable a las estaciones de servicio.'),
+(1, 'Deberá asegurar que el sistema de Administración tiene conformidad con los requisitos establecidos en los lineamientos emitidos por la agencia y con la normatividad aplicable a las estaciones de servicio.'),
 (2, 'Establecer un programa de revisiones por parte de la dirección, para mantenerlo(s) informado(s) acerca del Desempeño del Sistema '),
 (3, 'Proponer la adopción de las mejores prácticas nacionales e internacionales en la implementación del Sistema de Administración'),
 (4, 'Deberá coordinar las acciones necesarias para subsanar los incumplimientos de la normatividad interna y externa aplicable e informar a la Agencia de cualquier situación crítica que vulnere la Seguridad Industrial, Seguridad Operativa y a la Protecció'),
@@ -86,6 +86,29 @@ CREATE TABLE `added_responsabilities` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `archivos`
+--
+
+CREATE TABLE `archivos` (
+  `idarchivos` int(11) NOT NULL,
+  `carta_poder` varchar(75) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `nombre` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `archivos`
+--
+
+INSERT INTO `archivos` (`idarchivos`, `carta_poder`, `nombre`, `created_at`) VALUES
+(1, '29452cd567b87fffca334abd4c0c5c2a.pdf', 'aaa', NULL),
+(2, '831d7f7d50597c287b0073eb50523ddd.pdf', 'aaa', NULL),
+(3, '68689dc52d6aa02825a918c2057c52c7.pdf', 'aaa', NULL),
+(4, 'e6d6e27fdc40c593d5963892c7cf2254.pdf', 'aaa', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `bitacora`
 --
 
@@ -97,6 +120,70 @@ CREATE TABLE `bitacora` (
   `hora_termino` date DEFAULT NULL,
   `firma` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `deberes`
+--
+
+CREATE TABLE `deberes` (
+  `idd` int(11) NOT NULL,
+  `deber` varchar(550) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `deberes`
+--
+
+INSERT INTO `deberes` (`idd`, `deber`) VALUES
+(1, 'Determinar los objetivos con las partes interesadas'),
+(2, 'Establecer los programas para el cumplimiento de los objetivos.'),
+(3, 'Asegurar las buenas prácticas en materia de Seguridad Industrial, Seguridad Operativa y la Protección del Medio Ambiente en cualquiera de las etapas de la Estaci?n de Servicio.'),
+(4, 'Definir autoridad y responsabilidad; establecer interacciones y coordinaciones entra las diferentes ?reas y niveles.'),
+(5, 'Actualizar el Sistema de Administración cuando sea requerido y de acuerdo a las disposiciones que establezca la agencia.'),
+(6, 'Asegurar los diferentes recursos de la Estación de Servicio.'),
+(7, 'Asegurar la retroalimentación del Sistema de Administración.\r\n'),
+(8, 'Asegurar la mejora continua.'),
+(9, 'Detectar áreas de oportunidad en el Sistema de Administración.\r\n'),
+(10, 'Realizar o designar análisis de riesgo de las actividades.'),
+(11, 'Comunicar información referente al Sistema de Administración con los involucrados en la Estación de Servicio, así como con los contratistas y subcontratistas. Con los responsables de las diferentes áreas de la Estación de Servicio.'),
+(12, 'Cumplir con los objetivos del área operacional y participar en el sistema. '),
+(13, 'Implementar las buenas prácticas en materia de Seguridad Industrial, Seguridad y Operativa y la Protección del Medio Ambiente con el personal interno.'),
+(14, 'Administrar los diferentes recursos del área operativa que sean designados.'),
+(15, 'Contribuir a la retroalimentación del Sistema de Administración.\r\n'),
+(16, 'Contribuir al aseguramiento de la mejora continua del sistema de Administraci?n.\r'),
+(17, 'Detectar áreas de oportunidad en las diferentes operaciones y áreas de la estación de servicio.'),
+(18, 'Reportar de manera inmediata los incidentes y accidentes dentro de la estaci?n de servicio.'),
+(19, 'Atención con respeto al cliente.'),
+(20, 'Mantener en buenas condiciones el mobiliario y equipo de la estaci?n de servicio.'),
+(21, 'Dar cumplimiento a los objetivos del área operacional y exigir la participación del personal. '),
+(22, 'Asegurar las buenas prácticas en materia de Seguridad Industrial, Seguridad y Operativa y la Protección del Medio Ambiente con el personal interno.'),
+(23, 'Establecer coordinación con personal interno para la realización de actividades.'),
+(24, 'Transmitir cualquier Actualización en el Sistema de Administración cuando sea requerido.'),
+(25, 'Solicitar y administrar los diferentes recursos del área operativa.'),
+(26, 'Contribuir a la retroalimentaci?n del Sistema de Administraci?n.\r'),
+(27, 'Contribuir al aseguramiento de la mejora continua del sistema de Administraci?n.\r'),
+(28, 'Detectar ?reas de oportunidad en las diferentes operaciones y ?reas de la estaci?n de servicio.'),
+(29, 'Reportar de manera inmediata los incidentes y accidentes dentro de la estaci?n de servicio.'),
+(30, 'Control y calificaci?n de personal a su cargo.'),
+(31, 'Asegurar el cumplimiento de los programas de mantenimiento predictivo y preventivo.'),
+(32, 'Coordinar las actividades de su personal a cargo y de personal contratista.'),
+(33, 'Evaluaci?n de contratistas y proveedores por carta de servicios.'),
+(34, 'Dar cumplimiento a los objetivos del ?rea operacional. '),
+(35, 'Asegurar las buenas pr?cticas en materia de Seguridad Industrial, Seguridad y Operativa y la Protecci?n del Medio Ambiente con el personal interno y contratistas.'),
+(36, 'Establecer coordinaci?n con personal interno y contratistas, proveedores y subcontratistas para la realizaci?n de actividades.'),
+(37, 'Solicitar y administrar los diferentes recursos del ?rea operativa.'),
+(38, 'Reportar de manera inmediata los incidentes y accidentes dentro de la estaci?n de servicio.'),
+(39, 'Control y calificaci?n de personal a su cargo y personal contratista y proveedores.'),
+(40, 'Detectar y promover los recursos financieros, materiales y humanos para el cumplimiento los objetivos de sistema de administraci?n. '),
+(41, 'Dar seguimiento a los recursos otorgados a las diferentes ?reas.'),
+(42, 'Asegurar las buenas pr?cticas en la contrataci?n de contratistas, proveedores y subcontratistas en materia de Seguridad Industrial, Seguridad y Operativa y la Protecci?n del Medio Ambiente.'),
+(43, 'Coordinaci?n de actividades de contratistas, proveedores y subcontratistas para la realizaci?n de actividades.'),
+(44, 'Contribuir a la retroalimentaci?n del Sistema de Administraci?n.\r'),
+(45, 'Contribuir al aseguramiento de la mejora continua del sistema de Administraci?n.\r'),
+(46, 'Detectar ?reas de oportunidad en las diferentes operaciones y ?reas de la estaci?n de servicio.'),
+(47, 'Control y calificaci?n de contratistas y proveedores.');
 
 -- --------------------------------------------------------
 
@@ -153,7 +240,7 @@ CREATE TABLE `legal_requirements` (
   `idlr` int(11) NOT NULL,
   `dependencia` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `clasificacion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `codificiacion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `codificacion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `titulo` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `ano_emision` varchar(4) COLLATE utf8_unicode_ci DEFAULT NULL,
   `patron` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -169,7 +256,7 @@ CREATE TABLE `legal_requirements` (
 -- Volcado de datos para la tabla `legal_requirements`
 --
 
-INSERT INTO `legal_requirements` (`idlr`, `dependencia`, `clasificacion`, `codificiacion`, `titulo`, `ano_emision`, `patron`, `trabajadores`, `generales`, `disposiciones_especificas`, `articulos_aplicables`, `descripcion_requisito`, `link`) VALUES
+INSERT INTO `legal_requirements` (`idlr`, `dependencia`, `clasificacion`, `codificacion`, `titulo`, `ano_emision`, `patron`, `trabajadores`, `generales`, `disposiciones_especificas`, `articulos_aplicables`, `descripcion_requisito`, `link`) VALUES
 (1, 'STPS', 'SEGURIDAD', 'NOM-001', 'Edificios, locales e instalaciones.', '2008', '5.1, 5.2, 5.3, 5.4, 5.5, 5.6', '6.1, 6.2, 6.3', '7.1, 7.1.1, 7.1.2, 7.1.3, 7.1.4, 7.1.5, 7.1.6, 7.2', '7.5, 7.5.1, 7.5.2, 7.6, 7.6.1, 8, 8.1, 8.2, 8.3, 9, 9.1, 9.2, 9.3, 9.4, 9.8, 9.9', '\r', NULL, NULL),
 (2, 'STPS', 'SEGURIDAD', 'NOM-002', 'Prevención y protección contra incendios.', '2010', '5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.7, 5.8, 5.9, 5.12', '6, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9', '7, 7.1, 7.2, 7.3, 7.4, 7.5, 7.5.1, 7.5.2, 7.5.3, 7', '5.6, 5.11, 8.2, 9.1, 9.2, 9.3, 10.3, 11.3, 11.4, 5.10.2, 8.1.2', '\r', NULL, NULL),
 (3, 'STPS', 'SEGURIDAD', 'NOM-004', 'Sistemas y dispositivos de seguridad en maquinaria', '1999', '5.1, 5.2, 5.2.1, 5.2.2, 5.3, 5.4', '6.1, 6.2, 6.3, 6.4, 6.5, 6.6', '7, 7.1, 7.2, 7.2.1, 7.2.2, 7.2.3, 8, 8.1, 8.1.1, 8', '', '\r', NULL, NULL),
@@ -184,7 +271,10 @@ INSERT INTO `legal_requirements` (`idlr`, `dependencia`, `clasificacion`, `codif
 (12, 'STPS', 'ORGANIZACIÓN', 'NOM-018', 'Identificación de peligros y riesgos por sustancia', '2015', '5.1, 5.2, 5.3, 5.4, 5.5', '6.1, 6.2', '7.1, 7.1.1, 7.1.2, 7.2, 8, 101, 102, 103, 104, 105', '', '\r', NULL, NULL),
 (13, 'STPS', 'ORGANIZACIÓN', 'NOM-019', 'Comisiones de seguridad e higiene.', '2011', '5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.', '6, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7,', '', '', '\r', NULL, NULL),
 (14, 'STPS', 'ORGANIZACIÓN', 'NOM-026', 'Colores y señales de seguridad.', '2008', '5.1, 5.2, 5.3, 5.4', '6.1, 6.2', '7.1, 7.2, 8, 8.1, 8.2, 8.2.1, 8.2.2, 8.2.3, 8.2.4,', '9, 9.1, 9.1.1, 9.1.2, 9.1.3, 9.1.4, 9.2, 9.2.1, 9.2.2, 9.2.3, 9.2.4, 9.2.5, 9.2.6, 9.2.7, 9.2.8, 9.3', '\r', NULL, NULL),
-(15, 'STPS', 'ORGANIZACIÓN', 'NOM-030', 'Servicios preventivos de seguridad y salud.', '2009', '4, 4.1, 4.2, 4.3, 4.5, 4.6, 4.7, 4.8, 4.9', '', '5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6,', '4.1.1, 4.4.1, 6.2, 7.2', '\r', NULL, NULL);
+(15, 'STPS', 'ORGANIZACIÓN', 'NOM-030', 'Servicios preventivos de seguridad y salud.', '2009', '4, 4.1, 4.2, 4.3, 4.5, 4.6, 4.7, 4.8, 4.9', '', '5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6,', '4.1.1, 4.4.1, 6.2, 7.2', '\r', NULL, NULL),
+(16, 'prueba', 'prueb', 'prueb', 'pasdas', '5035', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd'),
+(17, 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'ddd', 'dd', 'dd', 'dd'),
+(18, 'qq', 'prueb', 'ss', 'ss', 'ss', 'ss', 'ss', 'sss', 'sss', 'sss', 'ss', 'ss');
 
 -- --------------------------------------------------------
 
@@ -210,6 +300,44 @@ INSERT INTO `level` (`idl`, `level`) VALUES
 (6, 'jefe_de_turno'),
 (7, 'auxiliar_administrativo'),
 (8, 'despachador');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `organigrama`
+--
+
+CREATE TABLE `organigrama` (
+  `idorganigrama` int(11) NOT NULL,
+  `altadireccion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `representantetecnico` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `jefemantenimiento` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `auxiliaradmin` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `jefedeturno` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `prestadores` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `despachadores` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `reporte1`
+--
+
+CREATE TABLE `reporte1` (
+  `idreporte1` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `titulo` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `turno` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `observacion` longtext COLLATE utf8_unicode_ci,
+  `colaborador` int(11) DEFAULT NULL,
+  `contratista` int(11) DEFAULT NULL,
+  `visitante` int(11) DEFAULT NULL,
+  `planeada` int(11) DEFAULT NULL,
+  `espontanea` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -299,11 +427,23 @@ ALTER TABLE `added_responsabilities`
   ADD KEY `fk_added_responsabilities_usuarios1_idx` (`idu`);
 
 --
+-- Indices de la tabla `archivos`
+--
+ALTER TABLE `archivos`
+  ADD PRIMARY KEY (`idarchivos`);
+
+--
 -- Indices de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
   ADD PRIMARY KEY (`idb`),
   ADD KEY `fk_bitacora_evidencia_bitacora1_idx` (`ideb`);
+
+--
+-- Indices de la tabla `deberes`
+--
+ALTER TABLE `deberes`
+  ADD PRIMARY KEY (`idd`);
 
 --
 -- Indices de la tabla `evidencia_bitacora`
@@ -315,13 +455,19 @@ ALTER TABLE `evidencia_bitacora`
 -- Indices de la tabla `ext_log_entries`
 --
 ALTER TABLE `ext_log_entries`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `log_class_lookup_idx` (`object_class`),
+  ADD KEY `log_date_lookup_idx` (`logged_at`),
+  ADD KEY `log_user_lookup_idx` (`username`),
+  ADD KEY `log_version_lookup_idx` (`object_id`,`object_class`,`username`);
 
 --
 -- Indices de la tabla `ext_translations`
 --
 ALTER TABLE `ext_translations`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `lookup_unique_idx` (`locale`,`object_class`,`field`,`foreign_key`),
+  ADD KEY `translations_lookup_idx` (`locale`,`object_class`,`foreign_key`);
 
 --
 -- Indices de la tabla `legal_requirements`
@@ -334,6 +480,18 @@ ALTER TABLE `legal_requirements`
 --
 ALTER TABLE `level`
   ADD PRIMARY KEY (`idl`);
+
+--
+-- Indices de la tabla `organigrama`
+--
+ALTER TABLE `organigrama`
+  ADD PRIMARY KEY (`idorganigrama`);
+
+--
+-- Indices de la tabla `reporte1`
+--
+ALTER TABLE `reporte1`
+  ADD PRIMARY KEY (`idreporte1`);
 
 --
 -- Indices de la tabla `responsibilities`
@@ -365,6 +523,12 @@ ALTER TABLE `added_responsabilities`
   MODIFY `idar` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `archivos`
+--
+ALTER TABLE `archivos`
+  MODIFY `idarchivos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
@@ -392,13 +556,19 @@ ALTER TABLE `ext_translations`
 -- AUTO_INCREMENT de la tabla `legal_requirements`
 --
 ALTER TABLE `legal_requirements`
-  MODIFY `idlr` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idlr` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `level`
 --
 ALTER TABLE `level`
   MODIFY `idl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT de la tabla `reporte1`
+--
+ALTER TABLE `reporte1`
+  MODIFY `idreporte1` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `responsibilities`
@@ -410,7 +580,7 @@ ALTER TABLE `responsibilities`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `idu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
