@@ -3,14 +3,15 @@
 namespace DashBundle\Controller;
 
 
-use CoreBundle\Entity\Organigrama;
-use CoreBundle\Form\ReporteAspAmbType;
+//Use que funcionan para llamar los entitys y que funcionen las consultas, mandar llamar los controllers y las rutas
+//
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use CoreBundle\Entity\LegalRequirements;
 use CoreBundle\Entity\Archivos;
 use CoreBundle\Entity\Reporte1;
+use CoreBundle\Entity\Organigrama;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -18,21 +19,13 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
+    //Controlador para la vista del index
     /**
      * @Route("/", name="dashboard")
      */
     public function indexAction()
     {
         return $this->render('DashBundle:Default:index.html.twig');
-    }
-
-    /**
-     * @Route("/requisitos-legales-vigentes", name="rlv")
-     */
-    public function rlvAction(){
-        $query = $this->getDoctrine()->getManager();
-        $req =  $query->getRepository('CoreBundle:LegalRequirements')->findAll();
-        return $this->render('@Dash/Default/formato3.html.twig',array('data'=>$req));
     }
 
     //Cada controlador manda llamar una vista que ya esta predefinida en la vista de formato
@@ -66,6 +59,41 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/formato.html.twig' , array('id'=>4));
     }
 
+    //Controlador para la vista de requisitos legales (apartado 3)
+    /**
+     * @Route("/requisitos-legales-vigentes", name="rlv")
+     */
+    public function rlvAction(){
+        $query = $this->getDoctrine()->getManager();
+        $req =  $query->getRepository('CoreBundle:LegalRequirements')->findAll();
+        return $this->render('@Dash/Default/formato3.html.twig',array('data'=>$req));
+    }
+
+    //Controlador de generar un nuevo requerimiento
+    /**
+     * @Route("/nuevo-requerimiento", name="new")
+     * @Method({"GET", "POST"})
+     */
+    public function newRequerimientoAction(Request $request){
+        $requerimiento = new LegalRequirements();
+        $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($requerimiento);
+            $em->flush();
+
+            return $this->redirectToRoute('rlv' );
+        }
+
+        return $this->render('@Dash/Default/newrequirement.html.twig',array(
+            'requerimiento' => $requerimiento,
+            'form' => $form->createView()
+        ));
+    }
+
+
 
     //Controlador para guardar la consulta y mostrar el formulario de insertar archivo dentro de newfile
     /**
@@ -98,8 +126,6 @@ class DefaultController extends Controller
         ));
     }
 
-
-
     //Controlador para mostrar deberes y responsabilidades
     /**
      * @Route("/deberes-y-responsabilidades", name="dr")
@@ -111,41 +137,15 @@ class DefaultController extends Controller
         $deb =  $query->getRepository('CoreBundle:Deberes')->findAll();
         return $this->render('@Dash/Default/formato6.html.twig',array('acti'=>$acti , 'respo'=>$respo , 'deb'=>$deb));
     }
-    //Controlador de generar un nuevo requerimiento
-    /**
-         * @Route("/nuevo-requerimiento", name="new")
-         * @Method({"GET", "POST"})
-         */
-    public function newRequerimientoAction(Request $request){
-            $requerimiento = new LegalRequirements();
-            $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
-            $form->handleRequest($request);
-
-            if ($form->isSubmitted() && $form->isValid()) {
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($requerimiento);
-                  $em->flush();
-
-        return $this->redirectToRoute('rlv' );
-        }
-
-        return $this->render('@Dash/Default/newrequirement.html.twig',array(
-                    'requerimiento' => $requerimiento,
-                    'form' => $form->createView()
-                    ));
-    }
 
     //Controlador para la vista del apartado 7 (PDF)
     /**
      * @Route("/Reporte-de-aspectos-ambientales", name="raa")
-     * @Method("GET")
-     *
      */
     public function raaAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $reportes = $em->getRepository('CoreBundle:Reporte1')->findAll();
-        return $this->render('DashBundle:Default:formato7.html.twig',array('reportes'=>$reportes));
+
+        return $this->render('DashBundle:Default:formato7.html.twig');
     }
 
     //Controlador para guardar la consulta y mostrar el formulario dentro de newreporte1
@@ -170,29 +170,6 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/newreporte1.html.twig',array(
             'reporte1' => $reporte1,
             'form' => $form->createView()
-        ));
-    }
-
-    /**
-     * @Route("/{id}/editar-reporte", name="editrepo")
-     * @Method({"GET", "POST"})
-     */
-    public function editReporteAction(Request $request, Reporte1 $reporte1){
-        $editForm = $this->createForm('CoreBundle\Form\ReporteAspAmbType', $reporte1);
-        $editForm->handleRequest($request);
-
-        if ($editForm->isSubmitted() && $editForm->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($reporte1);
-            $em->flush();
-
-            return $this->redirectToRoute('raa');
-
-        }
-
-        return $this->render('@Dash/Default/editreporte1.html.twig', array(
-            'reporte1' => $reporte1,
-            'edit_form' => $editForm->createView()
         ));
     }
 
@@ -223,19 +200,19 @@ class DefaultController extends Controller
      * @Method({"GET", "POST"})
      */
     public function newOrgAction(Request $request){
-        $org = new Organigrama();
-        $form = $this->createForm('CoreBundle\Form\OrganigramaType', $org);
+        $organigrama = new Organigrama();
+        $form = $this->createForm('CoreBundle\Form\OrganigramaType', $organigrama);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $rep = $this->getDoctrine()->getManager();
-            $rep->persist($org);
-            $rep->flush();
+            $orga = $this->getDoctrine()->getManager();
+            $orga->persist($organigrama);
+            $orga->flush();
 
             return $this->redirectToRoute('org' );
         }
 
-        return $this->render('@Dash/Default/organigrama.html.twig',array(
+        return $this->render('@Dash/Default/neworganigrama.html.twig',array(
             'organigrama' => $organigrama,
             'form' => $form->createView()
         ));

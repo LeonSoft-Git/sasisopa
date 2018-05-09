@@ -31,7 +31,6 @@ class Archivos
     protected $nombre;
 
     /**
-     * @Gedmo\Timestampable(on="create", field="creado")
      * @ORM\Column(type="datetime", nullable=true)
      */
     protected $created_at;

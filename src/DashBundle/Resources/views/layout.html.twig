@@ -73,6 +73,7 @@
         </div>
     </div>
 
+    <!--Barra lateral izquierda menú con el menú-->
 
     <div class="sidebar-menu">
 
@@ -93,7 +94,7 @@
                 <span class="icon-thumbnail"><i class="pg-form"></i></span>
                 <ul class="sub-menu">
                     <li class="">
-                        <a href="{{ path('politica') }}">Política I</a>
+                        <a href="{{ path('politica') }}">Política</a>
                         <span class="icon-thumbnail">I</span>
                     </li>
                     <li class="">
@@ -103,7 +104,7 @@
                         <ul class="sub-menu">
                             <li class="">
                                 <a href="{{ path('ieria') }}">Identificación y Evaluación de Riesgos e Impactos Ambientales</a>
-
+                                <span class="icon-thumbnail">IERIA</span>
                             </li>
                         </ul>
                     </li>
@@ -114,7 +115,7 @@
                         <ul class="sub-menu">
                             <li class="">
                                 <a href="{{ path('rlv') }}">Requisitos Legales Vigentes</a>
-
+                                <span class="icon-thumbnail">RLV</span>
                             </li>
                         </ul>
                     </li>
@@ -125,7 +126,7 @@
                         <ul class="sub-menu">
                             <li class="">
                                 <a href="{{ path('gpm') }}">Gestión de Objetivos y Metas</a>
-
+                                <span class="icon-thumbnail">GOM</span>
                             </li>
                         </ul>
                     </li>
@@ -136,7 +137,7 @@
                         <ul class="sub-menu">
                             <li class="">
                                 <a href="{{ path('carta') }}">Carta Poder</a>
-
+                                <span class="icon-thumbnail">FRA</span>
                             </li>
                         </ul>
                     </li>
@@ -147,7 +148,7 @@
                         <ul class="sub-menu">
                             <li class="">
                                 <a href="{{ path('dr') }}">Deberes y Responsabilidades</a>
-
+                                <span class="icon-thumbnail">DB</span>
                             </li>
                         </ul>
                     </li>
@@ -164,12 +165,16 @@
                         <span class="icon-thumbnail">VII</span>
                         <ul class="sub-menu">
                             <li class="">
+                                <a href="{{ path('raa') }}">Comunicación de política y objetivos</a>
+                                <span class="icon-thumbnail">CPO</span>
+                            </li>
+                            <li class="">
                                 <a href="{{ path('raa') }}">Reporte de aspectos ambientales</a>
-
+                                <span class="icon-thumbnail">RAA</span>
                             </li>
                             <li class="">
                                 <a href="{{ path('org') }}">Organigrama</a>
-
+                                <span class="icon-thumbnail">O</span>
                             </li>
                         </ul>
                     </li>
@@ -236,7 +241,10 @@
 
 </nav>
 
+<!-- FIN Barra lateral izquierda -->
 
+
+<!--Barra superior de notificaciones-->
 
 <div class="page-container ">
 
@@ -400,7 +408,10 @@
             <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
         </div>
     </div>
+    <!--FIN barra superior -->
 
+
+    <!--Comienza el bloque de los contenidos de cada apartado del menú-->
 
     <div class="page-content-wrapper ">
 
@@ -415,9 +426,9 @@
 
         </div>
 
+        <!--FIN el bloque de los contenidos de cada apartado del menú-->
 
-
-
+        <!--Comienza Footer-->
         <div class=" container-fluid  container-fixed-lg footer">
             <div class="copyright sm-text-center">
                 <p class="small no-margin pull-left sm-pull-reset">
@@ -432,12 +443,12 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-
+        <!--FIN Footer-->
     </div>
 
 </div>
 
-
+<!--Inicio de la barra lateral de accesos rapidos-->
 <div id="quickview" class="quickview-wrapper" data-pages="quickview">
 
     <ul class="nav nav-tabs">
@@ -1610,10 +1621,11 @@
         </div>
 
     </div>
+    <!--Fin de barra lateral izquierda-->
 
 </div>
 
-
+<!--Inicio de Scripts -->
 <script src="{{ asset('assets/plugins/pace/pace.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/plugins/jquery/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/plugins/modernizr.custom.js') }}" type="text/javascript"></script>
@@ -1661,9 +1673,8 @@
     };
 </script>
 <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xt5z6ibr';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-{% block javascripts %}
-{% endblock %}
+<!--Fin de Scripts -->
 </body>
 
-<!-- Mirrored from pages.revox.io/dashboard/3.0.0/html/corporate/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Apr 2018 02:25:21 GMT -->
+
 </html>
