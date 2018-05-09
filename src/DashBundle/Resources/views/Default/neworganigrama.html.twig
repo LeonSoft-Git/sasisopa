@@ -1,0 +1,100 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+
+<div class="col-lg-12">
+        <h2>Datos del observador</h2>
+
+        {{ form_start(form,  {'action':path('neworg')}) }}
+
+        <div class="form-group">
+            <label for="altadirecc">Alta Dirección</label>
+            {{ form_widget(form.altadireccion, {'attr': {'class': 'form-control'} }) }}
+            {% if form.altadireccion.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.altadireccion.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="reptec">Representante Técnico</label>
+            {{ form_widget(form.representantetecnico, {'attr': {'class': 'form-control'} }) }}
+            {% if form.representantetecnico.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.representantetecnico.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="jefemant">Jefe Mantenimiento</label>
+            {{ form_widget(form.jefemantenimiento, {'attr': {'class': 'form-control'} }) }}
+            {% if form.jefemantenimiento.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.jefemantenimiento.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="jefeturn">Jefe de turno</label>
+            {{ form_widget(form.jefedeturno, {'attr': {'class': 'form-control'} }) }}
+            {% if form.jefedeturno.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.jefedeturno.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.despachadores) }}
+            {{ form_widget(form.despachadores, {'attr': {'class': 'form-control'} }) }}
+            {% if form.despachadores.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.despachadores.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+         </div>
+        <div class="form-group">
+            {{ form_label(form.auxiliaradmin) }}
+            {{ form_widget(form.auxiliaradmin, {'attr': {'class': 'form-control'} }) }}
+            {% if form.auxiliaradmin.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.auxiliaradmin.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="prestadores">Prestadores</label>
+            {{ form_widget(form.prestadores, {'attr': {'class': 'form-control'} }) }}
+            {% if form.prestadores.vars.errors|length > 0 %}
+                <p class="help-block">
+                    {% for error in form.prestadores.vars.errors %}
+                        {{ error.message }} <br/>
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </div>
+
+        <div class="">
+            {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}
+        </div>
+
+        {{ form_end(form) }}
+</div>
+
+
+
+
+
+{% endblock %}
