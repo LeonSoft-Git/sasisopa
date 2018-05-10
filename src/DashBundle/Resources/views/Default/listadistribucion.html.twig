@@ -1,0 +1,40 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+	
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table table-bordered" border="2">
+
+                <tr>
+                    <td>Clave</td>
+                    <td>Nombre del documento</td>
+                    <td>No.revisión</td>
+                    <td>No.copia</td>
+                    <td>Fecha ultima de revisión</td>
+                    <td>Procesos y Áreas</td>
+
+                </tr>
+                {% for list in lista %}
+                <tr>
+                    <td>{{ list.clave }}</td>
+                    <td>{{ list.nombre_documento }}</td>
+                    <td>{{ list.no_revision }}</td>
+                    <td>{{ list.no_copia }}</td>
+                    <td>{{ list.fecha_ultima }}</td>
+                    <td>{{ list.procesos_areas }}</td>
+                </tr>
+                    {% endfor %}
+
+
+
+            </table>
+
+            <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newlddsa') }}">Insertar</a>
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

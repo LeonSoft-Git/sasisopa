@@ -8,88 +8,124 @@
 
     {{ form_start(form,  {'action':path('newrepo')}) }}
 
-    <div class="form-group">
-        {{ form_label(form.nombre) }}
-        {{ form_widget(form.nombre, {'attr': {'class': 'form-control'} }) }}
-        {% if form.nombre.vars.errors|length > 0 %}
-            <p class="help-block">
-                {% for error in form.nombre.vars.errors %}
-                    {{ error.message }} <br/>
-                {% endfor %}
-            </p>
-        {% endif %}
-    </div>
-    <div class="form-group">
-        {{ form_label(form.titulo) }}
-        {{ form_widget(form.titulo, {'attr': {'class': 'form-control'} }) }}
-        {% if form.titulo.vars.errors|length > 0 %}
-            <p class="help-block">
-                {% for error in form.titulo.vars.errors %}
-                    {{ error.message }} <br/>
-                {% endfor %}
-            </p>
-        {% endif %}
-    </div>
-    <div class="form-group ">
-        {{ form_label(form.turno) }}
-        {{ form_widget(form.turno, {'attr': {'class': 'form-control-sm' } }) }}
-    </div>
-    <div class="input-group date">
-        {{ form_label(form.fecha) }}
-        {{ form_widget(form.fecha) }}
+    <div class="row">
 
+        <div class="col-lg-6">
+
+            <div class="form-group">
+
+                <label>Nombre del Observador</label>
+                {{ form_widget(form.nombre, {'attr': {'class': 'form-control'} }) }}
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="form-check form-check-inline">
+
+                    {{ form_label(form.colaborador) }}
+                    {{ form_widget(form.colaborador) }}
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="form-check form-check-inline">
+                <fieldset disabled>
+                    {{ form_label(form.contratista) }}
+                    {{ form_widget(form.contratista) }}
+                </fieldset>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="form-check form-check-inline">
+                <fieldset disabled>
+                    {{ form_label(form.visitante) }}
+                    {{ form_widget(form.visitante) }}
+                </fieldset>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        {{ form_label(form.hora) }}
-        {{ form_widget(form.hora) }}
 
-    </div>
-    <div class="form-group">
-        {{ form_label(form.observacion) }}
-        {{ form_widget(form.observacion, {'attr': {'class': 'form-control counted' } }) }}
-        {% if form.observacion.vars.errors|length > 0 %}
-            <p class="help-block">
-                {% for error in form.observacion.vars.errors %}
-                    {{ error.message }} <br/>
-                {% endfor %}
-            </p>
-        {% endif %}
+    <div class="row">
 
-    </div>
-    <div class="form-check form-check-inline">
-        {{ form_label(form.colaborador) }}
-        {{ form_widget(form.colaborador) }}
+        <div class="col-lg-6">
 
-    </div>
-    <div class="form-check form-check-inline">
+            <div class="form-group">
 
-        {{ form_label(form.contratista) }}
-        {{ form_widget(form.contratista) }}
+                    <label>Lugar</label>
+                    {{ form_widget(form.lugar, {'attr': {'class': 'form-control'} }) }}
 
-    </div>
-    <div class="form-check form-check-inline">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
 
-        {{ form_label(form.visitante) }}
-        {{ form_widget(form.visitante) }}
+                    <label>Tipo de observación</label>
+                    {{ form_widget(form.tipo_observacion, {'attr': {'class': 'form-control'} }) }}
+
+            </div>
+        </div>
 
     </div>
-    <div class="form-check form-check-inline">
+    <div class="row">
 
-        {{ form_label(form.planeada) }}
-        {{ form_widget(form.planeada) }}
+        <div class="col-lg-3">
+
+            <div class="input-group date">
+
+                    <label>Fecha</label>
+                    {{ form_widget(form.fecha) }}
+
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="form-group">
+                    <label>Hora</label>
+                    {{ form_widget(form.hora) }}
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="form-group">
+
+                    <label>Turno</label>
+                    {{ form_widget(form.turno, {'attr': {'class': 'form-control-sm' } }) }}
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="form-check form-check-inline">
+
+                    {{ form_label(form.planeada) }}
+                    {{ form_widget(form.planeada) }}
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="form-check form-check-inline">
+
+                    {{ form_label(form.espontanea) }}
+                    {{ form_widget(form.espontanea) }}
+
+            </div>
+        </div>
 
     </div>
-    <div class="form-check form-check-inline">
 
-        {{ form_label(form.espontanea) }}
-        {{ form_widget(form.espontanea) }}
+    <div class="row">
+        <div class="col-lg-12">
 
+                <label for="">¿Qué se observa?</label>
+                {{ form_widget(form.observacion, {'attr': {'class': 'form-control counted' } }) }}
+
+        </div>
     </div>
     <hr>
     <h2>Identificacón del hallazgo</h2>
 
-    <div class="">
-        {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}
+    <div class="row">
+        <div class="col-lg-12">
+            {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}
+
+        </div>
     </div>
 
     {{ form_end(form) }}

@@ -11,34 +11,34 @@
             <div class="col-lg-6">
 
                 <div class="form-group">
-
-                        <label">Nombre del Observador</label>
+                    <fieldset disabled>
+                        <label>Nombre del Observador</label>
                         {{ form_widget(edit_form.nombre, {'attr': {'class': 'form-control'} }) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="form-check form-check-inline">
-
+               <div class="form-check form-check-inline">
+                    <fieldset disabled>
                         {{ form_label(edit_form.colaborador) }}
                         {{ form_widget(edit_form.colaborador) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="form-check form-check-inline">
-
+                    <fieldset disabled>
                         {{ form_label(edit_form.contratista) }}
                         {{ form_widget(edit_form.contratista) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="form-check form-check-inline">
-
+                    <fieldset disabled>
                         {{ form_label(edit_form.visitante) }}
                         {{ form_widget(edit_form.visitante) }}
-
+                    </fieldset>
                 </div>
             </div>
 
@@ -52,18 +52,18 @@
             <div class="col-lg-6">
 
                 <div class="form-group">
-
-                        <label">Lugar</label>
+                    <fieldset disabled>
+                        <label>Lugar</label>
                         {{ form_widget(edit_form.lugar, {'attr': {'class': 'form-control'} }) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="form-group">
-
-                        <label">Tipo de observación</label>
+                    <fieldset disabled>
+                        <label>Tipo de observación</label>
                         {{ form_widget(edit_form.tipo_observacion, {'attr': {'class': 'form-control'} }) }}
-
+                    </fieldset>
                 </div>
             </div>
 
@@ -73,60 +73,60 @@
             <div class="col-lg-2">
 
                 <div class="input-group date">
-
-                        <label">Fecha</label>
+                    <fieldset disabled>
+                        <label>Fecha</label>
                         {{ form_widget(edit_form.fecha) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="form-group">
-
-                        <label">Hora</label>
+                    <fieldset disabled>
+                        <label>Hora</label>
                         {{ form_widget(edit_form.hora) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="form-group">
-
-                        <label">Turno</label>
+                    <fieldset disabled>
+                        <label>Turno</label>
                         {{ form_widget(edit_form.turno, {'attr': {'class': 'form-control-sm' } }) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="form-check form-check-inline">
-
+                    <fieldset disabled>
                         {{ form_label(edit_form.planeada) }}
                         {{ form_widget(edit_form.planeada) }}
-
+                    </fieldset>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="form-check form-check-inline">
-
+                    <fieldset disabled>
                         {{ form_label(edit_form.espontanea) }}
                         {{ form_widget(edit_form.espontanea) }}
-
+                    </fieldset>
                 </div>
             </div>
 
         </div>
         <div class="row">
             <div class="col-lg-12">
-
+                <fieldset disabled>
                     <label for="">¿Qué se observa?</label>
                     {{ form_widget(edit_form.observacion, {'attr': {'class': 'form-control counted' } }) }}
-
+                </fieldset>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-
+                <fieldset disabled>
                     {{ form_widget(edit_form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}
                     <a class="btn btn-primary" href="{{ path('raa') }}" role="button">Regresar</a>
-
+                </fieldset>
             </div>
         </div>
         {{ form_end(edit_form) }}

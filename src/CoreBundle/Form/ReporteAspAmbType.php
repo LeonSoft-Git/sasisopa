@@ -7,6 +7,7 @@ use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TimeType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -17,7 +18,8 @@ class ReporteAspAmbType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('nombre',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
-                ->add('titulo',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
+                ->add('lugar',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
+                ->add('tipo_observacion',TextType::class,array('required'=>false,'attr'=>array('autocomplete'=>'off')))
                 ->add('fecha', DateType::class, array(
                             'widget' => 'single_text',
                             'format' => 'yyyy-MM-dd',
@@ -32,7 +34,7 @@ class ReporteAspAmbType extends AbstractType
                             'vespertino' => 'vespertino',
                             'nocturno' => 'nocturno',
                     )))
-                ->add('observacion',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
+                ->add('observacion',TextareaType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
                 ->add('colaborador', CheckboxType::class, array(
                     'label'    => 'Colaborador',
                     'required' => false,

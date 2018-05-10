@@ -27,7 +27,11 @@ class Reporte1
     /**
      * @ORM\Column(type="string", length=50, nullable=true)
      */
-    protected $titulo;
+    protected $lugar;
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    protected $tipo_observacion;
     /**
      * @ORM\Column(type="date", nullable=true)
      */
@@ -124,26 +128,49 @@ class Reporte1
     }
 
     /**
-     * Set the value of titulo.
+     * Set the value of lugar.
      *
-     * @param string $titulo
+     * @param string lugar
      * @return \CoreBundle\Entity\Reporte1
      */
-    public function setTitulo($titulo)
+    public function setLugar($lugar)
     {
-        $this->titulo = $titulo;
+        $this->lugar = $lugar;
 
         return $this;
     }
 
     /**
-     * Get the value of titulo.
+     * Get the value of lugar.
      *
      * @return string
      */
-    public function getTitulo()
+    public function getLugar()
     {
-        return $this->titulo;
+        return $this->lugar;
+    }
+
+    /**
+     * Set the value of tipo_observacion.
+     *
+     * @param string $tipo_observacion
+     * @return \CoreBundle\Entity\Reporte1
+     */
+    public function setTipoObservacion($tipo_observacion)
+    {
+        $this->tipo_observacion = $tipo_observacion;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of tipo_observacion.
+     *
+     * @return string
+     */
+    public function getTipoObservacion()
+    {
+        return $this->tipo_observacion;
     }
 
     /**
@@ -355,6 +382,6 @@ class Reporte1
 
     public function __sleep()
     {
-        return array('idreporte1', 'nombre', 'titulo', 'fecha', 'hora', 'turno', 'observacion', 'colaborador', 'contratista', 'visitante', 'planeada', 'espontanea');
+        return array('idreporte1', 'nombre', 'lugar', 'tipo_observacion', 'fecha', 'hora', 'turno', 'observacion', 'colaborador', 'contratista', 'visitante', 'planeada', 'espontanea');
     }
 }

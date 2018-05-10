@@ -32,7 +32,7 @@
     <link href="{{ asset('assets/plugins/datatables-responsive/css/datatables.responsive.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ asset('assets/css/pages-icons.css') }}" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="{{ asset('assets/css/corporate.css') }}" rel="stylesheet" type="text/css" />
-
+    {% block stylesheets %}{% endblock %}
 
 </head>
 <body class="fixed-header dashboard menu-pin menu-behind">
@@ -179,8 +179,16 @@
                         </ul>
                     </li>
                     <li class="">
-                        <a href="typography.html">Control de documentos</a>
+                        <a href="javascript:;"><span class="tittle">Control de documentos</span>
+                            <span class="arrow"></span></a>
                         <span class="icon-thumbnail">VIII</span>
+                        <ul class="sub-menu">
+                            <li class="">
+                                <a href="{{ path('ecdr') }}">Elaboración y Control de Documentos y Registros</a>
+                                <span class="icon-thumbnail">ECDR</span>
+                            </li>
+
+                        </ul>
                     </li>
                     <li class="">
                         <a href="icons.html">Mejores Practicas y Estandares</a>
