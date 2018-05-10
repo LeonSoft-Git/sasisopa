@@ -39,6 +39,6 @@ class ListaDistribucionType extends AbstractType
 
     public function getBlockPrefix()
     {
-        return 'core_bundle_lista_distribucion';
+        return 'corebundle_listadistribucion';
     }
 }

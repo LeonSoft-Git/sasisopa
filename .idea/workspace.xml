@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1fb1576-9fac-4779-ab1e-749f1a0c57c7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/ListaDistribucion.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/control_documentos.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadistribucion.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewreporte1.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/organigrama.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Reporte1.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Reporte1.php" />
-      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmbType.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmbType.php" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" />
-      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/editreporte1.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/editreporte1.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato7.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato7.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/organigrama.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/organigrama.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,26 +26,15 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="310" column="45" lean-forward="true" selection-start-line="310" selection-start-column="45" selection-end-line="310" selection-end-column="45" />
+            <state relative-caret-position="544">
+              <caret line="324" column="52" lean-forward="false" selection-start-line="324" selection-start-column="52" selection-end-line="324" selection-end-column="52" />
               <folding>
                 <element signature="e#162#202#0#PHP" expanded="true" />
-                <element signature="e#8530#8570#0#PHP" expanded="true" />
-                <element signature="e#8846#8890#1#PHP" expanded="true" />
-                <element signature="e#9961#9991#1#PHP" expanded="true" />
-                <element signature="e#10034#10077#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListaDistribucionType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="e#36#76#0#PHP" expanded="true" />
+                <element signature="e#2062#2092#1#PHP" expanded="true" />
+                <element signature="e#8532#8572#0#PHP" expanded="true" />
+                <element signature="e#8848#8892#1#PHP" expanded="true" />
+                <element signature="e#9587#9633#0#PHP" expanded="true" />
+                <element signature="e#10112#10155#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,9 +43,21 @@
       <file leaf-file-name="listadistribucion.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="93" lean-forward="false" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
+            <state relative-caret-position="238">
+              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaDistribucionType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+              <folding>
+                <element signature="e#36#76#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +65,7 @@
       <file leaf-file-name="formato3.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="565">
               <caret line="73" column="112" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="112" />
               <folding />
             </state>
@@ -228,9 +217,9 @@
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/control_documentos.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/ReporteAspAmbType.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucion.php" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php" />
         <option value="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig" />
       </list>
     </option>
   </component>
@@ -337,6 +326,16 @@
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -414,12 +413,12 @@
       <workItem from="1525871323042" duration="8887000" />
       <workItem from="1525880605592" duration="8132000" />
       <workItem from="1525904924592" duration="1914000" />
-      <workItem from="1525957695230" duration="18822000" />
+      <workItem from="1525957695230" duration="20901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200286000" />
+    <option name="totallyTimeSpent" value="202365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -721,14 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ListaDistribucion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
@@ -797,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="73" column="112" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/OrganigramaType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -813,10 +796,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato3.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="73" column="112" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ListaDistribucion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="378">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
           <folding>
             <element signature="e#36#76#0#PHP" expanded="true" />
           </folding>
@@ -825,22 +824,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="93" lean-forward="false" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
+        <state relative-caret-position="238">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="310" column="45" lean-forward="true" selection-start-line="310" selection-start-column="45" selection-end-line="310" selection-end-column="45" />
+        <state relative-caret-position="544">
+          <caret line="324" column="52" lean-forward="false" selection-start-line="324" selection-start-column="52" selection-end-line="324" selection-end-column="52" />
           <folding>
             <element signature="e#162#202#0#PHP" expanded="true" />
-            <element signature="e#8530#8570#0#PHP" expanded="true" />
-            <element signature="e#8846#8890#1#PHP" expanded="true" />
-            <element signature="e#9961#9991#1#PHP" expanded="true" />
-            <element signature="e#10034#10077#0#PHP" expanded="true" />
+            <element signature="e#2062#2092#1#PHP" expanded="true" />
+            <element signature="e#8532#8572#0#PHP" expanded="true" />
+            <element signature="e#8848#8892#1#PHP" expanded="true" />
+            <element signature="e#9587#9633#0#PHP" expanded="true" />
+            <element signature="e#10112#10155#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

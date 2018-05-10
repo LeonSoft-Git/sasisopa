@@ -13,7 +13,7 @@ use CoreBundle\Entity\LegalRequirements;
 use CoreBundle\Entity\Archivos;
 use CoreBundle\Entity\Reporte1;
 use CoreBundle\Entity\Organigrama;
-use CoreBundle\Form\ReporteAspAmbType;
+use CoreBundle\Entity\ReporteAspAmbType;
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -296,34 +296,34 @@ class DefaultController extends Controller
 
     public function newlddsaAction(Request $request)
     {
-        $listad = new ListaDistribucion();
-        $form = $this->createForm('CoreBundle\Form\ListaDistribucionType', $listad);
+        $listadistribucion = new ListaDistribucion();
+        $form = $this->createForm('CoreBundle\Form\ListaDistribucionType', $listadistribucion);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $list = $this->getDoctrine()->getManager();
-            $list->persist($listad);
-            $list->flush();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($listadistribucion);
+            $em->flush();
 
             return $this->redirectToRoute('lddsa');
         }
 
         return $this->render('@Dash/Default/newlistadistribucion.html.twig', array(
-            'listad' => $listad,
+            'listadistribucion' => $listadistribucion,
             'form' => $form->createView()
         ));
     }
 
     /**
      * @Route("/LISTA-DE-DISTRIBUCIÓN-DE-DOCUMENTOS-DEL-SISTEMA-DE-ADMINISTRACIÓN.", name="lddsa")
-     *
+     * @Method({ "GET", "POST"})
      */
 
     public function lddsaAction()
     {
         $query = $this->getDoctrine()->getManager();
-        $list = $query->getRepository('CoreBundle:ListaDistribucion')->findAll();
-        return $this->render('@Dash/Default/listadistribucion.html.twig', array('lista' => $list));
+        $lista = $query->getRepository('CoreBundle:ListaDistribucion')->findAll();
+        return $this->render('@Dash/Default/listadistribucion.html.twig', array('lista' => $lista));
     }
 
 }
