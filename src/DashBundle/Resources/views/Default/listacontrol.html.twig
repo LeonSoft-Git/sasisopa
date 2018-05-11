@@ -1,0 +1,54 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+	
+    <div class="col-lg-12">
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('newlcd') }}">Insertar</a>
+        <div class="table-responsive">
+            <table class="table">
+
+                <tr>
+                    <td>No.</td>
+                    <td>Clave</td>
+                    <td>No. Revisión</td>
+                    <td>Fecha última de revisión</td>
+                    <td>Nombre del registro</td>
+                    <td>Responsable de recolección y resguardo</td>
+                    <td>Ubicación</td>
+                    <td>Archivo (Tiempo Años)</td>
+                    <td>Destrucción</td>
+                    <td>Papel</td>
+                    <td>Electrónico</td>
+                    <td>Observaciones</td>
+                </tr>
+
+                <tr>
+                    {% for list in listac %}
+                    <td>{{ list.idlc }}</td>
+                    <td>{{ list.clave }}</td>
+                    <td>{{ list.noRevision }}</td>
+                    <td>{{ list.fechaUltima|date }}</td>
+                    <td>{{ list.nombreRegistro }}</td>
+                    <td>{{ list.responsable }}</td>
+                    <td>{{ list.ubicacion }}</td>
+                    <td>{{ list.archivoTiempo }}</td>
+                    <td>{{ list.destruccion }}</td>
+                    <td>{{ list.papel }}</td>
+                    <td>{{ list.electronico }}</td>
+                    <td>{{ list.observaciones }}</td>
+                    {% endfor %}
+                </tr>
+
+
+
+
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

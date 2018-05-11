@@ -18,7 +18,6 @@ class ListaControlType extends AbstractType
     {
         $builder->add('clave',NumberType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
                 ->add('no_revision',NumberType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
-                ->add('tipo_observacion',TextType::class,array('required'=>false,'attr'=>array('autocomplete'=>'off')))
                 ->add('fecha_ultima', DateType::class, array(
                             'widget' => 'single_text',
                             'format' => 'yyyy-MM-dd',
@@ -37,7 +36,7 @@ class ListaControlType extends AbstractType
                 ->add('electronico', CheckboxType::class, array(
                             'label'    => 'Electronico',
                             'required' => false,))
-                ->add('observacion',TextareaType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
+                ->add('observaciones',TextareaType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
                 ->add('ingresar', SubmitType::class,  array(
                             'label' => 'Ingresar'))
             ;

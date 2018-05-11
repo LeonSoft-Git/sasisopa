@@ -15,6 +15,7 @@ class ListaControl
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $idlc;
 

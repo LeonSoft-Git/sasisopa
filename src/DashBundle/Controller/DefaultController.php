@@ -5,6 +5,7 @@ namespace DashBundle\Controller;
 
 //Use que funcionan para llamar los entitys y que funcionen las consultas, mandar llamar los controllers y las rutas
 //
+use CoreBundle\Entity\ListaControl;
 use CoreBundle\Entity\ListaDistribucion;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -326,4 +327,49 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/listadistribucion.html.twig', array('data' => $lista));
     }
 
+    //Controlador para la vista del formulario de la Lista de control de documentos apartado VIII
+    /**
+     * @Route("/insertar-lista-de-control-de-documentos", name="newlcd")
+     * @Method({"GET", "POST"})
+     */
+
+    public function newlcdAction(Request $request)
+    {
+        $listacontrol = new ListaControl();
+        $form = $this->createForm('CoreBundle\Form\ListaControlType', $listacontrol);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($listacontrol);
+            $em->flush();
+
+            return $this->redirectToRoute('lcd');
+        }
+
+        return $this->render('@Dash/Default/newlistacontrol.html.twig', array(
+            'listacontrol' => $listacontrol,
+            'form' => $form->createView()
+        ));
+    }
+    //Controlador para la vista de Lista de control de documentos apartado VIII
+    /**
+     * @Route("/lista-de-control-de-documentos", name="lcd")
+     */
+
+    public function lcdAction()
+    {
+        $query = $this->getDoctrine()->getManager();
+        $listac = $query->getRepository('CoreBundle:ListaControl')->findAll();
+        return $this->render('@Dash/Default/listacontrol.html.twig', array('listac' => $listac));
+    }
+
+    //Controlador para la vista de pdf de mejores prácticas y estándares
+    /**
+     * @Route("/Mejores-practicas-y-estandares", name="mpe")
+     */
+    public function mpeAction()
+    {
+        return $this->render('@Dash/Default/practicas_estandares.html.twig');
+    }
 }

@@ -12,70 +12,58 @@
 
 {% block body %}
 
-<div class="container-fluid padding-25 sm-padding-10">
-	<div class="row">
-		<div class="col-md-12">
-			<table class="table table-hover" id="basicTable"">
-				<thead>
-				<tr>
-					<th style="width:1%" class="text-center">
-						<button class="btn btn-link"><i class="pg-trash"></i>
-						</button>
-					</th>
-					<th>Dependencia</th>
-					<th>Clasificación</th>
-					<th>Codificación</th>
-					<th>Título</th>
-					<th>Año de Emisión</th>
-					<th style="width: 120px" >Patrón</th>
-					<th>Trabajadores</th>
-					<th>Generales</th>
-					<th>Disposiciones Específicas</th>
-					<th>Artículos Aplicables</th>
-					<th>Descripción</th>
-					<th>Enlace</th>
-				</tr>
-				</thead>
-				<tbody>
 
-                {% for requisito in data %}
+		<div class="col-lg-12">
+			<a class="btn btn-default btn-cons m-t-10" href="{{ path('new') }}">Insertar Nuevo Requerimiento</a>
+			<div class="table-responsive">
+				<table class="table">
 					<tr>
-						<td class="v-align-middle">
-							<div class="checkbox text-center">
-								<input type="checkbox" value="3" id="checkbox1">
-								<label for="checkbox1" class="no-padding no-margin"></label>
-							</div>
-						</td>
-						<td>{{ requisito.dependencia }}</td>
-						<td>{{ requisito.clasificacion }}</td>
-						<td>{{ requisito.codificacion }}</td>
-						<td>{{ requisito.titulo }}</td>
-						<td>{{ requisito.anoEmision }}</td>
-						<td>{{ requisito.patron }}</td>
-						<td>{{ requisito.trabajadores }}</td>
-						<td>{{ requisito.generales }}</td>
-						<td>{{ requisito.disposicionesEspecificas }}</td>
-						<td>{{ requisito.articulosAplicables }}</td>
-						<td>{{ requisito.descripcionRequisito }}</td>
-						<td>{{ requisito.link }}</td>
-						<td>
-							<div class="btn-group btn-group-xs">
 
+							<th>Dependencia</th>
+							<th>Clasificación</th>
+							<th>Codificación</th>
+							<th>Título</th>
+							<th>Año de Emisión</th>
+							<th>Patrón</th>
+							<th>Trabajadores</th>
+							<th>Generales</th>
+							<th>Disposiciones Específicas</th>
+							<th>Artículos Aplicables</th>
+							<th>Descripción</th>
+							<th>Enlace</th>
+						</tr>
 
+					<tbody>
+
+					{% for requisito in data %}
+						<tr>
+
+							<td>{{ requisito.dependencia }}</td>
+							<td>{{ requisito.clasificacion }}</td>
+							<td>{{ requisito.codificacion }}</td>
+							<td>{{ requisito.titulo }}</td>
+							<td>{{ requisito.anoEmision }}</td>
+							<td>{{ requisito.patron }}</td>
+							<td>{{ requisito.trabajadores }}</td>
+							<td>{{ requisito.generales }}</td>
+							<td>{{ requisito.disposicionesEspecificas }}</td>
+							<td>{{ requisito.articulosAplicables }}</td>
+							<td>{{ requisito.descripcionRequisito }}</td>
+							<td>{{ requisito.link }}</td>
+							<td>
+								<div class="btn-group btn-group-xs">
 									<a href="#" data-toggle="tooltip" title="Editar" class="btn btn-default"><i class="fa fa-edit"></i></a>
+								</div>
+							</td>
+						</tr>
 
-							</div>
-						</td>
-					</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
 
-                {% endfor %}
-				</tbody>
-			</table>
-            <a class="btn btn-primary btn-cons m-t-10" href="{{ path('new') }}">Insertar Nuevo Requerimiento</a>
 		</div>
-	</div>
-</div>
-</div>
+
 
 
 {% endblock %}
