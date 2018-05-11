@@ -280,7 +280,7 @@ class DefaultController extends Controller
             'form' => $form->createView()
         ));
     }
-
+    //Controlador para la vista de pdf de control de documentos apartado VIII
     /**
      * @Route("/Elaboración-y-Control-de-Documentos-y-Registros", name="ecdr")
      */
@@ -289,6 +289,7 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/control_documentos.html.twig');
     }
 
+    //Controlador para la vista del formulario de la Lista de distribucion de documentos apartado VIII
     /**
      * @Route("/INSERTAR-LISTA-DE-DISTRIBUCIÓN-DE-DOCUMENTOS-DEL-SISTEMA-DE-ADMINISTRACIÓN.", name="newlddsa")
      * @Method({"GET", "POST"})
@@ -313,17 +314,16 @@ class DefaultController extends Controller
             'form' => $form->createView()
         ));
     }
-
+    //Controlador para la vista de Lista de distribucion de documentos apartado VIII
     /**
      * @Route("/LISTA-DE-DISTRIBUCIÓN-DE-DOCUMENTOS-DEL-SISTEMA-DE-ADMINISTRACIÓN.", name="lddsa")
-     * @Method({ "GET", "POST"})
      */
 
     public function lddsaAction()
     {
         $query = $this->getDoctrine()->getManager();
         $lista = $query->getRepository('CoreBundle:ListaDistribucion')->findAll();
-        return $this->render('@Dash/Default/listadistribucion.html.twig', array('lista' => $lista));
+        return $this->render('@Dash/Default/listadistribucion.html.twig', array('data' => $lista));
     }
 
 }

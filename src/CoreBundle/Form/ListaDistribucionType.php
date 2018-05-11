@@ -32,9 +32,7 @@ class ListaDistribucionType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         //data_class manda llamar las tablas del entity de la listas
-        $resolver->setDefaults(array(
-            'data_class' => 'CoreBundle\Entity\ListaDistribucion'
-        ));
+        $resolver->setDefaults(array('data_class' => 'CoreBundle\Entity\ListaDistribucion'));
     }
 
     public function getBlockPrefix()
