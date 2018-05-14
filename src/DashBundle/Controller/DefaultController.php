@@ -373,6 +373,14 @@ class DefaultController extends Controller
         $listac = $query->getRepository('CoreBundle:ListaControl')->findAll();
         return $this->render('@Dash/Default/listacontrol.html.twig', array('listac' => $listac));
     }
+    //Controlador para la vista Control de documentos externos apartado VIII
+    /**
+     * @Route("/control-de-documentos-externos", name="cde")
+     */
+    public function cdeAction()
+    {
+        return $this->render('@Dash/Default/documentos_externos.twig');
+    }
 
     //Controlador para la vista de pdf de mejores prácticas y estándares apartado IX
     /**
