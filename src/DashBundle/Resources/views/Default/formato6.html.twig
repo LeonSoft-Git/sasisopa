@@ -3,6 +3,7 @@
 {% block body %}
 
 	<div class="col-lg-12">
+		{% if (app.user.user == 1 or app.user.user == 2) %}
 	<p><h1>Representante Técnico</h1></p>
 	<div class="col-lg-12">
 		<h2>Actividades</h2>
@@ -128,7 +129,14 @@
 
 		</div>
 	</div>
+
+        {% elseif (app.user.user != 1) %}
+			Hola soy diferente de uno
+
+        {% endif %}
 	</div>
+
+
 	</div>
 
 

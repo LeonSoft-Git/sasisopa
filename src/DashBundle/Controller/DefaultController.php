@@ -282,6 +282,7 @@ class DefaultController extends Controller
         ));
     }
     //Controlador para la vista de pdf de control de documentos apartado VIII
+
     /**
      * @Route("/Elaboración-y-Control-de-Documentos-y-Registros", name="ecdr")
      */
@@ -291,8 +292,9 @@ class DefaultController extends Controller
     }
 
     //Controlador para la vista del formulario de la Lista de distribucion de documentos apartado VIII
+
     /**
-     * @Route("/INSERTAR-LISTA-DE-DISTRIBUCIÓN-DE-DOCUMENTOS-DEL-SISTEMA-DE-ADMINISTRACIÓN.", name="newlddsa")
+     * @Route("/insertar-lista-de-distribucion-de-documentos-del-sistema-de-administracion", name="newlddsa")
      * @Method({"GET", "POST"})
      */
 
@@ -316,6 +318,7 @@ class DefaultController extends Controller
         ));
     }
     //Controlador para la vista de Lista de distribucion de documentos apartado VIII
+
     /**
      * @Route("/LISTA-DE-DISTRIBUCIÓN-DE-DOCUMENTOS-DEL-SISTEMA-DE-ADMINISTRACIÓN.", name="lddsa")
      */
@@ -328,6 +331,7 @@ class DefaultController extends Controller
     }
 
     //Controlador para la vista del formulario de la Lista de control de documentos apartado VIII
+
     /**
      * @Route("/insertar-lista-de-control-de-documentos", name="newlcd")
      * @Method({"GET", "POST"})
@@ -335,22 +339,28 @@ class DefaultController extends Controller
 
     public function newlcdAction(Request $request)
     {
-        $listacontrol = new ListaControl();
-        $form = $this->createForm('CoreBundle\Form\ListaControlType', $listacontrol);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if ($user->getuser() == 1 || $user->getuser() == 2) {
+            $listacontrol = new ListaControl();
+            $form = $this->createForm('CoreBundle\Form\ListaControlType', $listacontrol);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($listacontrol);
-            $em->flush();
+                if ($form->isSubmitted() && $form->isValid()) {
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($listacontrol);
+                    $em->flush();
 
-            return $this->redirectToRoute('lcd');
+                    return $this->redirectToRoute('lcd');
+                }
+
+                return $this->render('@Dash/Default/newlistacontrol.html.twig', array(
+                    'listacontrol' => $listacontrol,
+                    'form' => $form->createView()
+                ));
+
+        } else{
+            return $this->redirect($this->generateUrl('lcd'));
         }
-
-        return $this->render('@Dash/Default/newlistacontrol.html.twig', array(
-            'listacontrol' => $listacontrol,
-            'form' => $form->createView()
-        ));
     }
     //Controlador para la vista de Lista de control de documentos apartado VIII
     /**
@@ -364,12 +374,76 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/listacontrol.html.twig', array('listac' => $listac));
     }
 
-    //Controlador para la vista de pdf de mejores prácticas y estándares
+    //Controlador para la vista de pdf de mejores prácticas y estándares apartado IX
     /**
-     * @Route("/Mejores-practicas-y-estandares", name="mpe")
+     * @Route("/mejores-practicas-y-estandares", name="mpe")
      */
     public function mpeAction()
     {
         return $this->render('@Dash/Default/practicas_estandares.html.twig');
     }
+
+    //Cada controlador manda llamar una vista que ya esta predefinida en la vista de formato (apartado X)
+
+    /**
+     * @Route("/control-de-aspectos-ambientales-y-reducción-de-riesgos", name="caarr")
+     */
+    public function caarrAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig', array('id' => 1));
+    }
+    /**
+     * @Route("/pruebas-y-puesta-en-marcha-de-instalaciones-y-equipos", name="ppmie")
+     */
+    public function ppmieAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 2));
+    }
+    /**
+     * @Route("/uso-maquinaria-y-equipo", name="ume")
+     */
+    public function umeAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 3));
+    }
+    /**
+     * @Route("/manejo-de-combustibles-y-sustancias-quimicas", name="mcsq")
+     */
+    public function mcsqAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 4));
+    }
+    /**
+     * @Route("/proteccion-ambiental", name="pa")
+     */
+    public function paAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 5));
+    }
+    /**
+     * @Route("/despacho-de-combustible-al-consumidor", name="dcc")
+     */
+    public function dccAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 6));
+    }
+    /**
+     * @Route("/acceso-y-circulacion-de-auto-tanques-y-vehiculos-de-reparto", name="acatvr")
+     */
+    public function acatvrAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 7));
+    }
+    /**
+     * @Route("/descarga-de-combustible-con-auto-tanques", name="dcat")
+     */
+    public function dcatAction()
+    {
+        return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 8));
+    }
+
+
+
+
+
 }

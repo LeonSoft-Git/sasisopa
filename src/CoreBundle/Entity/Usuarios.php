@@ -369,6 +369,7 @@ class Usuarios implements UserInterface, \Serializable
             $this->idu,
             $this->user,
             $this->password,
+            $this->
             // see section on salt below
             // $this->salt
             ) = unserialize($serialized);
