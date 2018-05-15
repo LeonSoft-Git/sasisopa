@@ -1,23 +1,31 @@
 {% extends('@Dash/layout.html.twig') %}
 
 {% block body %}
-	
     <div class="col-lg-12">
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('newcde') }}">Insertar</a>
 
+	<div class="row">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr align="center">
+                        <td>No.</td>
+                        <td>Nombre del documento</td>
+                        <td>Fecha última de revisión y/o actualización</td>
+                        <td>Frecuencia de revisión</td>
+                    </tr>
+                    {% for doc in documentose %}
+                    <tr align="center">
 
-        <div class="table-responsive">
-            <table class="table">
+                            <td>{{ doc.idde }}</td>
+                            <td>{{ doc.nombredocumento }}</td>
+                            <td>{{ doc.fechaultima|date("m/d/Y") }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
 
-                <tr>
-                    <td>No.</td>
-                    <td>Nombre del documento</td>
-                    <td>Fecha última de revisión y/o actualización</td>
-                    <td>Nombre del registro</td>
-                    <td>Frecuencia de revisión</td>
-
-                </tr>
-            </table>
+            </div>
         </div>
     </div>
-
+    </div>
 {% endblock %}

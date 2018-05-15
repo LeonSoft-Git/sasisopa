@@ -1,136 +1,33 @@
 {% extends('@Dash/layout.html.twig') %}
 
 {% block body %}
-	
     <div class="col-lg-12">
 
 
-        {{ form_start(form,  {'action':path('newlcd')}) }}
+        {{ form_start(form,  {'action':path('newcde')}) }}
             <div class="row">
-                <div class="col-lg-2">
-                    <label for="clave">Clave</label>
-                    {{ form_widget(form.clave, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.clave.vars.errors|length > 0 %}
+                <div class="col-lg-4">
+                    <label for="revision">Nombre del documento</label>
+                    {{ form_widget(form.nombre_documento, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.nombre_documento.vars.errors|length > 0 %}
                         <p class="help-block">
-                            {% for error in form.clave.vars.errors %}
+                            {% for error in form.nombre_documento.vars.errors %}
                                 {{ error.message }} <br/>
                             {% endfor %}
                         </p>
                     {% endif %}
                 </div>
-                <div class="col-lg-2">
-                    <label for="revision">No. Revisión</label>
-                    {{ form_widget(form.no_revision, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.no_revision.vars.errors|length > 0 %}
-                        <p class="help-block">
-                            {% for error in form.no_revision.vars.errors %}
-                                {{ error.message }} <br/>
-                            {% endfor %}
-                        </p>
-                    {% endif %}
-                </div>
-                <div class="date col-lg-2">
+                <div class="date col-lg-4">
                     <label>Fecha última revisión</label>
-                    {{ form_widget(form.fecha_ultima) }}
+                    {{ form_widget(form.fecha_ultima, {'attr': {'class': 'form-control date'}} ) }}
                 </div>
-                <div class="date col-lg-3">
-
-                    <label>Nombre del registro</label>
-                    {{ form_widget(form.nombre_registro, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.nombre_registro.vars.errors|length > 0 %}
-                        <p class="help-block">
-                            {% for error in form.nombre_registro.vars.errors %}
-                                {{ error.message }} <br/>
-                            {% endfor %}
-                        </p>
-                    {% endif %}
-                </div>
-                <div class="date col-lg-3">
-
-                    <label>Responsable de recolección y resguardo</label>
-                    {{ form_widget(form.responsable, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.responsable.vars.errors|length > 0 %}
-                        <p class="help-block">
-                            {% for error in form.responsable.vars.errors %}
-                                {{ error.message }} <br/>
-                            {% endfor %}
-                        </p>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="date col-lg-6">
-
-                    <label>Ubicación</label>
-                    {{ form_widget(form.ubicacion, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.ubicacion.vars.errors|length > 0 %}
-                        <p class="help-block">
-                            {% for error in form.ubicacion.vars.errors %}
-                                {{ error.message }} <br/>
-                            {% endfor %}
-                        </p>
-                    {% endif %}
-                </div>
-                <div class="date col-lg-6">
-
-                    <label>Tiempo de Retención (Vigencia años)</label>
-                    {{ form_widget(form.tiempo, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.tiempo.vars.errors|length > 0 %}
-                        <p class="help-block">
-                            {% for error in form.tiempo.vars.errors %}
-                                {{ error.message }} <br/>
-                            {% endfor %}
-                        </p>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="date col-lg-6">
-                    <h3>Disposición final</h3>
-                    <hr>
-                    <label>Archivo(Tiempo Años)</label>
-                    {{ form_widget(form.archivo_tiempo, {'attr': {'class': 'form-control counted' } }) }}
-                    {% if form.archivo_tiempo.vars.errors|length > 0 %}
-                        <p class="help-block">
-                            {% for error in form.archivo_tiempo.vars.errors %}
-                                {{ error.message }} <br/>
-                            {% endfor %}
-                        </p>
-                    {% endif %}
-                    <div class="form-check form-check-inline">
-                        {{ form_label(form.destruccion) }}
-                        {{ form_widget(form.destruccion) }}
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <h3>Medio</h3>
-                    <hr>
-
-                    <div class="form-check form-check-inline">
-                        {{ form_label(form.papel) }}
-                        {{ form_widget(form.papel) }}
-                    </div>
-                    <div class="form-check form-check-inline">
-                        {{ form_label(form.electronico) }}
-                        {{ form_widget(form.electronico) }}
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <label for="">Observaciones</label>
-                    {{ form_widget(form.observaciones, {'attr': {'class': 'form-control counted' } }) }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                   <p> {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}</p>
-
+                <div class="col-lg-4">
+                    <p> {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}</p>
                 </div>
             </div>
 
         {{ form_end(form) }}
     </div>
+
 
 {% endblock %}

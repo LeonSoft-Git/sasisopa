@@ -3,7 +3,7 @@
 namespace CoreBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\ButtonType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -15,7 +15,7 @@ class ArchivosType extends AbstractType
     {
       $builder->add('nombre',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
               ->add('cartaPoder',FileType::class,array('required'=>false,'data_class'=>null,'attr'=>array('ruta'=>'images'),'label'=>'Archivo'))
-              ->add('enviar', SubmitType::class, array('label'=> 'Enviar'))
+              ->add('enviar', ButtonType::class, array('label'=> 'Enviar'))
     ;
 
     }

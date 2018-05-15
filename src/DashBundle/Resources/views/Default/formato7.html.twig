@@ -5,9 +5,9 @@
 
 <div class="col-lg-12">
     <p>
-        <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newrepo') }}">Ingresar Reporte</a>
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('newrepo') }}">Ingresar Reporte</a>
         {% for rep in reportes %}
-            <a class="btn btn-success btn-cons m-t-10" href="{{ path('viewrepo', {'id': rep.idreporte1}) }}">Ver Reporte {{ rep.idreporte1 }}</a>
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('viewrepo', {'id': rep.idreporte1}) }}">Ver Reporte {{ rep.idreporte1 }}</a>
         {% endfor %}
     </p>
     <p><embed src="{{asset('assets/documentos/Reporte-aspectos-ambientales.pdf')}}" width="1050" height="650"></p>

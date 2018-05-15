@@ -25,12 +25,6 @@ class RevisionesExternas
     protected $fecha;
 
     /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     */
-    protected $documentos_externos_idde;
-
-    /**
      * @ORM\ManyToOne(targetEntity="DocumentosExternos", inversedBy="revisionesExternas")
      * @ORM\JoinColumn(name="documentos_externos_idde", referencedColumnName="idde", nullable=false)
      */

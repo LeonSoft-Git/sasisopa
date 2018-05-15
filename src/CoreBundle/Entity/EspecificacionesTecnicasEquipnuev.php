@@ -64,11 +64,7 @@ class EspecificacionesTecnicasEquipnuev
      */
     protected $resultados;
 
-    /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     */
-    protected $lista_equipos_nuevos_idlen;
+
 
     /**
      * @ORM\OneToOne(targetEntity="ListaEquiposNuevos", inversedBy="especificacionesTecnicasEquipnuev")

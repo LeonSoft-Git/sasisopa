@@ -31,7 +31,7 @@
                 </div>
                 <div class="date col-lg-2">
                     <label>Fecha última revisión</label>
-                    {{ form_widget(form.fecha_ultima) }}
+                    {{ form_widget(form.fecha_ultima, {'attr': {'class': 'form-control date'}}) }}
                 </div>
                 <div class="date col-lg-3">
 
@@ -89,7 +89,7 @@
                     <h3>Disposición final</h3>
                     <hr>
                     <label>Archivo(Tiempo Años)</label>
-                    {{ form_widget(form.archivo_tiempo, {'attr': {'class': 'form-control counted' } }) }}
+                    {{ form_widget(form.archivo_tiempo, {'attr': {'class': 'form-control date' } }) }}
                     {% if form.archivo_tiempo.vars.errors|length > 0 %}
                         <p class="help-block">
                             {% for error in form.archivo_tiempo.vars.errors %}

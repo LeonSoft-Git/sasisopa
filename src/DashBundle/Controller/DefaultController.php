@@ -5,8 +5,11 @@ namespace DashBundle\Controller;
 
 //Use que funcionan para llamar los entitys y que funcionen las consultas, mandar llamar los controllers y las rutas
 //
+use CoreBundle\Entity\DocumentosExternos;
 use CoreBundle\Entity\ListaControl;
 use CoreBundle\Entity\ListaDistribucion;
+use CoreBundle\Entity\ListaEquiposNuevos;
+use CoreBundle\Entity\RevisionesExternas;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -362,6 +365,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('lcd'));
         }
     }
+
     //Controlador para la vista de Lista de control de documentos apartado VIII
     /**
      * @Route("/lista-de-control-de-documentos", name="lcd")
@@ -373,14 +377,71 @@ class DefaultController extends Controller
         $listac = $query->getRepository('CoreBundle:ListaControl')->findAll();
         return $this->render('@Dash/Default/listacontrol.html.twig', array('listac' => $listac));
     }
+
     //Controlador para la vista Control de documentos externos apartado VIII
     /**
      * @Route("/control-de-documentos-externos", name="cde")
      */
     public function cdeAction()
     {
-        return $this->render('@Dash/Default/documentos_externos.twig');
+        $query = $this->getDoctrine()->getManager();
+        $documentose = $query->getRepository('CoreBundle:DocumentosExternos')->findAll();
+        return $this->render('@Dash/Default/documentos_externos.twig', array('documentose' => $documentose));
     }
+
+    //Controlador para la vista del formulario de Documentos externos apartado VIII
+    /**
+     * @Route("/insertar-documento-externo", name="newcde")
+     * @Method({"GET", "POST"})
+     */
+        public function newcdeAction(Request $request)
+    {
+        $documentosexternos = new DocumentosExternos();
+        $form = $this->createForm('CoreBundle\Form\DocumentosExternosType', $documentosexternos);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($documentosexternos);
+            $em->flush();
+
+            return $this->redirectToRoute('cde');
+        }
+
+        return $this->render('@Dash/Default/newdocumentoexterno.html.twig', array(
+            'documentosexternos' => $documentosexternos,
+            'form' => $form->createView()
+        ));
+    }
+
+    //Controlador para las fechas de revision de documentos externos (apartado VIII)
+    /**
+     * @Route("/insertar-fecha-documento-externo", name="newfcde")
+     * @Method({"GET", "POST"})
+     */
+    public function newfcdeAction(Request $request)
+    {
+        $revisionesexternas = new RevisionesExternas();
+        $form = $this->createForm('CoreBundle\Form\RevisionesExternasType', $revisionesexternas);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($revisionesexternas);
+            $em->flush();
+
+            return $this->redirectToRoute('cde');
+        }
+
+        return $this->render('@Dash/Default/newfechaexterna.html.twig', array(
+            'revisionesexternas' => $revisionesexternas,
+            'form' => $form->createView()
+        ));
+    }
+
+
 
     //Controlador para la vista de pdf de mejores prácticas y estándares apartado IX
     /**
@@ -450,8 +511,101 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/apartadoX.html.twig',  array('id' => 8));
     }
 
+    //Cada controlador manda llamar una vista que ya esta predefinida en la vista de apartado XI (apartado XI)
 
+    /**
+     * @Route("/integridad-mecanica-y-aseguramiento-de-calidad", name="imac")
+     */
+    public function imacAction()
+    {
+        return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 1));
+    }
+    /**
+     * @Route("/manual-de-mantenimiento-a-maquinaria-y-equipo", name="mmme")
+     */
+    public function mmmeAction()
+    {
+        return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 2));
+    }
+    /**
+     * @Route("/identificación-de-equipos-críticos", name="iec")
+     */
+    public function iecAction()
+    {
+        return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 3));
+    }
+    /**
+     * @Route("/procedimiento-de-limpieza-y-revision-a-instalaciones", name="plri")
+     */
+    public function plriAction()
+    {
+        return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 4));
+    }
+    /**
+     * @Route("/revision-limpieza-y-mantenimiento-anual-de-los-elementos-constructivos-e-instalaciones", name="rlmaeci")
+     */
+        public function rlmaeciAction()
+        {
+            return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 5));
+        }
+    /**
+     * @Route("/revision-y-mantenimiento-anual-de-los-sistemas-y-elementos-de-seguridad", name="rmases")
+     */
+    public function rmasesAction()
+    {
+        return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 6));
+    }
+    /**
+     * @Route("/revision-y-mantenimiento-anual-de-los-equipos-instalados", name="rmaei")
+     */
+    public function rmaeiAction()
+    {
+        return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 7));
+    }
 
+    //Controlador para vista del formulario Listado de Equipos Críticos (apartado XI)
 
+    /**
+     * @Route("/insertar-lista-verificacion-de-equipos-nuevos", name="newlven")
+     * @Method({"GET", "POST"})
+     */
+    public function newlvenAction(Request $request)
+    {
+        $listaequip = new ListaEquiposNuevos();
+        $form = $this->createForm('CoreBundle\Form\ListaEquiposNuevosType', $listaequip);
+        $form->handleRequest($request);
 
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($listaequip);
+            $em->flush();
+
+            return $this->redirectToRoute('lic');
+        }
+
+        return $this->render('@Dash/Default/newlistaequiposnuevos.html.twig', array(
+            'revisionesexternas' => $revisionesexternas,
+            'form' => $form->createView()
+        ));
+    }
+
+    //Controlador para vista de Listado de Equipos o sistemas nuevos (apartado XI)
+    /**
+     * @Route("/listado-de-equipos-o-sistemas-nuevos", name="lesn")
+     */
+    public function lesnAction()
+    {
+        return $this->render('@Dash/Default/equipos_nuevos.html.twig');
+    }
+
+    //Controlador para vista de Listado de Equipos Críticos (apartado XI)
+    /**
+     * @Route("/listado-de-equipos-criticos", name="lic")
+     */
+    public function licAction()
+    {
+        return $this->render('@Dash/Default/equipos_criticos.html.twig');
+    }
 }
+

@@ -69,27 +69,18 @@
     <div class="row">
 
         <div class="col-lg-3">
-
-            <div class="input-group date">
-
-                    <label>Fecha</label>
-                    {{ form_widget(form.fecha) }}
-
-            </div>
+            <label>Fecha</label>
+            {{ form_widget(form.fecha, {'attr': {'class': 'form-control date'}}) }}
         </div>
         <div class="col-lg-3">
             <div class="form-group">
                     <label>Hora</label>
-                    {{ form_widget(form.hora) }}
+                    {{ form_widget(form.hora, {'attr': {'class': 'form-control'}}) }}
             </div>
         </div>
         <div class="col-lg-2">
-            <div class="form-group">
-
                     <label>Turno</label>
                     {{ form_widget(form.turno, {'attr': {'class': 'form-control-sm' } }) }}
-
-            </div>
         </div>
         <div class="col-lg-2">
             <div class="form-check form-check-inline">

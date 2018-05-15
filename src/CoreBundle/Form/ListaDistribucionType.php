@@ -24,8 +24,7 @@ class ListaDistribucionType extends AbstractType
                             'format' => 'yyyy-MM-dd',
                         ))
                 ->add('procesos_areas',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
-                ->add('ingresar', SubmitType::class,  array(
-                            'label' => 'Ingresar'))
+                ->add('ingresar', SubmitType::class,  array('label' => 'Ingresar'))
         ;
     }
 

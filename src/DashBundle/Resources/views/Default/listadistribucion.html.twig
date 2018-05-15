@@ -1,41 +1,49 @@
 {% extends('@Dash/layout.html.twig') %}
 
 {% block body %}
-	
+
     <div class="col-lg-12">
-        <div class="table-responsive">
-            <table class="table table-bordered" border="2">
+        <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newlddsa') }}">Insertar</a>
 
-                <tr>
-                    <td>Clave</td>
-                    <td>Nombre del documento</td>
-                    <td>No.revisión</td>
-                    <td>No.copia</td>
-                    <td>Fecha ultima de revisión</td>
-                    <td>Procesos y Áreas</td>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered" border="2">
 
-                </tr>
-                {% for lista in data %}
-                <tr>
-                    <td>{{ lista.clave }}</td>
-                    <td>{{ lista.nombreDocumento }}</td>
-                    <td>{{ lista.noRevision }}</td>
-                    <td>{{ lista.noCopia }}</td>
-                    <td>{{ lista.fechaUltima|date("m/d/Y") }}</td>
-                    <td>{{ lista.procesosAreas }}</td>
+                        <tr>
+                            <td>Clave</td>
+                            <td>Nombre del documento</td>
+                            <td>No.revisión</td>
+                            <td>No.copia</td>
+                            <td>Fecha ultima de revisión</td>
+                            <td>Procesos y Áreas</td>
 
-                </tr>
-                {% endfor %}
+                        </tr>
+                        {% for lista in data %}
+                            <tr>
+                                <td>{{ lista.clave }}</td>
+                                <td>{{ lista.nombreDocumento }}</td>
+                                <td>{{ lista.noRevision }}</td>
+                                <td>{{ lista.noCopia }}</td>
+                                <td>{{ lista.fechaUltima|date("m/d/Y") }}</td>
+                                <td>{{ lista.procesosAreas }}</td>
+                            {% for rev in revisionext %}
+                                <td>{{ rev.fecha  }}</td>
+                            {% endfor %}
+
+                            </tr>
+                        {% endfor %}
 
 
 
-            </table>
+                    </table>
 
-            <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newlddsa') }}">Insertar</a>
 
+
+                </div>
+
+
+            </div>
         </div>
-
-
     </div>
-
 {% endblock %}
