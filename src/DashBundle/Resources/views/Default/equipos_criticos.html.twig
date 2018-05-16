@@ -3,7 +3,7 @@
 {% block body %}
 
     <div class="col-lg-12">
-        <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newlddsa') }}">Insertar</a>
+
 
         <div class="row">
             <div class="col-lg-12">
@@ -19,20 +19,10 @@
                             <td>Procesos y Áreas</td>
 
                         </tr>
-                        {% for lista in data %}
-                            <tr>
-                                <td>{{ lista.clave }}</td>
-                                <td>{{ lista.nombreDocumento }}</td>
-                                <td>{{ lista.noRevision }}</td>
-                                <td>{{ lista.noCopia }}</td>
-                                <td>{{ lista.fechaUltima|date("m/d/Y") }}</td>
-                                <td>{{ lista.procesosAreas }}</td>
-                            {% for rev in revisionext %}
-                                <td>{{ rev.fecha  }}</td>
-                            {% endfor %}
+
 
                             </tr>
-                        {% endfor %}
+
 
 
 

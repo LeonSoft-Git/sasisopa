@@ -3,9 +3,7 @@
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
-
 /**
  * CoreBundle\Entity\ListaEquiposNuevos
  *
@@ -87,20 +85,64 @@ class ListaEquiposNuevos
     protected $ubicacion_final;
 
     /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $planos_construidos;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $manuales_especificacion;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $requerimientos;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $planos;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $datos_tecnicos;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $informes;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $datos_necesarios;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $informes_ensayos;
+
+    /**
+     * @ORM\Column(type="string", length=3, nullable=true)
+     */
+    protected $resultados;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    protected $observacion;
+
+    /**
      * @Gedmo\Timestampable(on="create", field="creado")
      *
      * @ORM\Column(type="datetime", nullable=true)
      */
     protected $created_at;
 
-    /**
-     * @ORM\OneToOne(targetEntity="EspecificacionesTecnicasEquipnuev", mappedBy="listaEquiposNuevos")
-     */
-    protected $especificacionesTecnicasEquipnuev;
-
     public function __construct()
     {
-        $this->especificacionesTecnicasEquipnuevs = new ArrayCollection();
     }
 
     /**
@@ -426,6 +468,235 @@ class ListaEquiposNuevos
     }
 
     /**
+     * Set the value of planos_construidos.
+     *
+     * @param string $planos_construidos
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setPlanosConstruidos($planos_construidos)
+    {
+        $this->planos_construidos = $planos_construidos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of planos_construidos.
+     *
+     * @return string
+     */
+    public function getPlanosConstruidos()
+    {
+        return $this->planos_construidos;
+    }
+
+    /**
+     * Set the value of manuales_especificacion.
+     *
+     * @param string $manuales_especificacion
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setManualesEspecificacion($manuales_especificacion)
+    {
+        $this->manuales_especificacion = $manuales_especificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of manuales_especificacion.
+     *
+     * @return string
+     */
+    public function getManualesEspecificacion()
+    {
+        return $this->manuales_especificacion;
+    }
+
+    /**
+     * Set the value of requerimientos.
+     *
+     * @param string $requerimientos
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setRequerimientos($requerimientos)
+    {
+        $this->requerimientos = $requerimientos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of requerimientos.
+     *
+     * @return string
+     */
+    public function getRequerimientos()
+    {
+        return $this->requerimientos;
+    }
+
+    /**
+     * Set the value of planos.
+     *
+     * @param string $planos
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setPlanos($planos)
+    {
+        $this->planos = $planos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of planos.
+     *
+     * @return string
+     */
+    public function getPlanos()
+    {
+        return $this->planos;
+    }
+
+    /**
+     * Set the value of datos_tecnicos.
+     *
+     * @param string $datos_tecnicos
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setDatosTecnicos($datos_tecnicos)
+    {
+        $this->datos_tecnicos = $datos_tecnicos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of datos_tecnicos.
+     *
+     * @return string
+     */
+    public function getDatosTecnicos()
+    {
+        return $this->datos_tecnicos;
+    }
+
+    /**
+     * Set the value of informes.
+     *
+     * @param string $informes
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setInformes($informes)
+    {
+        $this->informes = $informes;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of informes.
+     *
+     * @return string
+     */
+    public function getInformes()
+    {
+        return $this->informes;
+    }
+
+    /**
+     * Set the value of datos_necesarios.
+     *
+     * @param string $datos_necesarios
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setDatosNecesarios($datos_necesarios)
+    {
+        $this->datos_necesarios = $datos_necesarios;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of datos_necesarios.
+     *
+     * @return string
+     */
+    public function getDatosNecesarios()
+    {
+        return $this->datos_necesarios;
+    }
+
+    /**
+     * Set the value of informes_ensayos.
+     *
+     * @param string $informes_ensayos
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setInformesEnsayos($informes_ensayos)
+    {
+        $this->informes_ensayos = $informes_ensayos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of informes_ensayos.
+     *
+     * @return string
+     */
+    public function getInformesEnsayos()
+    {
+        return $this->informes_ensayos;
+    }
+
+    /**
+     * Set the value of resultados.
+     *
+     * @param string $resultados
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setResultados($resultados)
+    {
+        $this->resultados = $resultados;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of resultados.
+     *
+     * @return string
+     */
+    public function getResultados()
+    {
+        return $this->resultados;
+    }
+    /**
+     * Set the value of observacion.
+     *
+     * @param string $observacion
+     * @return \CoreBundle\Entity\ListaEquiposNuevos
+     */
+    public function setObservacion($observacion)
+    {
+        $this->observacion = $observacion;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of observacion.
+     *
+     * @return string
+     */
+    public function getObservacion()
+    {
+        return $this->observacion;
+    }
+
+    /**
      * Set the value of created_at.
      *
      * @param \DateTime $created_at
@@ -448,32 +719,8 @@ class ListaEquiposNuevos
         return $this->created_at;
     }
 
-    /**
-     * Set EspecificacionesTecnicasEquipnuev entity (one to one).
-     *
-     * @param \CoreBundle\Entity\EspecificacionesTecnicasEquipnuev $especificacionesTecnicasEquipnuev
-     * @return \CoreBundle\Entity\ListaEquiposNuevos
-     */
-    public function setEspecificacionesTecnicasEquipnuev(EspecificacionesTecnicasEquipnuev $especificacionesTecnicasEquipnuev = null)
-    {
-        $especificacionesTecnicasEquipnuev->setListaEquiposNuevos($this);
-        $this->especificacionesTecnicasEquipnuev = $especificacionesTecnicasEquipnuev;
-
-        return $this;
-    }
-
-    /**
-     * Get EspecificacionesTecnicasEquipnuev entity (one to one).
-     *
-     * @return \CoreBundle\Entity\EspecificacionesTecnicasEquipnuev
-     */
-    public function getEspecificacionesTecnicasEquipnuev()
-    {
-        return $this->especificacionesTecnicasEquipnuev;
-    }
-
     public function __sleep()
     {
-        return array('idlen', 'nombre_estacion', 'equipo', 'serial', 'marca', 'fabricante', 'critico', 'no_estacion', 'fecha_llenado', 'no_id', 'modelo', 'fecha_compra', 'ano_fabricacion', 'ubicacion_final', 'created_at');
+        return array('idlen', 'nombre_estacion', 'equipo', 'serial', 'marca', 'fabricante', 'critico', 'no_estacion', 'fecha_llenado', 'no_id', 'modelo', 'fecha_compra', 'ano_fabricacion', 'ubicacion_final', 'planos_construidos', 'manuales_especificacion', 'requerimientos', 'planos', 'datos_tecnicos', 'informes', 'datos_necesarios', 'informes_ensayos', 'resultados', 'observacion' , 'created_at');
     }
 }

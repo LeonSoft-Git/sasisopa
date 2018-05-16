@@ -1,0 +1,114 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+	
+    <div class="col-lg-12">
+
+
+        <h2></h2>
+        {{ form_start(edit_form) }}
+        <div class="row">
+            <div class="col-lg-6">
+                <fieldset disabled>
+                    <label for="revision">Nombre estación o servicio</label>
+                    {{ form_widget(edit_form.nombre_estacion, {'attr': {'class': 'form-control counted' } }) }}
+                    <label for="equipo">Equipo / sistema</label>
+                    {{ form_widget(edit_form.equipo, {'attr': {'class': 'form-control counted' } }) }}
+                    <label for="revision">Nombre estación o servicio</label>
+                    {{ form_widget(edit_form.nombre_estacion, {'attr': {'class': 'form-control counted' } }) }}
+                    <label for="revision">Serial</label>
+                    {{ form_widget(edit_form.serial, {'attr': {'class': 'form-control counted' } }) }}
+                    <label for="revision">Marca</label>
+                    {{ form_widget(edit_form.marca, {'attr': {'class': 'form-control counted' } }) }}
+                    <label for="revision">Fabricante</label>
+                    {{ form_widget(edit_form.fabricante, {'attr': {'class': 'form-control counted' } }) }}
+                    <label for="revision">Crítico</label>
+                    {{ form_widget(edit_form.critico, {'attr': {'class': 'form-control counted' } }) }}
+                </fieldset>
+            </div>
+            <div class="col-lg-6">
+                <fieldset disabled>
+                <label for="revision">No. Estación</label>
+                {{ form_widget(edit_form.no_estacion, {'attr': {'class': 'form-control counted' } }) }}
+                <label for="revision">Fecha de llenado</label>
+                {{ form_widget(edit_form.fecha_llenado, {'attr': {'class': 'form-control date' } }) }}
+                <label for="revision">No. Id</label>
+                {{ form_widget(edit_form.no_id, {'attr': {'class': 'form-control counted' } }) }}
+                <label for="revision">Modelo</label>
+                {{ form_widget(edit_form.modelo, {'attr': {'class': 'form-control counted' } }) }}
+                <label for="revision">Fecha de Compra</label>
+                {{ form_widget(edit_form.fecha_compra, {'attr': {'class': 'form-control date' } }) }}
+                <label for="revision">Año de Fabricación</label>
+                {{ form_widget(edit_form.ano_fabricacion, {'attr': {'class': 'form-control date' } }) }}
+                <label for="revision">Ubicación Final</label>
+                {{ form_widget(edit_form.ubicacion_final, {'attr': {'class': 'form-control counted' } }) }}
+
+                </fieldset>
+            </div>
+        </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-center">Especificaciones Técnicas</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td><label for="planos">Planos como construidos</label></td>
+
+                            <td><fieldset disabled>{{ form_widget(edit_form.planos_construidos, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Manuales">Manuales y especificaciones mecánicas del fabricante</label></td>
+                            <td><fieldset disabled >{{ form_widget(edit_form.manuales_especificacion, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Requerimientos">Requerimientos de mantenimiento preventivo del fabricante y repuestos sugeridos</label></td>
+                            <td><fieldset disabled>{{ form_widget(edit_form.requerimientos, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="planos">Planos de tubería e instrumentación</label></td>
+                            <td><fieldset disabled>{{ form_widget(edit_form.planos, {'attr': {'class': 'form-control' } }) }} </fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="datos">Datos técnicos del fabricante</label></td>
+                            <td><fieldset disabled>{{ form_widget(edit_form.datos_tecnicos, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="informes">Informes de certificación del material</label></td>
+                            <td><fieldset disabled>{{ form_widget(edit_form.informes, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="datosn">Datos necesarios para el entrenamiento del personal</label></td>
+                            <td><fieldset disabled>{{ form_widget(edit_form.datos_necesarios, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="informes">Todos los informes de ensayos no destructivos</label>
+                            <td><fieldset disabled>{{ form_widget(edit_form.informes_ensayos, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><label for="resultados">Resultados de las pruebas de rendimiento</label></td>
+                            <td><fieldset disabled>{{ form_widget(edit_form.resultados, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                        </tr>
+
+                    </div>
+                </table>
+                <hr>
+
+                <h2 class="text-center">Observaciones</h2>
+                <fieldset disabled>
+                    <p> {{ form_widget(edit_form.observacion, {'attr': {'class': 'form-control text-area'}}) }}</p>
+                </fieldset>
+
+            </div>
+        </div>
+        <fieldset disabled>
+            {{ form_widget(edit_form.ingresar,{'attr': {'class': 'btn btn-default btn-cons m-t-10'}}) }}
+        </fieldset>
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('lvec') }}" role="button"><i class="fa fa-undo"> Regresar</i></a>
+
+
+        {{ form_end(edit_form) }}
+    </div>
+
+{% endblock %}

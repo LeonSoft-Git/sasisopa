@@ -3,7 +3,7 @@
 {% block body %}
     <div class="col-lg-12">
 
-
+        <h2>Ingresar reporte lista de verificación de equipos o sistemas nuevos</h2>
         {{ form_start(form,  {'action':path('newlven')}) }}
             <div class="row">
                 <div class="col-lg-6">
@@ -34,13 +34,167 @@
                             {% endfor %}
                         </p>
                     {% endif %}
+                    <label for="revision">Serial</label>
+                    {{ form_widget(form.serial, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.serial.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.serial.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Marca</label>
+                    {{ form_widget(form.marca, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.marca.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.marca.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Fabricante</label>
+                    {{ form_widget(form.fabricante, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.fabricante.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.fabricante.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Crítico</label>
+                    {{ form_widget(form.critico, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.critico.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.critico.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
                 </div>
-
-
-
-
+                <div class="col-lg-6">
+                    <label for="revision">No. Estación</label>
+                    {{ form_widget(form.no_estacion, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.no_estacion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.no_estacion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Fecha de llenado</label>
+                    {{ form_widget(form.fecha_llenado, {'attr': {'class': 'form-control date' } }) }}
+                    {% if form.fecha_llenado.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.fecha_llenado.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">No. Id</label>
+                    {{ form_widget(form.no_id, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.no_id.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.no_id.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Modelo</label>
+                    {{ form_widget(form.modelo, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.modelo.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.modelo.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Fecha de Compra</label>
+                    {{ form_widget(form.fecha_compra, {'attr': {'class': 'form-control date' } }) }}
+                    {% if form.fecha_compra.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.fecha_compra.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Año de Fabricación</label>
+                    {{ form_widget(form.ano_fabricacion, {'attr': {'class': 'form-control date' } }) }}
+                    {% if form.ano_fabricacion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.ano_fabricacion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Ubicación Final</label>
+                    {{ form_widget(form.ubicacion_final, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.ubicacion_final.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.ubicacion_final.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
             </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-center">Especificaciones Técnicas</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <td><label for="planos">Planos como construidos</label></td>
+                        <td>{{ form_widget(form.planos_construidos, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Manuales">Manuales y especificaciones mecánicas del fabricante</label></td>
+                        <td>{{ form_widget(form.manuales_especificacion, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Requerimientos">Requerimientos de mantenimiento preventivo del fabricante y repuestos sugeridos</label></td>
+                        <td>{{ form_widget(form.requerimientos, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="planos">Planos de tubería e instrumentación</label></td>
+                        <td>{{ form_widget(form.planos, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="datos">Datos técnicos del fabricante</label></td>
+                        <td>{{ form_widget(form.datos_tecnicos, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="informes">Informes de certificación del material</label></td>
+                        <td>{{ form_widget(form.informes, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="datosn">Datos necesarios para el entrenamiento del personal</label></td>
+                        <td>{{ form_widget(form.datos_necesarios, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="informes">Todos los informes de ensayos no destructivos</label>
+                        <td>{{ form_widget(form.informes_ensayos, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="resultados">Resultados de las pruebas de rendimiento</label></td>
+                        <td>{{ form_widget(form.resultados, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
 
+                </div>
+            </table>
+            <hr>
+
+                <h2 class="text-center">Observaciones</h2>
+               <p> {{ form_widget(form.observacion, {'attr': {'class': 'form-control text-area'}}) }}</p>
+
+        </div>
+
+
+        </div>
+
+        {{ form_widget(form.ingresar,{'attr': {'class': 'btn btn-default btn-cons m-t-10'}}) }}
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('lvec') }}">Regresar</a>
         {{ form_end(form) }}
     </div>
 

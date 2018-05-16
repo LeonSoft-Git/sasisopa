@@ -3,37 +3,28 @@
 {% block body %}
 
     <div class="col-lg-12">
-        <a class="btn btn-primary btn-cons m-t-10" href="{{ path('newlddsa') }}">Insertar</a>
-
+        <h2>Listado de equipos nuevos</h2>
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('newlven') }}" role="button"><i class="fa fa-plus"> Insertar</i> </a>
+        <hr>
         <div class="row">
             <div class="col-lg-12">
                 <div class="table-responsive">
                     <table class="table table-bordered" border="2">
 
-                        <tr>
-                            <td>Clave</td>
-                            <td>Nombre del documento</td>
-                            <td>No.revisión</td>
-                            <td>No.copia</td>
-                            <td>Fecha ultima de revisión</td>
-                            <td>Procesos y Áreas</td>
+                        <tr align="center">
+                            <td>No. Id</td>
+                            <td>Nombre de estacion</td>
+                            <td>link</td>
+
 
                         </tr>
-                        {% for lista in data %}
-                            <tr>
-                                <td>{{ lista.clave }}</td>
-                                <td>{{ lista.nombreDocumento }}</td>
-                                <td>{{ lista.noRevision }}</td>
-                                <td>{{ lista.noCopia }}</td>
-                                <td>{{ lista.fechaUltima|date("m/d/Y") }}</td>
-                                <td>{{ lista.procesosAreas }}</td>
-                            {% for rev in revisionext %}
-                                <td>{{ rev.fecha  }}</td>
+                        <tr align="center">
+                            {% for eq in eqnu %}
+                                <td>{{ eq.idlen }}</td>
+                                <td>{{ eq.nombreEstacion }}</td>
+                                <td><a href="{{ path('lvesc', {'id': eq.idlen}) }}" data-toggle="tooltip" title="Ver"> Ver Reporte {{ eq.idlen }} <i class="fa fa-eye"></i></a></td>
                             {% endfor %}
-
-                            </tr>
-                        {% endfor %}
-
+                        </tr>
 
 
                     </table>

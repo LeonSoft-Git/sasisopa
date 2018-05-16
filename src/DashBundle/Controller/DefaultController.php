@@ -5,6 +5,7 @@ namespace DashBundle\Controller;
 
 //Use que funcionan para llamar los entitys y que funcionen las consultas, mandar llamar los controllers y las rutas
 //
+
 use CoreBundle\Entity\DocumentosExternos;
 use CoreBundle\Entity\ListaControl;
 use CoreBundle\Entity\ListaDistribucion;
@@ -581,29 +582,58 @@ class DefaultController extends Controller
             $em->persist($listaequip);
             $em->flush();
 
-            return $this->redirectToRoute('lic');
+            return $this->redirectToRoute('lvec');
         }
 
         return $this->render('@Dash/Default/newlistaequiposnuevos.html.twig', array(
-            'revisionesexternas' => $revisionesexternas,
+            'listaequip' => $listaequip,
             'form' => $form->createView()
         ));
     }
 
-    //Controlador para vista de Listado de Equipos o sistemas nuevos (apartado XI)
+
+    //Controladores para ver cada formato de la Lista de Equipos o Sistemas Críticos. (apartado XI)
+
     /**
-     * @Route("/listado-de-equipos-o-sistemas-nuevos", name="lesn")
+     * @Route("/{id}/listado-de-verificacion-de-equipos-o-sistemas-nuevos", name="lvesc")
+     * @Method({"GET", "POST"})
      */
-    public function lesnAction()
+    public function viewLicAction(Request $request, ListaEquiposNuevos $listaequip)
     {
-        return $this->render('@Dash/Default/equipos_nuevos.html.twig');
+        $editForm = $this->createForm('CoreBundle\Form\ListaEquiposNuevosType', $listaequip);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist();
+            $em->flush();
+
+            return $this->redirectToRoute('lvec');
+
+        }
+
+        return $this->render('@Dash/Default/viewlistaequipos_nuevos.html.twig', array(
+            'listaequip' => $listaequip,
+            'edit_form' => $editForm->createView()
+        ));
+    }
+
+    //Controlador para vista de Listado de Equipos nuevos (apartado XI)
+    /**
+     * @Route("/lista-de-equipos-nuevos", name="lvec")
+     */
+    public function lvecAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $eqnu = $em->getRepository('CoreBundle:ListaEquiposNuevos')->findAll();
+        return $this->render('DashBundle:Default:equipos_nuevos.html.twig', array('eqnu' => $eqnu));
     }
 
     //Controlador para vista de Listado de Equipos Críticos (apartado XI)
     /**
-     * @Route("/listado-de-equipos-criticos", name="lic")
+     * @Route("/lista-de-equipos-criticos", name="lec")
      */
-    public function licAction()
+    public function lecAction()
     {
         return $this->render('@Dash/Default/equipos_criticos.html.twig');
     }
