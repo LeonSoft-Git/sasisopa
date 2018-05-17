@@ -4,7 +4,9 @@
 
     <div class="col-lg-12">
         <h2>Listado de equipos nuevos</h2>
-        <a class="btn btn-default btn-cons m-t-10" href="{{ path('newlven') }}" role="button"><i class="fa fa-plus"> Insertar</i> </a>
+        {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('newlven') }}" role="button"><i class="fa fa-plus"> Insertar</i> </a>
+        {% endif %}
         <hr>
         <div class="row">
             <div class="col-lg-12">
@@ -18,13 +20,13 @@
 
 
                         </tr>
+                        {% for eq in eqnu %}
                         <tr align="center">
-                            {% for eq in eqnu %}
                                 <td>{{ eq.idlen }}</td>
                                 <td>{{ eq.nombreEstacion }}</td>
                                 <td><a href="{{ path('lvesc', {'id': eq.idlen}) }}" data-toggle="tooltip" title="Ver"> Ver Reporte {{ eq.idlen }} <i class="fa fa-eye"></i></a></td>
-                            {% endfor %}
                         </tr>
+                        {% endfor %}
 
 
                     </table>

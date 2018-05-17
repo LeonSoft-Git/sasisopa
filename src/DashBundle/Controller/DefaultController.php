@@ -572,23 +572,28 @@ class DefaultController extends Controller
      */
     public function newlvenAction(Request $request)
     {
-        $listaequip = new ListaEquiposNuevos();
-        $form = $this->createForm('CoreBundle\Form\ListaEquiposNuevosType', $listaequip);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2){
+            $listaequip = new ListaEquiposNuevos();
+            $form = $this->createForm('CoreBundle\Form\ListaEquiposNuevosType', $listaequip);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+            if ($form->isSubmitted() && $form->isValid()) {
 
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($listaequip);
-            $em->flush();
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($listaequip);
+                $em->flush();
 
-            return $this->redirectToRoute('lvec');
+                return $this->redirectToRoute('lvec');
+            }
+
+            return $this->render('@Dash/Default/newlistaequiposnuevos.html.twig', array(
+                'listaequip' => $listaequip,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
         }
-
-        return $this->render('@Dash/Default/newlistaequiposnuevos.html.twig', array(
-            'listaequip' => $listaequip,
-            'form' => $form->createView()
-        ));
     }
 
 

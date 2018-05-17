@@ -6,6 +6,7 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -23,7 +24,9 @@ class ListaEquiposNuevosType extends AbstractType
             ->add('marca',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
             ->add('fabricante',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
             ->add('critico',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
-            ->add('no_estacion',NumberType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
+            ->add('no_estacion',IntegerType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off','step'=>'1',
+                'min'=>'0',
+                'max'=>'10')))
             ->add('fecha_llenado', DateType::class, array(
                         'widget' => 'single_text',
                         'format' => 'yyyy-MM-dd',
@@ -36,8 +39,8 @@ class ListaEquiposNuevosType extends AbstractType
                         'format' => 'yyyy-MM-dd',
                     ))
             ->add('ano_fabricacion', DateType::class, array(
-                        'widget' => 'single_text',
-                        'format' => 'yyyy-MM-dd',
+                        'widget' => 'choice',
+                        'format' => 'yyyy-MM-dd'
                     ))
             ->add('ubicacion_final',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
             ->add('planos_construidos' , TextType::class, array('required' => true))
