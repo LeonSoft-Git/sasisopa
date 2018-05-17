@@ -10,7 +10,9 @@
     {% elseif id==3 %}
 		<embed src="{{asset('assets/documentos/Gestión-de-Objetivos-y-Metas.pdf')}}" width="1050" height="650">
     {% elseif id==4 %}
-		<p><a class="btn btn-default btn-cons m-t-10" href="{{ path('newfile') }}"><i class="fa fa-paperclip"> Adjuntar Carta</i></a></p>
+		{% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+			<p><a class="btn btn-default btn-cons m-t-10" href="{{ path('newfile') }}"><i class="fa fa-paperclip"> Adjuntar Carta</i></a></p>
+		{% endif %}
 
 		<embed src="{{asset('assets/documentos/CARTAPODER.pdf')}}" width="1050" height="650">
 

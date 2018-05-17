@@ -14,7 +14,9 @@
 
 
 		<div class="col-lg-12">
-			<a class="btn btn-default btn-cons m-t-10" href="{{ path('new') }}"><i class="fa fa-plus"> Insertar</i></a>
+    		{% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+				<a class="btn btn-default btn-cons m-t-10" href="{{ path('new') }}"><i class="fa fa-plus"> Insertar</i></a>
+			{% endif %}
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
@@ -50,11 +52,14 @@
 							<td>{{ requisito.articulosAplicables }}</td>
 							<td>{{ requisito.descripcionRequisito }}</td>
 							<td>{{ requisito.link }}</td>
-							<td>
-								<div class="btn-group btn-group-xs">
-									<a href="#" data-toggle="tooltip" title="Editar" class="btn btn-default"><i class="fa fa-edit"></i></a>
-								</div>
-							</td>
+                        	{% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+								<td>
+									<div class="btn-group btn-group-xs">
+
+										<a href="#" data-toggle="tooltip" title="Editar" class="btn btn-default"><i class="fa fa-edit"></i></a>
+									</div>
+								</td>
+							{% endif %}
 						</tr>
 
 					{% endfor %}

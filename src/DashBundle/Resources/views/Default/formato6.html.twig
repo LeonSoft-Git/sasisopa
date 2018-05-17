@@ -3,14 +3,153 @@
 {% block body %}
 
 	<div class="col-lg-12">
-		{% if (app.user.user == 1 or app.user.user == 2) %}
-	<p><h1>Representante Técnico</h1></p>
+        {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+		<p><h1>Representante Técnico</h1></p>
+		<div class="col-lg-12">
+			<h2>Actividades</h2>
+			<p>
+				<ol>
+					{% for actividad in acti %}
+					<li>{{ actividad.activity }}</li>
+					{% endfor %}
+
+				</ol>
+			</p>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-lg-6">
+				<h1>Deberes</h1>
+				<p>
+					<ol>
+					{% for deberes in deb %}
+						<li>{{ deberes.deber }}</li>
+					{% endfor %}
+					</ol>
+				</p>
+			</div>
+			<div class="col-lg-6">
+				<h1>Responsabilidades</h1>
+				<p>
+					<ol>
+					{% for responsabilidades in respo %}
+						<li>{{ responsabilidades.responsability }}</li>
+					{% endfor %}
+					</ol>
+				</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Otras Actividades</h1>
+			</div>
+			<div class="col-lg-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#GO">Gerente Operacional</a></li>
+					<li><a data-toggle="tab" href="#GA">Gerente Administrativo</a></li>
+					<li><a data-toggle="tab" href="#JM">Jefe de Mantenimiento</a></li>
+					<li><a data-toggle="tab" href="#JT">Jefe de Turno</a></li>
+					<li><a data-toggle="tab" href="#JA">Auxiliar Administrativo</a></li>
+					<li><a data-toggle="tab" href="#DE">Despachador</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="GO" class="tab-pane fade in active">
+						<h3>Actividades Gerente Operacional</h3>
+						<hr>
+						<div class="col-lg-12">
+
+								<p>
+
+									{% for actividad in acti %}
+										<li>{{ actividad.activity }}</li>
+									{% endfor %}
+
+								</p>
+
+							<hr>
+							<div class="row">
+								<div class="col-lg-6">
+									<h1>Deberes</h1>
+									<p>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label" for="defaultCheck1">
+											Deber 1
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label" for="defaultCheck1">
+											Deber 2
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label" for="defaultCheck1">
+											Deber 3
+										</label>
+									</div>
+									</p>
+								</div>
+								<div class="col-lg-6">
+									<h1>Responsabilidades</h1>
+									<p>
+										{% for responsabilidades in respo %}
+											<li>{{ responsabilidades.responsability }}</li>
+										{% endfor %}
+									</p>
+								</div>
+							</div>
+
+							<button type="button" class="btn btn-primary">Aplicar Tareas</button>
+					</div>
+					<div id="GA" class="tab-pane fade">
+						<h3>Actividades Gerente Administrativo</h3>
+						<p> </p>
+					</div>
+					<div id="JM" class="tab-pane fade">
+						<h3>Actividades Jefe de Mantenimiento</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+					<div id="JT" class="tab-pane fade">
+						<h3>Actividades Jefe de Mantenimiento</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+					<div id="JA" class="tab-pane fade">
+						<h3>Actividades Jefe de Mantenimiento</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+					<div id="DE" class="tab-pane fade">
+						<h3>Actividades Jefe de Mantenimiento</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+
+		</div>
+
+
+
+		<!--Gerente operacional -->
+    {% elseif (app.user.level.idl == 3) %}
+	<p><h1>Gerente Operacional</h1></p>
 	<div class="col-lg-12">
 		<h2>Actividades</h2>
-		<p><ol>
-			{% for actividad in acti %}
-			<li>{{ actividad.activity }}</li>
-			{% endfor %}
+		<p>
+		<ol>
+            {% for actividad in acti %}
+				<li>{{ actividad.activity }}</li>
+            {% endfor %}
 
 		</ol>
 		</p>
@@ -20,123 +159,223 @@
 		<div class="col-lg-6">
 			<h1>Deberes</h1>
 			<p>
-				<ol>
+			<ol>
                 {% for deberes in deb %}
 					<li>{{ deberes.deber }}</li>
                 {% endfor %}
-				</ol>
+			</ol>
 			</p>
 		</div>
 		<div class="col-lg-6">
 			<h1>Responsabilidades</h1>
 			<p>
-				<ol>
+			<ol>
                 {% for responsabilidades in respo %}
 					<li>{{ responsabilidades.responsability }}</li>
                 {% endfor %}
-				</ol>
+			</ol>
 			</p>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-lg-12">
-			<h1>Otras Actividades</h1>
-		</div>
-		<div class="col-lg-12">
-			<ul class="nav nav-tabs">
-				<li class="active"><a data-toggle="tab" href="#GO">Gerente Operacional</a></li>
-				<li><a data-toggle="tab" href="#GA">Gerente Administrativo</a></li>
-				<li><a data-toggle="tab" href="#JM">Jefe de Mantenimiento</a></li>
-				<li><a data-toggle="tab" href="#JT">Jefe de Turno</a></li>
-				<li><a data-toggle="tab" href="#JA">Auxiliar Administrativo</a></li>
-				<li><a data-toggle="tab" href="#DE">Despachador</a></li>
-			</ul>
+		<!--Fin Gerente Op-->
 
-			<div class="tab-content">
-				<div id="GO" class="tab-pane fade in active">
-					<h3>Actividades Gerente Operacional</h3>
-					<hr>
-					<div class="col-lg-12"
+		<!--Gerente administratifo -->
+        {% elseif (app.user.level.idl == 4) %}
+			<p><h1>Gerente Administrativo</h1></p>
+			<div class="col-lg-12">
+				<h2>Actividades</h2>
+				<p>
+				<ol>
+                    {% for actividad in acti %}
+						<li>{{ actividad.activity }}</li>
+                    {% endfor %}
 
-							<p>
-
-                                {% for actividad in acti %}
-									<li>{{ actividad.activity }}</li>
-								{% endfor %}
-
-							</p>
-
-						<hr>
-						<div class="row">
-							<div class="col-lg-6">
-								<h1>Deberes</h1>
-								<p>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<label class="form-check-label" for="defaultCheck1">
-										Deber 1
-									</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<label class="form-check-label" for="defaultCheck1">
-										Deber 2
-									</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<label class="form-check-label" for="defaultCheck1">
-										Deber 3
-									</label>
-								</div>
-								</p>
-							</div>
-							<div class="col-lg-6">
-								<h1>Responsabilidades</h1>
-								<p>
-                                    {% for responsabilidades in respo %}
-										<li>{{ responsabilidades.responsability }}</li>
-                                	{% endfor %}
-								</p>
-							</div>
-						</div>
-
-						<button type="button" class="btn btn-primary">Aplicar Tareas</button>
-				</div>
-				<div id="GA" class="tab-pane fade">
-					<h3>Actividades Gerente Administrativo</h3>
-					<p> </p>
-				</div>
-				<div id="JM" class="tab-pane fade">
-					<h3>Actividades Jefe de Mantenimiento</h3>
-					<p>Some content in menu 2.</p>
-				</div>
-				<div id="JT" class="tab-pane fade">
-					<h3>Actividades Jefe de Mantenimiento</h3>
-					<p>Some content in menu 2.</p>
-				</div>
-				<div id="JA" class="tab-pane fade">
-					<h3>Actividades Jefe de Mantenimiento</h3>
-					<p>Some content in menu 2.</p>
-				</div>
-				<div id="DE" class="tab-pane fade">
-					<h3>Actividades Jefe de Mantenimiento</h3>
-					<p>Some content in menu 2.</p>
-				</div>
-
+				</ol>
+				</p>
 			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Deberes</h1>
+					<p>
+					<ol>
+                        {% for deberes in deb %}
+							<li>{{ deberes.deber }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Responsabilidades</h1>
+					<p>
+					<ol>
+                        {% for responsabilidades in respo %}
+							<li>{{ responsabilidades.responsability }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+			</div>
+			<!--Fin Gerente Op-->
 
+			<!--Jefe Mantenimiento -->
+        {% elseif (app.user.level.idl == 5) %}
+			<p><h1>Jefe mantenimiento</h1></p>
+			<div class="col-lg-12">
+				<h2>Actividades</h2>
+				<p>
+				<ol>
+                    {% for actividad in acti %}
+						<li>{{ actividad.activity }}</li>
+                    {% endfor %}
 
-		</div>
-	</div>
+				</ol>
+				</p>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Deberes</h1>
+					<p>
+					<ol>
+                        {% for deberes in deb %}
+							<li>{{ deberes.deber }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Responsabilidades</h1>
+					<p>
+					<ol>
+                        {% for responsabilidades in respo %}
+							<li>{{ responsabilidades.responsability }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+			</div>
+			<!--Fin Gerente JM-->
 
-        {% elseif (app.user.user != 1) %}
-			Hola soy diferente de uno
+			<!--jefe turno -->
+        {% elseif (app.user.level.idl == 6) %}
+			<p><h1>Gerente Administrativo</h1></p>
+			<div class="col-lg-12">
+				<h2>Actividades</h2>
+				<p>
+				<ol>
+                    {% for actividad in acti %}
+						<li>{{ actividad.activity }}</li>
+                    {% endfor %}
+
+				</ol>
+				</p>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Deberes</h1>
+					<p>
+					<ol>
+                        {% for deberes in deb %}
+							<li>{{ deberes.deber }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Responsabilidades</h1>
+					<p>
+					<ol>
+                        {% for responsabilidades in respo %}
+							<li>{{ responsabilidades.responsability }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+			</div>
+			<!--Fin JT-->
+
+			<!--Auxiliar administratifo -->
+        {% elseif (app.user.level.idl == 7) %}
+			<p><h1>Auxiliar Administrativo</h1></p>
+			<div class="col-lg-12">
+				<h2>Actividades</h2>
+				<p>
+				<ol>
+                    {% for actividad in acti %}
+						<li>{{ actividad.activity }}</li>
+                    {% endfor %}
+
+				</ol>
+				</p>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Deberes</h1>
+					<p>
+					<ol>
+                        {% for deberes in deb %}
+							<li>{{ deberes.deber }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Responsabilidades</h1>
+					<p>
+					<ol>
+                        {% for responsabilidades in respo %}
+							<li>{{ responsabilidades.responsability }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+			</div>
+			<!--Fin Auxiliar ad-->
+
+			<!--Despachador -->
+        {% elseif (app.user.level.idl == 8) %}
+			<p><h1>Despachador</h1></p>
+			<div class="col-lg-12">
+				<h2>Actividades</h2>
+				<p>
+				<ol>
+                    {% for actividad in acti %}
+						<li>{{ actividad.activity }}</li>
+                    {% endfor %}
+
+				</ol>
+				</p>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Deberes</h1>
+					<p>
+					<ol>
+                        {% for deberes in deb %}
+							<li>{{ deberes.deber }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Responsabilidades</h1>
+					<p>
+					<ol>
+                        {% for responsabilidades in respo %}
+							<li>{{ responsabilidades.responsability }}</li>
+                        {% endfor %}
+					</ol>
+					</p>
+				</div>
+			</div>
+			<!--Fin Despachador-->
+
 
         {% endif %}
-	</div>
-
-
 	</div>
 
 

@@ -91,22 +91,28 @@ class DefaultController extends Controller
      */
     public function newRequerimientoAction(Request $request)
     {
-        $requerimiento = new LegalRequirements();
-        $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $requerimiento = new LegalRequirements();
+            $form = $this->createForm('CoreBundle\Form\RequirementType', $requerimiento);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($requerimiento);
-            $em->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($requerimiento);
+                $em->flush();
 
-            return $this->redirectToRoute('rlv');
+                return $this->redirectToRoute('rlv');
+            }
+
+            return $this->render('@Dash/Default/newrequirement.html.twig', array(
+                'requerimiento' => $requerimiento,
+                'form' => $form->createView()
+            ));
+        } else{
+            return $this->redirect($this->generateUrl('dashboard'));
         }
 
-        return $this->render('@Dash/Default/newrequirement.html.twig', array(
-            'requerimiento' => $requerimiento,
-            'form' => $form->createView()
-        ));
     }
 
 
@@ -114,34 +120,39 @@ class DefaultController extends Controller
     //Controlador para guardar la consulta y mostrar el formulario de insertar archivo dentro de newfile
 
     /**
-     * @Route("/Poder" , name="newfile")
+     * @Route("/insertar-carta-poder" , name="newfile")
      * @Method({"GET", "POST"})
      */
     public function newFileAction(Request $request)
     {
-        $archivo = new Archivos();
-        $form = $this->createForm('CoreBundle\Form\ArchivosType', $archivo);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $archivo = new Archivos();
+            $form = $this->createForm('CoreBundle\Form\ArchivosType', $archivo);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            if ($archivo->getCartaPoder()) {
-                $file = $archivo->getCartaPoder();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                if ($archivo->getCartaPoder()) {
+                    $file = $archivo->getCartaPoder();
 
-                $fileName = md5(uniqid()) . '.' . $file->guessExtension();
-                $file->move($this->getParameter('cp_directory'), $fileName);
-                $archivo->setCartaPoder($fileName);
+                    $fileName = md5(uniqid()) . '.' . $file->guessExtension();
+                    $file->move($this->getParameter('cp_directory'), $fileName);
+                    $archivo->setCartaPoder($fileName);
 
+                }
+
+                $em->persist($archivo);
+                $em->flush();
             }
 
-            $em->persist($archivo);
-            $em->flush();
+            return $this->render('@Dash/Default/carta.html.twig', array(
+                'archivo' => $archivo,
+                'form' => $form->createView()
+            ));
+        }  else{
+            return $this->redirect($this->generateUrl('dashboard'));
         }
-
-        return $this->render('@Dash/Default/carta.html.twig', array(
-            'archivo' => $archivo,
-            'form' => $form->createView()
-        ));
     }
 
     //Controlador para mostrar deberes y responsabilidades
@@ -180,22 +191,27 @@ class DefaultController extends Controller
      */
     public function newReporteAction(Request $request)
     {
-        $reporte1 = new Reporte1();
-        $form = $this->createForm('CoreBundle\Form\ReporteAspAmbType', $reporte1);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $reporte1 = new Reporte1();
+            $form = $this->createForm('CoreBundle\Form\ReporteAspAmbType', $reporte1);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $rep = $this->getDoctrine()->getManager();
-            $rep->persist($reporte1);
-            $rep->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $rep = $this->getDoctrine()->getManager();
+                $rep->persist($reporte1);
+                $rep->flush();
 
-            return $this->redirectToRoute('raa');
+                return $this->redirectToRoute('raa');
+            }
+
+            return $this->render('@Dash/Default/newreporte1.html.twig', array(
+                'reporte1' => $reporte1,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
         }
-
-        return $this->render('@Dash/Default/newreporte1.html.twig', array(
-            'reporte1' => $reporte1,
-            'form' => $form->createView()
-        ));
     }
     //Controlador para la vista del formulario de Editar en el apartado 7 (Reportes)
 
@@ -304,27 +320,32 @@ class DefaultController extends Controller
 
     public function newlddsaAction(Request $request)
     {
-        $listadistribucion = new ListaDistribucion();
-        $form = $this->createForm('CoreBundle\Form\ListaDistribucionType', $listadistribucion);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $listadistribucion = new ListaDistribucion();
+            $form = $this->createForm('CoreBundle\Form\ListaDistribucionType', $listadistribucion);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($listadistribucion);
-            $em->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($listadistribucion);
+                $em->flush();
 
-            return $this->redirectToRoute('lddsa');
+                return $this->redirectToRoute('lddsa');
+            }
+
+            return $this->render('@Dash/Default/newlistadistribucion.html.twig', array(
+                'listadistribucion' => $listadistribucion,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
         }
-
-        return $this->render('@Dash/Default/newlistadistribucion.html.twig', array(
-            'listadistribucion' => $listadistribucion,
-            'form' => $form->createView()
-        ));
     }
     //Controlador para la vista de Lista de distribucion de documentos apartado VIII
 
     /**
-     * @Route("/LISTA-DE-DISTRIBUCIÓN-DE-DOCUMENTOS-DEL-SISTEMA-DE-ADMINISTRACIÓN.", name="lddsa")
+     * @Route("/lista-de-distribucion-de-documentos-del-sistema-de-administracion", name="lddsa")
      */
 
     public function lddsaAction()
@@ -389,6 +410,16 @@ class DefaultController extends Controller
         $documentose = $query->getRepository('CoreBundle:DocumentosExternos')->findAll();
         return $this->render('@Dash/Default/documentos_externos.twig', array('documentose' => $documentose));
     }
+    //Controlador para generar fecha en control de documentos externos apartado VIII
+    /**
+     * @Route("/insertar-fecha-control-de-documentos-externos", name="cde")
+     */
+    public function cdeAction()
+    {
+        $query = $this->getDoctrine()->getManager();
+        $documentose = $query->getRepository('CoreBundle:DocumentosExternos')->findAll();
+        return $this->render('@Dash/Default/documentos_externos.twig', array('documentose' => $documentose));
+    }
 
     //Controlador para la vista del formulario de Documentos externos apartado VIII
     /**
@@ -397,23 +428,28 @@ class DefaultController extends Controller
      */
         public function newcdeAction(Request $request)
     {
-        $documentosexternos = new DocumentosExternos();
-        $form = $this->createForm('CoreBundle\Form\DocumentosExternosType', $documentosexternos);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $documentosexternos = new DocumentosExternos();
+            $form = $this->createForm('CoreBundle\Form\DocumentosExternosType', $documentosexternos);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+            if ($form->isSubmitted() && $form->isValid()) {
 
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($documentosexternos);
-            $em->flush();
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($documentosexternos);
+                $em->flush();
 
-            return $this->redirectToRoute('cde');
+                return $this->redirectToRoute('cde');
+            }
+
+            return $this->render('@Dash/Default/newdocumentoexterno.html.twig', array(
+                'documentosexternos' => $documentosexternos,
+                'form' => $form->createView()
+            ));
+        } else {
+            return $this->redirect($this->generateUrl('dashboard'));
         }
-
-        return $this->render('@Dash/Default/newdocumentoexterno.html.twig', array(
-            'documentosexternos' => $documentosexternos,
-            'form' => $form->createView()
-        ));
     }
 
     //Controlador para las fechas de revision de documentos externos (apartado VIII)
@@ -423,23 +459,28 @@ class DefaultController extends Controller
      */
     public function newfcdeAction(Request $request)
     {
-        $revisionesexternas = new RevisionesExternas();
-        $form = $this->createForm('CoreBundle\Form\RevisionesExternasType', $revisionesexternas);
-        $form->handleRequest($request);
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $revisionesexternas = new RevisionesExternas();
+            $form = $this->createForm('CoreBundle\Form\RevisionesExternasType', $revisionesexternas);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+            if ($form->isSubmitted() && $form->isValid()) {
 
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($revisionesexternas);
-            $em->flush();
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($revisionesexternas);
+                $em->flush();
 
-            return $this->redirectToRoute('cde');
+                return $this->redirectToRoute('cde');
+            }
+
+            return $this->render('@Dash/Default/newfechaexterna.html.twig', array(
+                'revisionesexternas' => $revisionesexternas,
+                'form' => $form->createView()
+            ));
+        }else {
+            return $this->redirect($this->generateUrl('dashboard'));
         }
-
-        return $this->render('@Dash/Default/newfechaexterna.html.twig', array(
-            'revisionesexternas' => $revisionesexternas,
-            'form' => $form->createView()
-        ));
     }
 
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * CoreBundle\Entity\AddedResponsabilities
  *
  * @ORM\Entity()
- * @ORM\Table(name="added_responsabilities", indexes={@ORM\Index(name="fk_added_responsabilities_activities_idx", columns={"idac"}), @ORM\Index(name="fk_added_responsabilities_responsibilities1_idx", columns={"idr"}), @ORM\Index(name="fk_added_responsabilities_usuarios1_idx", columns={"idu"})})
+ * @ORM\Table(name="added_responsabilities", indexes={@ORM\Index(name="fk_added_responsabilities_activities_idx", columns={"idac"}), @ORM\Index(name="fk_added_responsabilities_deberes_idx", columns={"idd"}), @ORM\Index(name="fk_added_responsabilities_responsibilities1_idx", columns={"idr"}), @ORM\Index(name="fk_added_responsabilities_usuarios1_idx", columns={"idu"})})
  */
 class AddedResponsabilities
 {
@@ -24,6 +24,12 @@ class AddedResponsabilities
      * @ORM\JoinColumn(name="idac", referencedColumnName="idac", nullable=false)
      */
     protected $activities;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Deberes", inversedBy="addedResponsabilities")
+     * @ORM\JoinColumn(name="idd", referencedColumnName="idd", nullable=false)
+     */
+    protected $deberes;
 
     /**
      * @ORM\ManyToOne(targetEntity="Responsibilities", inversedBy="addedResponsabilities")
@@ -85,6 +91,29 @@ class AddedResponsabilities
     public function getIdac()
     {
         return $this->idac;
+    }
+
+    /**
+     * Set the value of idd.
+     *
+     * @param integer $idd
+     * @return \CoreBundle\Entity\AddedResponsabilities
+     */
+    public function setIdd($idd)
+    {
+        $this->idd = $idd;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idd.
+     *
+     * @return integer
+     */
+    public function getIdd()
+    {
+       return $this->idd;
     }
 
     /**
@@ -156,6 +185,8 @@ class AddedResponsabilities
         return $this->activities;
     }
 
+
+
     /**
      * Set Responsibilities entity (many to one).
      *
@@ -177,6 +208,29 @@ class AddedResponsabilities
     public function getResponsibilities()
     {
         return $this->responsibilities;
+    }
+
+    /**
+     * Set Deberes entity (many to one).
+     *
+     * @param \CoreBundle\Entity\Deberes $deberes
+     * @return \CoreBundle\Entity\AddedResponsabilities
+     */
+    public function setDeberes(Deberes $deberes = null)
+    {
+        $this->Deberes = $deberes;
+
+        return $this;
+    }
+
+    /**
+     * Get Responsibilities entity (many to one).
+     *
+     * @return \CoreBundle\Entity\Deberes
+     */
+    public function getDeberes()
+    {
+        return $this->deberes;
     }
 
     /**
@@ -204,6 +258,6 @@ class AddedResponsabilities
 
     public function __sleep()
     {
-        return array('idar', 'idac', 'idr', 'idu');
+        return array('idar', 'idac', 'idr', 'idd' , 'idu');
     }
 }
