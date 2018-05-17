@@ -1,0 +1,161 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+    <div class="col-lg-12">
+
+        <h2>Ingresar hoja de especificación y dátos técnicos</h2>
+        <hr>
+        {{ form_start(form,  {'action':path('newhedt')}) }}
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="equipo">Equipo</label>
+                    {{ form_widget(form.equipo, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.equipo.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.equipo.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="serial">Serial</label>
+                    {{ form_widget(form.serial, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.serial.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.serial.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Marca</label>
+                    {{ form_widget(form.marca, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.marca.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.marca.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Fabricante</label>
+                    {{ form_widget(form.fabricante, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.fabricante.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.fabricante.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Crítico</label>
+                    {{ form_widget(form.critico, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.critico.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.critico.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6">
+                    <label for="revision">No. ID</label>
+                    {{ form_widget(form.no_id, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.no_id.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.no_id.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Modelo</label>
+                    {{ form_widget(form.modelo, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.modelo.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.modelo.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Fecha de Compra</label>
+                    {{ form_widget(form.fecha, {'attr': {'class': 'form-control date' } }) }}
+                    {% if form.fecha.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.fecha.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Año de Fabricación</label>
+                    {{ form_row(form.ano_fabricacion, {'date_pattern': '<span style="display: none;">{{ day }}{{ month }}</span>{{ year }}'}) }}
+                    {% if form.ano_fabricacion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.ano_fabricacion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    <label for="revision">Ubicación Física</label>
+                    {{ form_widget(form.ubicacion_fisica, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.ubicacion_fisica.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.ubicacion_fisica.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-center">Especificaciones Técnicas</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <td><label for="planos">Capacidad</label></td>
+                        <td>{{ form_widget(form.capacidad, {'attr': {'class': 'form-control' } }) }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dimensiones">Dimensiones</label></td>
+                        <td>{{ form_widget(form.dimensiones, {'attr': {'class': 'form-control' } }) }}</td>
+                        <td>Temperatura</td>
+                        <td>{{ form_widget(form.temperatura, {'attr': {'class': 'form-control'}}) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="peso">Peso total</label></td>
+                        <td>{{ form_widget(form.peso_total, {'attr': {'class': 'form-control' } }) }}</td>
+                        <td><label>Voltaje</label></td>
+                        <td>{{ form_widget(form.voltaje, {'attr': {'class': 'form-control'}}) }}</td>
+                    </tr>
+                    <tr>
+                        <td><label for="caudal">Caudal</label></td>
+                        <td>{{ form_widget(form.caudal, {'attr': {'class': 'form-control' } }) }}</td>}
+                        <td><label for="caudal">Presión</label></td>
+                        <td>{{ form_widget(form.presion, {'attr': {'class': 'form-control' } }) }}</td>
+                    </tr>
+
+                </div>
+            </table>
+            <hr>
+                <h2 class="text-center">Función</h2>
+                <p> {{ form_widget(form.funcion, {'attr': {'class': 'form-control text-area'}}) }}</p>
+            <hr>
+                <h2 class="text-center">Especificaciones del fabricante</h2>
+                <p> {{ form_widget(form.especificaciones_fab, {'attr': {'class': 'form-control text-area'}}) }}</p>
+            <hr>
+
+                <h2 class="text-center">Observaciones</h2>
+               <p> {{ form_widget(form.observaciones, {'attr': {'class': 'form-control text-area'}}) }}</p>
+
+        </div>
+
+
+        </div>
+
+        {{ form_widget(form.insertar,{'attr': {'class': 'btn btn-default btn-cons m-t-10'}}) }}
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('hedt') }}">Regresar</a>
+        {{ form_end(form) }}
+    </div>
+
+
+{% endblock %}

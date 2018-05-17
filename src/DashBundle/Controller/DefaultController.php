@@ -7,10 +7,12 @@ namespace DashBundle\Controller;
 //
 
 use CoreBundle\Entity\DocumentosExternos;
+use CoreBundle\Entity\HojaEspecificacion;
 use CoreBundle\Entity\ListaControl;
 use CoreBundle\Entity\ListaDistribucion;
 use CoreBundle\Entity\ListaEquiposNuevos;
 use CoreBundle\Entity\RevisionesExternas;
+use CoreBundle\Form\RevisionesExternasType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -408,17 +410,39 @@ class DefaultController extends Controller
     {
         $query = $this->getDoctrine()->getManager();
         $documentose = $query->getRepository('CoreBundle:DocumentosExternos')->findAll();
-        return $this->render('@Dash/Default/documentos_externos.twig', array('documentose' => $documentose));
+        return $this->render('@Dash/Default/documentos_externos.html.twig', array('documentose' => $documentose));
     }
-    //Controlador para generar fecha en control de documentos externos apartado VIII
+
+
+    //Controlador para generar el formulario para insertar fecha en control de documentos externos apartado VIII
     /**
-     * @Route("/insertar-fecha-control-de-documentos-externos", name="cde")
+     * @Route("/insertar-fecha-control-documentos-externos", name="nfcd")
+     * @Method({"GET", "POST"})
      */
-    public function cdeAction()
+    public function nfcdcdeAction(Request $request)
     {
-        $query = $this->getDoctrine()->getManager();
-        $documentose = $query->getRepository('CoreBundle:DocumentosExternos')->findAll();
-        return $this->render('@Dash/Default/documentos_externos.twig', array('documentose' => $documentose));
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+            $revisionesExternas = new RevisionesExternas();
+            $form = $this->createForm('CoreBundle\Form\RevisionesExternasType', $revisionesExternas);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($revisionesExternas);
+                $em->flush();
+
+                return $this->redirectToRoute('cde');
+            }
+
+            return $this->render('@Dash/Default/newfechaexterna.html.twig', array(
+                'revisionesExternas' => $revisionesExternas,
+                'form' => $form->createView()
+            ));
+        } else {
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
     }
 
     //Controlador para la vista del formulario de Documentos externos apartado VIII
@@ -605,7 +629,7 @@ class DefaultController extends Controller
         return $this->render('@Dash/Default/apartadoXI.html.twig', array('id' => 7));
     }
 
-    //Controlador para vista del formulario Listado de Equipos Críticos (apartado XI)
+    //Controlador para vista del formulario Listado de Equipos Nuevos (apartado XI)
 
     /**
      * @Route("/insertar-lista-verificacion-de-equipos-nuevos", name="newlven")
@@ -638,7 +662,7 @@ class DefaultController extends Controller
     }
 
 
-    //Controladores para ver cada formato de la Lista de Equipos o Sistemas Críticos. (apartado XI)
+    //Controladores para ver cada formato de la Lista de Equipos o Sistemas Nuevos. (apartado XI)
 
     /**
      * @Route("/{id}/listado-de-verificacion-de-equipos-o-sistemas-nuevos", name="lvesc")
@@ -675,6 +699,75 @@ class DefaultController extends Controller
         return $this->render('DashBundle:Default:equipos_nuevos.html.twig', array('eqnu' => $eqnu));
     }
 
+    //Controlador para vista de Hoja de Especificación y Datos Técnicos (apartado XI)
+
+    /**
+     * @Route("/hoja-especificacion-y-datos-tecnicos", name="hedt")
+     */
+    public function hedtAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $hoja = $em->getRepository('CoreBundle:HojaEspecificacion')->findAll();
+        return $this->render('DashBundle:Default:hoja_especificacion.html.twig', array('hoja' => $hoja));
+    }
+
+    //Controlador para vista del formulario Hoja de especificacion (apartado XI)
+
+    /**
+     * @Route("/insertar-hoja-de-especificacion-y-datos-tecnicos", name="newhedt")
+     * @Method({"GET", "POST"})
+     */
+    public function newhedtAction(Request $request)
+    {
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2){
+            $hojaesp = new HojaEspecificacion();
+            $form = $this->createForm('CoreBundle\Form\HojaEspecificacionDatosType', $hojaesp);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($hojaesp);
+                $em->flush();
+
+                return $this->redirectToRoute('hedt');
+            }
+
+            return $this->render('@Dash/Default/newhojaespecificacion.html.twig', array(
+                'hojaesp' => $hojaesp,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
+    }
+
+    //Controladores para ver cada formato de la Hoja de especificacion y datos tecnicos (apartado XI)
+
+    /**
+     * @Route("/{id}/hoja-de-especificacion-y-datos-tecnicos", name="vhedt")
+     * @Method({"GET", "POST"})
+     */
+    public function viewVhedtAction(Request $request, HojaEspecificacion $hojaesp)
+    {
+        $editForm = $this->createForm('CoreBundle\Form\HojaEspecificacionDatosType', $hojaesp);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist();
+            $em->flush();
+
+            return $this->redirectToRoute('hedt');
+
+        }
+
+        return $this->render('@Dash/Default/viewhoja_especificacion.html.twig', array(
+            'hojaesp' => $hojaesp,
+            'edit_form' => $editForm->createView()
+        ));
+    }
     //Controlador para vista de Listado de Equipos Críticos (apartado XI)
     /**
      * @Route("/lista-de-equipos-criticos", name="lec")

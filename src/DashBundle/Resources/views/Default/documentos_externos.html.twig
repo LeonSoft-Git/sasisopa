@@ -2,8 +2,10 @@
 
 {% block body %}
     <div class="col-lg-12">
+        <h2>Control de documentos</h2>
+        <hr>
         {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
-            <a class="btn btn-default btn-cons m-t-10" href="{{ path('newcde') }}">Insertar</a>
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('newcde') }}"><i class="fa fa-plus"> </i> Insertar</a>
         {% endif %}
 	<div class="row">
         <div class="col-lg-12">
@@ -22,11 +24,9 @@
                             <td>{{ doc.nombredocumento }}</td>
                             <td>{{ doc.fechaultima|date("m/d/Y") }}</td>
                             {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
-                                <td><i class="fa fa-plus"></i></td>
+                                <td><a href="{{ path('nfcd') }}" ><i class="fa fa-plus"></i></a></td>
                             {% else %}
-                                {% for rev in revisiones %}
-                                    <td>{{ rev.fecha }}</td>
-                                {% endfor %}
+                                <td></td>
                             {% endif %}
                     </tr>
                     {% endfor %}

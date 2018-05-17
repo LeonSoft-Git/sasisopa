@@ -1,0 +1,43 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+    <div class="col-lg-12">
+        <h2>Hoja de especificación y dátos técnicos</h2>
+        {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('newhedt') }}" role="button"><i class="fa fa-plus"></i> Insertar </a>
+        {% endif %}
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered" border="2">
+
+                        <tr align="center">
+                            <td>No. Id</td>
+                            <td>Nombre de estacion</td>
+                            <td>link</td>
+
+
+                        </tr>
+                        {% for ho in hoja  %}
+                            <tr align="center">
+                                <td>{{ ho.idhe }}</td>
+                                <td>{{ ho.equipo }}</td>
+                                <td><a href="{{ path('vhedt', {'id': ho.idhe}) }}" data-toggle="tooltip" title="Ver"> Ver Reporte {{ ho.idhe }} <i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            {% endfor  %}
+
+
+
+                    </table>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
