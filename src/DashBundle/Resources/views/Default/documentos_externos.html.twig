@@ -15,7 +15,8 @@
                         <td>No.</td>
                         <td>Nombre del documento</td>
                         <td>Fecha última de revisión y/o actualización</td>
-                        <td colspan="2">Frecuencia de revisión</td>
+                        <td><i class="fa fa-calendar-plus-o"> </i></td>
+                        <td>Frecuencia de revisión</td>
                     </tr>
                     {% for doc in documentose %}
                     <tr align="center">
@@ -24,12 +25,12 @@
                             <td>{{ doc.nombredocumento }}</td>
                             <td>{{ doc.fechaultima|date("d/m/Y") }}</td>
                             {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
-                                <td><a href="{{ path('nfcd' , {'id': doc.idde }) }}" title="Agregar Revisión"><i class="fa fa-plus"></i></a></td>
+                                <td><a href="{{ path('nfcd' , {'id': doc.idde }) }}" data-toggle="tooltip" title="Actualizar fecha"><i class="fa fa-plus"></i></a></td>
                             {% endif %}
                             <td>
                                 {% for rev in revisiones %}
                                     {% if rev.documentosExternos == doc %}
-                                        {{ rev.fecha|date('d/m/Y') }} -
+                                        {{ rev.fecha|date('m/Y') }} |
                                     {% endif %}
                                 {% endfor %}
                             </td>

@@ -3,7 +3,9 @@
 namespace CoreBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -35,6 +37,7 @@ class EquiposCriticosType extends AbstractType
                     'format' => 'yyyy',
                 ))
                 ->add('ubicacion_final',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
+                ->add('ingresar',SubmitType::class,array('label'=> 'Insertar'))
         ;
     }
 

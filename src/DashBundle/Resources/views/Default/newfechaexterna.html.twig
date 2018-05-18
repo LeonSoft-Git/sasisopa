@@ -4,19 +4,17 @@
     <div class="col-lg-12">
         {{ form_start(form,  {'action':path('nfcd', {'id': id})}) }}
         <div class="row">
-            <div class="col-lg-4">
-
-            </div>
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <label>Fecha última revisión</label>
-                {{ form_widget(form.fecha, {'attr': {'class': 'form-control date'}} ) }}
+                {{ form_widget(form.fecha, {'date_pattern': '<span style="display: none;">{{ day }}{{ month }}</span>{{ year }}', 'attr': {'class': 'form-control date'}}) }}
             </div>
         </div>
 
 
         <div class="row">
                 <div class="col-lg-12">
-                    {{ form_widget(form.insertar, {'attr': {'class ': 'btn btn-default'} }) }}
+                    {{ form_widget(form.insertar, {'attr': {'class ': 'btn btn-default btn-cons m-t-10'} }) }}
+                    <a class="btn btn-default btn-cons m-t-10" href="{{ path('cde') }}">Regresar</a>
                 </div>
             </div>
         </div>

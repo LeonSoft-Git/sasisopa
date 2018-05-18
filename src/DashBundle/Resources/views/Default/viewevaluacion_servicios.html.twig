@@ -1,0 +1,107 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+    <div class="col-lg-12">
+
+        <h2>Nuevo documento de evaluación a servicio.</h2>
+        <hr>
+        {{ form_start(edit_form) }}
+        <div class="row">
+            <div class="col-lg-12">
+                <label for="nombre">Formato completado por:</label>
+                <fieldset disabled>{{ form_widget(edit_form.nombre, {'attr': {'class': 'form-control counted' } }) }}</fieldset>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="departamento">Departamento:</label>
+                <fieldset disabled>{{ form_widget(edit_form.departamento, {'attr': {'class': 'form-control date'}} ) }}</fieldset>
+            </div>
+            <div class="date col-lg-6">
+                <label>Fecha</label>
+                <fieldset disabled>
+                {{ form_widget(edit_form.fecha, {'attr': {'class': 'form-control date'}} ) }}
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <label for="servicio">Servicio evaluado:</label>
+                <fieldset disabled>
+                {{ form_widget(edit_form.servicio_evaluado, {'attr': {'class': 'form-control date'}} ) }}
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <label for="proveedor">Nombre del proveedor a evaluar:</label>
+                <fieldset disabled>
+                {{ form_widget(edit_form.proveedor, {'attr': {'class': 'form-control date'}} ) }}
+                </fieldset>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td colspan="2"><h3 class="text-center">Entregas</h3></td>
+                </tr>
+                <tr>
+                    <td><label for="planos">¿El servicio fue ofrecido en el tiempo requerido?</label></td>
+                    <td><fieldset disabled>{{ form_widget(edit_form.entrega_servicio, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+                <tr>
+                    <td><label for="Manuales">Comparado con otros prestadores del mismo servicio el tiempo ofrecido fue</label></td>
+                    <td><fieldset disabled>{{ form_widget(edit_form.entregas_tiempo, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h3 class="text-center">Precio</h3></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Requerimientos">El precio del servicio, comparado con su desempeño fue</label></td>
+                    <td><fieldset disabled>{{ form_widget(edit_form.precio_servicio, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+                <tr>
+                    <td><label for="planos">El precio comparado con otros prestadores del mismo servicio es</label></td>
+                    <td><fieldset disabled> {{ form_widget(edit_form.precio_comparado, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h3 class="text-center">Satisfacción</h3></td>
+                </tr>
+                <tr>
+                    <td><label for="datos">El servicio ofrecido fue</label></td>
+                    <td><fieldset disabled>{{ form_widget(edit_form.satisfaccion_servicio, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+                <tr>
+                    <td><label for="informes">El servicio comparado con el de otros prestadores del mismo servicio es</label></td>
+                    <td><fieldset disabled>{{ form_widget(edit_form.satisfaccion_comparado, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+                <tr>
+                    <td><label for="datosn">En lo personal considera que el proveedor de servicio debe</label></td>
+                    <td><fieldset disabled>{{ form_widget(edit_form.satisfaccion_proveedor, {'attr': {'class': 'form-control' } }) }}</fieldset></td>
+                </tr>
+
+        </div>
+        </table>
+
+
+    </div>
+
+
+    <div class="col-lg-12">
+      <fieldset disabled>  {{ form_widget(edit_form.ingresar, {'attr': {'class ': 'btn btn-default btn-cons m-t-10'} }) }}</fieldset>
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('cde') }}">Regresar</a>
+    </div>
+    {{ form_end(edit_form) }}
+    </div>
+{% endblock %}

@@ -155,7 +155,7 @@ class ListaControl
     /**
      * Set the value of fecha_ultima.
      *
-     * @param \DateTime $fecha_ultima
+     * @param \integer $fecha_ultima
      * @return \CoreBundle\Entity\ListaControl
      */
     public function setFechaUltima($fecha_ultima)
@@ -168,7 +168,7 @@ class ListaControl
     /**
      * Get the value of fecha_ultima.
      *
-     * @return \DateTime
+     * @return \integer
      */
     public function getFechaUltima()
     {

@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fb1576-9fac-4779-ab1e-749f1a0c57c7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/uploads/carta_poder/ejemplo2.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/documentos/~$ANEXOS.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/documentos/~$artado I Manual.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/EvaluacionServicio.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/EvaluacionServcioType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/apartadoXII.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newevaluacionservicio.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewevaluacion_servicios.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/documentos/ACCESO A CONTRATISTAS, SUBCONTRATSITAS, PRESTADORES DE SERVICIO Y PROVEDOORES.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/documentos/CARTA COMPROMISO.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/documentos/EVALUACIÓN Y SELECCIÓN DE CONTRATISTAS, SUB- CONTRATISTAS, PRESTADORES DE SERVICIOS Y PROVEEDORES  .pdf" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Form/RevisionesExternasType.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/RevisionesExternasType.php" />
+      <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/ListaControl.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/ListaControl.php" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Form/EquiposCriticosType.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Form/EquiposCriticosType.php" />
+      <change beforePath="$PROJECT_DIR$/src/CoreBundle/Form/especificacionesTecnicasEqnType.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/documentos_externos.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/documentos_externos.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newdocumentoexterno.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newdocumentoexterno.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newfechaexterna.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newfechaexterna.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistacontrol.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistacontrol.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadoequiposcriticos.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadoequiposcriticos.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistaequiposnuevos.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistaequiposnuevos.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,35 +48,93 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+            <state relative-caret-position="1147">
+              <caret line="863" column="62" lean-forward="true" selection-start-line="863" selection-start-column="62" selection-end-line="863" selection-end-column="62" />
               <folding>
-                <element signature="e#14392#14423#1#PHP" expanded="true" />
-                <element signature="e#14481#14512#1#PHP" expanded="true" />
-                <element signature="e#14556#14601#0#PHP" expanded="true" />
-                <element signature="e#15502#15533#1#PHP" expanded="true" />
-                <element signature="e#15817#15858#0#PHP" expanded="true" />
-                <element signature="e#24816#24861#0#PHP" expanded="true" />
+                <element signature="e#13473#13514#0#PHP" expanded="true" />
+                <element signature="e#13682#13720#1#PHP" expanded="true" />
+                <element signature="e#14030#14055#1#PHP" expanded="true" />
+                <element signature="e#15889#15930#0#PHP" expanded="true" />
+                <element signature="e#17052#17097#0#PHP" expanded="true" />
+                <element signature="e#27918#27955#0#PHP" expanded="true" />
+                <element signature="e#28197#28234#0#PHP" expanded="true" />
+                <element signature="e#28455#28492#0#PHP" expanded="true" />
+                <element signature="e#29380#29427#0#PHP" expanded="true" />
+                <element signature="e#30342#30392#0#PHP" expanded="true" />
+                <element signature="e#30779#30810#1#PHP" expanded="true" />
+                <element signature="e#30853#30904#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ejemplo.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/uploads/carta_poder/ejemplo.json">
+      <file leaf-file-name="evaluacion_servicios.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/evaluacion_servicios.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ejemplo2.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/uploads/carta_poder/ejemplo2.json">
+      <file leaf-file-name="viewevaluacion_servicios.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewevaluacion_servicios.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+            <state relative-caret-position="-485">
+              <caret line="59" column="127" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="127" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluacionServcioType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/EvaluacionServcioType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1082">
+              <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluacionServicio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/EvaluacionServicio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2499">
+              <caret line="321" column="52" lean-forward="false" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newevaluacionservicio.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newevaluacionservicio.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="103" column="10" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="103" selection-end-column="10" />
+              <folding>
+                <element signature="e#12#34#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newlistaequiposnuevos.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistaequiposnuevos.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-607">
+              <caret line="140" column="10" lean-forward="false" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -71,6 +151,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>li</find>
+      <find>spa</find>
+      <find>cf</find>
       <find>data</find>
       <find>width</find>
       <find>mrampe</find>
@@ -96,11 +179,8 @@
       <find>control-documentos-externos</find>
       <find>lista-equipos</find>
       <find>lista-de-equipos-c</find>
-      <find>lista-de-dis</find>
-      <find>insertar-lista-ver</find>
-      <find>createForm</find>
-      <find>lvec</find>
-      <find>documentos_</find>
+      <find>control-de-documentos-exter</find>
+      <find>newlcd</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;{{ asset('assets/images/profiles/5x.jpg') }}&quot;</replace>
@@ -117,21 +197,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/control_aspectos_ambientales.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/pruebas_puesta_en_marcha.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/apartadoIX.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/apartadoX.html.twig" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Revisiones.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/DocumentosExternos.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Form/ArchivosType.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Form/ListaDistribucionType.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Form/DocumentosExternosType.php" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistacontrol.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/RevisionesExternasType.php" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/apartadoXI.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/EspecificacionesTecnicasEquipnuev.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Form/EquiposCriticosType.php" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/carta.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadistribucion.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/editreporte1.html.twig" />
@@ -149,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/equipos_nuevos.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newdocumentoexterno.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Certificaciones.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/AddedResponsabilities.php" />
@@ -161,12 +228,25 @@
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listacontrol.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewlistaequipos_nuevos.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewhoja_especificacion.html.twig" />
-        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistaequiposnuevos.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newdocumentoexterno.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadoequiposcriticos.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/ListaControlType.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ListaControl.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistacontrol.html.twig" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newfechaexterna.html.twig" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Form/RevisionesExternasType.php" />
         <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/documentos_externos.html.twig" />
-        <option value="$PROJECT_DIR$/web/uploads/carta_poder/ejemplo2.json" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/apartadoXII.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/EquiposCriticosType.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Form/EvaluacionServcioType.php" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newevaluacionservicio.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/reporte_equipos_nuevos.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/evaluacion_servicios.html.twig" />
+        <option value="$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewevaluacion_servicios.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/EvaluacionServicio.php" />
         <option value="$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -266,6 +346,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,12 +358,20 @@
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CoreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CoreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
@@ -294,32 +384,20 @@
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
               <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sasisopa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sasisopa" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="carta_poder" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DashBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,11 +409,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\sasisopa\web\uploads\carta_poder" />
       <recent name="C:\xampp\htdocs\sasisopa\src\DashBundle\Resources\views\Default" />
       <recent name="C:\xampp\htdocs\sasisopa\src\CoreBundle\Entity" />
       <recent name="C:\xampp\htdocs\sasisopa\app\config" />
       <recent name="C:\xampp56\htdocs\sasisopa\app\config" />
+      <recent name="C:\xampp\htdocs\sasisopa\src\CoreBundle\Form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\sasisopa\src\AdminBundle\Resources\views" />
@@ -403,13 +481,13 @@
       <workItem from="1526568083130" duration="5988000" />
       <workItem from="1526574662631" duration="1019000" />
       <workItem from="1526576201569" duration="95000" />
-      <workItem from="1526576350644" duration="17175000" />
-      <workItem from="1526609887607" duration="7121000" />
+      <workItem from="1526576350644" duration="17416000" />
+      <workItem from="1526649227756" duration="20388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332494000" />
+    <option name="totallyTimeSpent" value="346002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -423,7 +501,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2138158" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2138158" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -449,50 +527,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/EspecificacionesTecnicasEquipnuev.php" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaControlType.php" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Reporte1.php" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ListaEquiposNuevos.php" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/especificacionesTecnicasEqnType.php" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadoequiposcriticos.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/carta.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/organigrama.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="62" column="15" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Level.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato6.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -500,28 +534,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/editreporte1.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistacontrol.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -535,7 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -543,11 +555,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/RevisionesExternasType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/AddedResponsabilities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="132" lean-forward="false" selection-start-line="10" selection-start-column="132" selection-end-line="10" selection-end-column="132" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,33 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ArchivosType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/DocumentosExternosType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="94" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="29" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Certificaciones.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,34 +587,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10217">
           <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#69#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/HojaEspecificacionDatosType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="e#35#75#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/documentos_externos.twig" />
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newdocumentoexterno.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/hoja_especificacion.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listacontrol.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-709">
-          <caret line="6" column="110" lean-forward="false" selection-start-line="6" selection-start-column="110" selection-end-line="6" selection-end-column="110" />
+        <state relative-caret-position="113">
+          <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="98" selection-end-line="7" selection-end-column="124" />
         </state>
       </provider>
     </entry>
@@ -630,84 +605,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewhoja_especificacion.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="106" column="99" lean-forward="false" selection-start-line="106" selection-start-column="99" selection-end-line="106" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/hoja_especificacion.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="98" selection-end-line="7" selection-end-column="124" />
+        <state relative-caret-position="136">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newuser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13413">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4796#4805#0#Twig" expanded="false" />
-            <element signature="e#5434#5442#0#Twig" expanded="false" />
-            <element signature="e#5947#5952#0#Twig" expanded="false" />
-            <element signature="e#6579#6582#0#Twig" expanded="false" />
-            <element signature="e#7184#7187#0#Twig" expanded="false" />
-            <element signature="e#7799#7804#0#Twig" expanded="false" />
-            <element signature="e#8414#8416#0#Twig" expanded="false" />
-            <element signature="e#9321#9324#0#Twig" expanded="false" />
-            <element signature="e#9570#9573#0#Twig" expanded="false" />
-            <element signature="e#9814#9817#0#Twig" expanded="false" />
-            <element signature="e#10394#10398#0#Twig" expanded="false" />
-            <element signature="e#10656#10661#0#Twig" expanded="false" />
-            <element signature="e#10938#10941#0#Twig" expanded="false" />
-            <element signature="e#11225#11228#0#Twig" expanded="false" />
-            <element signature="e#11833#11836#0#Twig" expanded="false" />
-            <element signature="e#12718#12723#0#Twig" expanded="false" />
-            <element signature="e#12990#12995#0#Twig" expanded="false" />
-            <element signature="e#13260#13263#0#Twig" expanded="false" />
-            <element signature="e#13499#13503#0#Twig" expanded="false" />
-            <element signature="e#13758#13760#0#Twig" expanded="false" />
-            <element signature="e#13989#13992#0#Twig" expanded="false" />
-            <element signature="e#14239#14245#0#Twig" expanded="false" />
-            <element signature="e#14517#14521#0#Twig" expanded="false" />
-            <element signature="e#15153#15157#0#Twig" expanded="false" />
-            <element signature="e#15414#15418#0#Twig" expanded="false" />
-            <element signature="e#15674#15677#0#Twig" expanded="false" />
-            <element signature="e#15921#15924#0#Twig" expanded="false" />
-            <element signature="e#16161#16165#0#Twig" expanded="false" />
-            <element signature="e#16427#16431#0#Twig" expanded="false" />
-            <element signature="e#16682#16686#0#Twig" expanded="false" />
-            <element signature="e#17037#17044#0#Twig" expanded="false" />
-            <element signature="e#17346#17352#0#Twig" expanded="false" />
-            <element signature="e#29598#29604#0#Twig" expanded="false" />
-            <element signature="e#30829#30835#0#HTML" expanded="false" />
+            <element signature="e#12#34#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadistribucion.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newreporte1.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        <state relative-caret-position="175">
+          <caret line="116" column="94" lean-forward="false" selection-start-line="116" selection-start-column="94" selection-end-line="116" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newrequirement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="138" column="87" lean-forward="false" selection-start-line="138" selection-start-column="87" selection-end-line="138" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newhojaespecificacion.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="85" column="144" lean-forward="true" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="144" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaEquiposNuevosType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        <state relative-caret-position="-1403">
+          <caret line="59" column="50" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -720,63 +655,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/equipos_nuevos.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ListaControl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" column="78" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="78" />
+        <state relative-caret-position="-68">
+          <caret line="170" column="23" lean-forward="false" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistaequiposnuevos.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistacontrol.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="120" column="144" lean-forward="false" selection-start-line="120" selection-start-column="144" selection-end-line="120" selection-end-column="144" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newfechaexterna.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/RevisionesExternasType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="17">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/documentos_externos.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="26" column="108" lean-forward="false" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
+        <state relative-caret-position="-94">
+          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/RevisionesExternas.php">
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newfechaexterna.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="272">
+          <caret line="16" column="100" lean-forward="false" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/formato.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Usuarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ArchivosType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/DocumentosExternosType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="29" column="94" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="29" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/HojaEspecificacionDatosType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="51" column="63" lean-forward="false" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/apartadoXII.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaControlType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newdocumentoexterno.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#1282#1285#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ListaEquiposNuevos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/DocumentosExternos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/carta_poder/ejemplo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -784,25 +777,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/carta_poder/ejemplo2.json">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/especificacionesTecnicasEqnType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+        <state relative-caret-position="-828">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/ListaEquiposNuevosType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="110" column="75" lean-forward="true" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/EquiposCriticosType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listadistribucion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/listacontrol.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadistribucion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistadoequiposcriticos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="24" column="107" lean-forward="false" selection-start-line="24" selection-start-column="107" selection-end-line="24" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Activities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newlistaequiposnuevos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="140" column="10" lean-forward="false" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/equipos_nuevos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/newevaluacionservicio.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="103" column="10" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="103" selection-end-column="10" />
+          <folding>
+            <element signature="e#12#34#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="321" column="52" lean-forward="false" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewhoja_especificacion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1403">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/evaluacion_servicios.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DashBundle/Resources/views/Default/viewevaluacion_servicios.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-485">
+          <caret line="59" column="127" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/EvaluacionServcioType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1082">
+          <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/EvaluacionServicio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DashBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        <state relative-caret-position="1147">
+          <caret line="863" column="62" lean-forward="true" selection-start-line="863" selection-start-column="62" selection-end-line="863" selection-end-column="62" />
           <folding>
-            <element signature="e#14392#14423#1#PHP" expanded="true" />
-            <element signature="e#14481#14512#1#PHP" expanded="true" />
-            <element signature="e#14556#14601#0#PHP" expanded="true" />
-            <element signature="e#15502#15533#1#PHP" expanded="true" />
-            <element signature="e#15817#15858#0#PHP" expanded="true" />
-            <element signature="e#24816#24861#0#PHP" expanded="true" />
+            <element signature="e#13473#13514#0#PHP" expanded="true" />
+            <element signature="e#13682#13720#1#PHP" expanded="true" />
+            <element signature="e#14030#14055#1#PHP" expanded="true" />
+            <element signature="e#15889#15930#0#PHP" expanded="true" />
+            <element signature="e#17052#17097#0#PHP" expanded="true" />
+            <element signature="e#27918#27955#0#PHP" expanded="true" />
+            <element signature="e#28197#28234#0#PHP" expanded="true" />
+            <element signature="e#28455#28492#0#PHP" expanded="true" />
+            <element signature="e#29380#29427#0#PHP" expanded="true" />
+            <element signature="e#30342#30392#0#PHP" expanded="true" />
+            <element signature="e#30779#30810#1#PHP" expanded="true" />
+            <element signature="e#30853#30904#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

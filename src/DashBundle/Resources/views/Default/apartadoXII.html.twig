@@ -1,0 +1,13 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+	{% if id==1 %}
+			<embed src="{{asset('assets/documentos/CARTA COMPROMISO.pdf')}}" width="1050" height="650">
+	{% elseif id==2 %}
+		<embed src="{{asset('assets/documentos/EVALUACIÓN Y SELECCIÓN DE CONTRATISTAS, SUB- CONTRATISTAS, PRESTADORES DE SERVICIOS Y PROVEEDORES  .pdf')}}" width="1050" height="650">
+	{% elseif id==3 %}
+		<embed src="{{asset('assets/documentos/ACCESO A CONTRATISTAS, SUBCONTRATSITAS, PRESTADORES DE SERVICIO Y PROVEDOORES.pdf')}}" width="1050" height="650">
+	{% endif %}
+
+{% endblock %}
+

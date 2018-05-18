@@ -3,8 +3,8 @@
 {% block body %}
 	
     <div class="col-lg-12">
-
-
+        <h2>Insertar nueva lista de control de documentos </h2>
+        <hr>
         {{ form_start(form,  {'action':path('newlcd')}) }}
             <div class="row">
                 <div class="col-lg-2">
@@ -97,21 +97,23 @@
                             {% endfor %}
                         </p>
                     {% endif %}
-                    <div class="form-check form-check-inline">
-                        {{ form_label(form.destruccion) }}
-                        {{ form_widget(form.destruccion) }}
-                    </div>
+                    <p>
+                        <div class="form-check form-check-inline">
+                            {{ form_label(form.destruccion) }}
+                            {{ form_widget(form.destruccion) }}
+                        </div>
+                    </p>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 text-center">
                     <h3>Medio</h3>
                     <hr>
 
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline" >
                         {{ form_label(form.papel) }}
                         {{ form_widget(form.papel) }}
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline text-center">
                         {{ form_label(form.electronico) }}
                         {{ form_widget(form.electronico) }}
                     </div>
@@ -120,12 +122,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <label for="">Observaciones</label>
-                    {{ form_widget(form.observaciones, {'attr': {'class': 'form-control counted' } }) }}
+                   {{ form_widget(form.observaciones, {'attr': {'class': 'form-control counted' } }) }}
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                   <p> {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}</p>
+                   <p>
+                       {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-default btn-cons m-t-10'} }) }}
+                       <a class="btn btn-default btn-cons m-t-10" href="{{ path('lcd') }}">Regresar</a>
+                   </p>
 
                 </div>
             </div>

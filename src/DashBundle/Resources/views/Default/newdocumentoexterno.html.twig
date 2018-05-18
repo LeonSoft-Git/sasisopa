@@ -6,7 +6,7 @@
 
         {{ form_start(form,  {'action':path('newcde')}) }}
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-8">
                     <label for="revision">Nombre del documento</label>
                     {{ form_widget(form.nombre_documento, {'attr': {'class': 'form-control counted' } }) }}
                     {% if form.nombre_documento.vars.errors|length > 0 %}
@@ -21,8 +21,11 @@
                     <label>Fecha última revisión</label>
                     {{ form_widget(form.fecha_ultima, {'attr': {'class': 'form-control date'}} ) }}
                 </div>
-                <div class="col-lg-4">
-                    <p> {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-primary'} }) }}</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    {{ form_widget(form.ingresar, {'attr': {'class ': 'btn btn-default btn-cons m-t-10'} }) }}
+                    <a class="btn btn-default btn-cons m-t-10" href="{{ path('cde') }}">Regresar</a>
                 </div>
             </div>
 

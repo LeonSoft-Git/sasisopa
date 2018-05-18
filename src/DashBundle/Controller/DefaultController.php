@@ -7,11 +7,13 @@ namespace DashBundle\Controller;
 //
 
 use CoreBundle\Entity\DocumentosExternos;
+use CoreBundle\Entity\EvaluacionServicio;
 use CoreBundle\Entity\HojaEspecificacion;
 use CoreBundle\Entity\ListaControl;
 use CoreBundle\Entity\ListaDistribucion;
 use CoreBundle\Entity\ListaEquiposNuevos;
 use CoreBundle\Entity\RevisionesExternas;
+use CoreBundle\Form\EvaluacionServcioType;
 use CoreBundle\Form\RevisionesExternasType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -383,27 +385,27 @@ class DefaultController extends Controller
     public function newlcdAction(Request $request)
     {
         $user = $this->get('security.token_storage')->getToken()->getUser();
-        if ($user->getuser() == 1 || $user->getuser() == 2) {
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
             $listacontrol = new ListaControl();
             $form = $this->createForm('CoreBundle\Form\ListaControlType', $listacontrol);
             $form->handleRequest($request);
 
-                if ($form->isSubmitted() && $form->isValid()) {
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($listacontrol);
-                    $em->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($listacontrol);
+                $em->flush();
 
-                    return $this->redirectToRoute('lcd');
-                }
+                return $this->redirectToRoute('lcd');
+            }
 
-                return $this->render('@Dash/Default/newlistacontrol.html.twig', array(
-                    'listacontrol' => $listacontrol,
-                    'form' => $form->createView()
-                ));
-
-        } else{
-            return $this->redirect($this->generateUrl('lcd'));
+            return $this->render('@Dash/Default/newlistacontrol.html.twig', array(
+                'listacontrol' => $listacontrol,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->render('@Dash/Default/listacontrol.html.twig');
         }
+
     }
 
     //Controlador para la vista de Lista de control de documentos apartado VIII
@@ -795,5 +797,96 @@ class DefaultController extends Controller
     {
         return $this->render('@Dash/Default/equipos_criticos.html.twig');
     }
+
+    //Controladores para las vistas del apartado XII
+    /**
+     * @Route("/carta-compromiso", name="cc")
+     */
+    public function ccAction()
+    {
+        return $this->render('@Dash/Default/apartadoXII.html.twig', array('id' => 1));
+    }
+    /**
+     * @Route("/evaluacion-y-seleccion-de-contratistas-subcontratistas-prestadores-de-servicios-y-proveedores", name="escspsp")
+     */
+    public function escspspAction()
+    {
+        return $this->render('@Dash/Default/apartadoXII.html.twig', array('id' => 2));
+    }
+    /**
+     * @Route("/acceso-a-contratistas-subcontratistas-prestadores-de-servicio-y-provedores", name="acspsp")
+     */
+    public function acspspAction()
+    {
+        return $this->render('@Dash/Default/apartadoXII.html.twig', array('id' => 3));
+    }
+
+    //Controlador para vista del formulario evaluacion a servicio nuevo (apartado XII)
+    /**
+     * @Route("/insertar-evaluacion-a-servicio", name="newes")
+     */
+    public function newesAction(Request $request)
+    {
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2){
+            $evaluacion = new EvaluacionServicio();
+            $form = $this->createForm('CoreBundle\Form\EvaluacionServcioType', $evaluacion);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($evaluacion);
+                $em->flush();
+
+                return $this->redirectToRoute('es');
+            }
+
+            return $this->render('@Dash/Default/newevaluacionservicio.html.twig', array(
+                'evaluacion' => $evaluacion,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
+    }
+
+    //Controladores para ver cada formato de la Hoja de especificacion y datos tecnicos (apartado XI)
+
+    /**
+     * @Route("/{id}/evaluacion-a-servicio", name="ves")
+     * @Method({"GET", "POST"})
+     */
+    public function viewEsAction(Request $request, EvaluacionServicio $evaluacion)
+    {
+        $editForm = $this->createForm('CoreBundle\Form\EvaluacionServcioType', $evaluacion);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist();
+            $em->flush();
+
+            return $this->redirectToRoute('es');
+
+        }
+
+        return $this->render('@Dash/Default/viewevaluacion_servicios.html.twig', array(
+            'evaluacion' => $evaluacion,
+            'edit_form' => $editForm->createView()
+        ));
+    }
+
+    //Controlador para vista de evaluacion a servicio nuevo (apartado XII)
+    /**
+     * @Route("/evaluacion-a-servicio", name="es")
+     */
+    public function esAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $reporte = $em->getRepository('CoreBundle:EvaluacionServicio')->findAll();
+        return $this->render('DashBundle:Default:evaluacion_servicios.html.twig', array('reporte' => $reporte));
+    }
+
+
 }
 

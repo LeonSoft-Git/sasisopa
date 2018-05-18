@@ -1,0 +1,42 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+    <div class="col-lg-12">
+        <h2>Listado de equipos nuevos</h2>
+        {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('newes') }}" role="button"><i class="fa fa-plus"> Insertar</i> </a>
+        {% endif %}
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered" border="2">
+
+                        <tr align="center">
+                            <td>No. Id</td>
+                            <td>Servicio Evaluado</td>
+                            <td>link</td>
+
+
+                        </tr>
+                        {% for rep in reporte %}
+                        <tr align="center">
+                                <td>{{ rep.ides }}</td>
+                                <td>{{ rep.servicioEvaluado }}</td>
+                                <td><a href="{{ path('ves', {'id': rep.ides}) }}" data-toggle="tooltip" title="Ver"> Ver Evaluacion {{ rep.ides }} <i class="fa fa-eye"></i></a></td>
+                        </tr>
+                        {% endfor %}
+
+
+                    </table>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
