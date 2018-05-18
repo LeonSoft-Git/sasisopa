@@ -5,6 +5,7 @@ namespace CoreBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ButtonType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,7 +17,7 @@ class RevisionesExternasType extends AbstractType
                             'widget' => 'single_text',
                             'format' => 'yyyy-MM-dd',
                         ))
-                ->add('insertar', ButtonType::class, array('label'=> 'Actualizar'))
+                ->add('insertar', SubmitType::class, array('label'=> 'Actualizar'))
             ;
     }
 

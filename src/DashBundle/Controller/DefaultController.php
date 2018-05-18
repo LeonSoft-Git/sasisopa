@@ -34,7 +34,23 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+        /*
+        $tmp = array();
+        $tmp["nombre"] = "Cesar";
+        $tmp["apellido"] = "Rios";
+        $tmp["hijos"] = array('nombre hijo'=>"Leonardo");
+        $json_string= json_encode($tmp);
+        $file_name='ejemplo.json';
+        $file=$this->getParameter('cp_directory').'/'.$file_name;
+        file_put_contents($file,$json_string);
+        $segundo=$this->getParameter('cp_directory'). '/ejemplo2.json';
+        $datos=file_get_contents($segundo);
+        $json=json_decode($datos,true);
+        print_r($json);
+        exit;
+        */
         return $this->render('DashBundle:Default:index.html.twig');
+
     }
 
     //Cada controlador manda llamar una vista que ya esta predefinida en la vista de formato
@@ -410,26 +426,29 @@ class DefaultController extends Controller
     {
         $query = $this->getDoctrine()->getManager();
         $documentose = $query->getRepository('CoreBundle:DocumentosExternos')->findAll();
-        return $this->render('@Dash/Default/documentos_externos.html.twig', array('documentose' => $documentose));
-    }
+        $revisiones = $query->getRepository('CoreBundle:RevisionesExternas')->findAll();
 
+        return $this->render('@Dash/Default/documentos_externos.html.twig', array('documentose' => $documentose,'revisiones'=>$revisiones));
+    }
 
     //Controlador para generar el formulario para insertar fecha en control de documentos externos apartado VIII
     /**
-     * @Route("/insertar-fecha-control-documentos-externos", name="nfcd")
+     * @Route("/{id}/insertar-fecha-control-documentos-externos", name="nfcd")
      * @Method({"GET", "POST"})
      */
-    public function nfcdcdeAction(Request $request)
+    public function nfcdcdeAction(Request $request, $id)
     {
         $user = $this->get('security.token_storage')->getToken()->getUser();
         if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+
             $revisionesExternas = new RevisionesExternas();
             $form = $this->createForm('CoreBundle\Form\RevisionesExternasType', $revisionesExternas);
             $form->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()) {
-
                 $em = $this->getDoctrine()->getManager();
+                $doc = $em->getRepository('CoreBundle:DocumentosExternos')->findOneBy(array('idde'=>$id));
+                $revisionesExternas->setDocumentosExternos($doc);
                 $em->persist($revisionesExternas);
                 $em->flush();
 
@@ -437,7 +456,7 @@ class DefaultController extends Controller
             }
 
             return $this->render('@Dash/Default/newfechaexterna.html.twig', array(
-                'revisionesExternas' => $revisionesExternas,
+                'id' => $id,
                 'form' => $form->createView()
             ));
         } else {

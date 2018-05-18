@@ -118,7 +118,7 @@
                         </p>
                     {% endif %}
                     <label for="revision">Año de Fabricación</label>
-                    {{ form_row(form.ano_fabricacion, {'date_pattern': '<span style="display: none;">{{ year }}'}) }}
+                    {{ form_row(form.ano_fabricacion, {'date_pattern': '<span style="display: none;">{{ day }}{{ month }}</span>{{ year }}'}) }}
                     {% if form.ano_fabricacion.vars.errors|length > 0 %}
                         <p class="help-block">
                             {% for error in form.ano_fabricacion.vars.errors %}
