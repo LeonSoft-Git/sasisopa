@@ -1,0 +1,136 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+    <div class="col-lg-12">
+
+
+        {{ form_start(form,  {'action':path('newrex')}) }}
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="tipo">Tipo</label>
+                    {{ form_widget(form.tipo, {'attr': {'class': 'form-control'} }) }}
+                    {% if form.tipo.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.tipo.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6">
+                    <label for="ubicacion">ubicación</label>
+                    {{ form_widget(form.ubicacion, {'attr': {'class': 'form-control'} }) }}
+                    {% if form.ubicacion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.ubicacion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿El extintor se encontró en su lugar?</label>
+                {{ form_widget(form.ubicacionLugar, {'attr': {'class': 'form-control select' } }) }}
+                <p>{% if form.ubicacionLugar.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.ubicacionLugar.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %} </p>
+            </div>
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Cuenta con sello o fleje de garantía sin violar?</label>
+                {{ form_widget(form.sello, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.sello.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.sello.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Cuenta con la nemotecnia de funcionamiento?</label>
+                {{ form_widget(form.nemotecnia, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.nemotecnia.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.nemotecnia.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Cuenta con la fecha de última recarga, agente extintor y cap. nominal?</label>
+                {{ form_widget(form.ultimaCarga, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.ultimaCarga.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.ultimaCarga.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Se encuentra libre de obstáculos? </label>
+                <p>{{ form_widget(form.obstaculos, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.obstaculos.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.obstaculos.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %} </p>
+            </div>
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Las ruedas de los extintores móviles se encuentran en buenas condiciones?</label>
+                {{ form_widget(form.ruedas, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.ruedas.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.ruedas.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Cuenta con señalamientos?</label>
+                {{ form_widget(form.senalamientos, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.senalamientos.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.senalamientos.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+            <div class="col-lg-6">
+                <label for="ubicacionlugar">¿Presentan daños físicos, corrosión, escape de presión, golpes, etc.?</label>
+                {{ form_widget(form.danos, {'attr': {'class': 'form-control select' } }) }}
+                {% if form.danos.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.danos.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        {{ form_widget(form.ingresar,{'attr': {'class': 'btn btn-default btn-cons m-t-10'}}) }}
+        <a class="btn btn-default btn-cons m-t-10" href="{{ path('rex') }}" ><i class="fa fa-arrow-left"></i> Regresar</a>
+
+        {{ form_end(form) }}
+    </div>
+
+
+{% endblock %}

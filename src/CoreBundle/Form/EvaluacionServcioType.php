@@ -24,14 +24,14 @@ class EvaluacionServcioType extends AbstractType
                 ->add('proveedor',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
                 ->add('entrega_servicio', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Si' => '1',
                                 'No' => '2',
                             ),
                         ))
                 ->add('entregas_tiempo', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Mejor' => '1',
                                 'Igual' => '2',
                                 'Peor' => '3',
@@ -40,7 +40,7 @@ class EvaluacionServcioType extends AbstractType
                         ))
                 ->add('precio_servicio', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Caro' => '1',
                                 'Equivalente' => '2',
                                 'Barato' => '3',
@@ -48,7 +48,7 @@ class EvaluacionServcioType extends AbstractType
                         ))
                 ->add('precio_comparado', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Más caro' => '1',
                                 'Equivalente' => '2',
                                 'Más barato' => '3',
@@ -57,7 +57,7 @@ class EvaluacionServcioType extends AbstractType
                         ))
                 ->add('satisfaccion_servicio', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Excelente' => '1',
                                 'Bueno' => '2',
                                 'Regular' => '3',
@@ -67,7 +67,7 @@ class EvaluacionServcioType extends AbstractType
                         ))
                 ->add('satisfaccion_comparado', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Excelente' => '1',
                                 'Bueno' => '2',
                                 'Regular' => '3',
@@ -78,13 +78,13 @@ class EvaluacionServcioType extends AbstractType
                         ))
                 ->add('satisfaccion_proveedor', ChoiceType::class, array(
                             'choices'  => array(
-                                '- -' => null,
+                                ' ' => null,
                                 'Incluirse como un proveedor aprobado' => '1',
                                 'No incluirse como un proveedor aprobado' => '2',
                             ),
                         ))
 
-                ->add('ingresar',SubmitType::class,array('label'=> 'Insertar'))
+                ->add('insertar', SubmitType::class, array('label'=> 'Insertar'))
 
         ;
     }

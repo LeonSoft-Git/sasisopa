@@ -1,0 +1,190 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+    <div class="col-lg-12">
+
+        <h2>Nuevo reporte de mantenimiento.</h2>
+        <hr>
+        {{ form_start(form,  {'action':path('newrm')}) }}
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="nombre">Nombre de la estación:</label>
+                    {{ form_widget(form.nombre, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.nombre.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.nombre.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6">
+                    <label for="nombre">No. Estación:</label>
+                    {{ form_widget(form.noEstacion, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.noEstacion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.noEstacion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <label for="departamento">Dirección:</label>
+                    {{ form_widget(form.direccion, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.direccion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.direccion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="servicio">Fecha realización</label>
+                    {{ form_widget(form.fechaRealizacion, {'attr': {'class': 'form-control counted' } }) }}
+                    {% if form.fechaRealizacion.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.fechaRealizacion.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6 text-center">
+
+                        <label>Horario Programado </label>
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            {{ form_widget(form.horarioInicio, {'attr': {'class': 'form-control time' } }) }}
+                            {% if form.horarioInicio.vars.errors|length > 0 %}
+                                <p class="help-block">
+                                    {% for error in form.horarioInicio.vars.errors %}
+                                        {{ error.message }} <br/>
+                                    {% endfor %}
+                                </p>
+                            {% endif %}
+                            <label for="servicio">Inicio</label>
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            {{ form_widget(form.horarioTermino, {'attr': {'class': 'form-control time' } }) }}
+                            {% if form.horarioTermino.vars.errors|length > 0 %}
+                                <p class="help-block">
+                                    {% for error in form.horarioTermino.vars.errors %}
+                                        {{ error.message }} <br/>
+                                    {% endfor %}
+                                </p>
+                            {% endif %}
+                            <label for="servicio">Termino</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <label for="mantenimento">MANTENIMIENTO:</label>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="form-check form-check-inline">
+                        {{ form_label(form.mantenimientoInt) }}
+                        {{ form_widget(form.mantenimientoInt) }}
+                    </div>
+                    <div class="form-check form-check-inline">
+                        {{ form_label(form.mantenimientoExt) }}
+                        {{ form_widget(form.mantenimientoExt) }}
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <label for="mantenimento">TIPO DE MANTENIMIENTO:</label>
+
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="form-check form-check-inline">
+                        {{ form_label(form.tipoPrev) }}
+                        {{ form_widget(form.tipoPrev) }}
+                    </div>
+                    <div class="form-check form-check-inline">
+                        {{ form_label(form.tipoCorrectivo) }}
+                        {{ form_widget(form.tipoCorrectivo) }}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="area">Área</label>
+                    {{ form_widget(form.area, {'attr': {'class': 'form-control ' } }) }}
+                    {% if form.area.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.area.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6">
+                    <label for="area">Nombre del equipo</label>
+                    {{ form_widget(form.nombreEquipo, {'attr': {'class': 'form-control ' } }) }}
+                    {% if form.nombreEquipo.vars.errors|length > 0 %}
+                        <p class="help-block">
+                            {% for error in form.nombreEquipo.vars.errors %}
+                                {{ error.message }} <br/>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 >Trabajo solicitado</h3>
+                    {{ form_widget(form.trabajoSolicitado, {'attr': {'class': 'form-control ' } }) }}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 >Objetivo</h3>
+                    {{ form_widget(form.objetivo, {'attr': {'class': 'form-control ' } }) }}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 >Alcance</h3>
+                    {{ form_widget(form.alcance, {'attr': {'class': 'form-control ' } }) }}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 >Trabajo realizado</h3>
+                    {{ form_widget(form.trabajoRealizado, {'attr': {'class': 'form-control ' } }) }}
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="col-lg-12">
+
+                {{ form_widget(form.ingresar,{'attr': {'class': 'btn btn-default btn-cons m-t-10'}}) }}
+                <a class="btn btn-default btn-cons m-t-10" href="{{ path('rm') }}">Regresar</a>
+            </div>
+
+
+            {{ form_end(form) }}
+        </div>
+
+
+{% endblock %}

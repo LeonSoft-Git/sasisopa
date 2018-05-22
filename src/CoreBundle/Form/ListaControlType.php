@@ -39,6 +39,8 @@ class ListaControlType extends AbstractType
                 ->add('observaciones',TextareaType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
                 ->add('ingresar', SubmitType::class,  array(
                             'label' => 'Ingresar'))
+
+                ->add('ingresar', SubmitType::class,  array('label' => 'Ingresar'))
             ;
 
     }

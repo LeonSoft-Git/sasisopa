@@ -33,9 +33,9 @@ class EquiposCriticosType extends AbstractType
                             'format' => 'yyyy-MM-dd',
                 ))
                 ->add('ano_fabricacion', DateType::class, array(
-                    'widget' => 'single_text',
-                    'format' => 'yyyy',
-                ))
+                            'widget' => 'single_text',
+                            'format' => 'yyyy',
+                        ))
                 ->add('ubicacion_final',TextType::class,array('required'=>true,'attr'=>array('autocomplete'=>'off')))
                 ->add('ingresar',SubmitType::class,array('label'=> 'Insertar'))
         ;

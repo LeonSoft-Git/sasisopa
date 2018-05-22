@@ -1,0 +1,15 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+	{% if id==1 %}
+		<embed src="{{asset('assets/documentos/IDENTIFICACIÓN DE SITUACIONES DE EMERGENCIA.pdf')}}" width="1050" height="650">
+	{% elseif id==2 %}
+		<embed src="{{asset('assets/documentos/PLAN DE ATENCIÓN A EMERGENCIAS.pdf')}}" width="1050" height="650">
+    {% elseif id==3 %}
+		<embed src="{{asset('assets/documentos/INVESTIGACIÓN Y ANÁLISIS DESPUÉS DE LA EMERGENCIA.pdf')}}" width="1050" height="650">
+    {% elseif id==4 %}
+		<embed src="{{asset('assets/documentos/REVISIÓN DE EQUIPO DE ATENCIÓN A EMERGENCIAS.pdf')}}" width="1050" height="650">
+	{% endif %}
+
+{% endblock %}
+

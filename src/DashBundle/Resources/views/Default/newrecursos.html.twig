@@ -1,0 +1,45 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+    <div class="col-lg-12">
+        <h2>Agregar recurso necesario</h2>
+        <hr>
+        {{ form_start(form,  {'action':path('nwrn', {'id': id})}) }}
+
+        <div class="row">
+
+
+            <div class="col-lg-2">
+
+                <label for="cantidad">Cantidad</label>
+                {{ form_widget(form.cantidad, {'attr': {'class': 'form-control'} }) }}
+                {% if form.cantidad.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.cantidad.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+
+            </div>
+            <div class="col-lg-10">
+                <label for="descripcion">Descripción</label>
+                {{ form_widget(form.descripcion, {'attr': {'class': 'form-control'} }) }}
+                {% if form.descripcion.vars.errors|length > 0 %}
+                    <p class="help-block">
+                        {% for error in form.descripcion.vars.errors %}
+                            {{ error.message }} <br/>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+
+            {{ form_widget(form.insertar, {'attr': {'class ': 'btn btn-default btn-cons m-t-10'} }) }}
+            {{ form_end(form) }}
+	</div>
+
+
+
+
+{% endblock %}

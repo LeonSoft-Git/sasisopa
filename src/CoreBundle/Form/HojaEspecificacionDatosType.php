@@ -3,6 +3,7 @@
 namespace CoreBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ButtonType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
@@ -51,7 +52,7 @@ class HojaEspecificacionDatosType extends AbstractType
                 ->add('funcion' , TextareaType::class, array('required' => true))
                 ->add('especificaciones_fab' , TextareaType::class, array('required' => true))
                 ->add('observaciones' , TextareaType::class, array('required' => false))
-                ->add('insertar', SubmitType::class, array('label'=> 'Insertar'))
+                ->add('ingresar', SubmitType::class, array('label'=> 'ingresar'))
 
             ;
     }

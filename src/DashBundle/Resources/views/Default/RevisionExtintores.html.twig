@@ -1,0 +1,156 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block body %}
+
+
+    <div class="col-lg-12">
+        <h2>Revision de extintores</h2>
+        <hr>
+        {% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+            <a class="btn btn-default btn-cons m-t-10" href="{{ path('newrex') }}"><i class="fa fa-plus"></i> Insertar</a>
+        {% endif %}
+        <div class="table-responsive">
+            <table class="table" align="center" width="30">
+
+                <tr align="center">
+                    <td rowspan="2" >No.</td>
+                    <td rowspan="2" >Tipo de extintor</td>
+                    <td colspan="3" >El extintor se encontró en su lugar</td>
+                    <td colspan="2" >Cuenta con el sello de garantía sin violar</td>
+                    <td colspan="2">Cuenta con la nemotecnia del funcionamiento</td>
+                    <td colspan="2">Cuenta con la fecha de última recarga, agente extintor y cap. nominal</td>
+                    <td colspan="2">Se encuentra libre de obstaculos</td>
+                    <td colspan="2">Las ruedas de los extintores móviles se encuentran en buenas condiciones</td>
+                    <td colspan="2">Cuenta con señalamientos</td>
+                    <td colspan="2">Presentan daños físicos, corrosión, escape de presión, golpes, etc</td>
+                    <td rowspan="2">Fecha de creación</td>
+
+
+                </tr>
+                <tr align="center">
+                    <td>Ubicación</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+                    <td>Si</td>
+                    <td>No</td>
+
+                </tr>
+                <tr  align="center">
+                    {% for ex in extintor %}
+                        <td>{{ ex.idreevext }}</td>
+                        <td>{{ ex.tipo }}</td>
+                        <td>{{ ex.ubicacion }}</td>
+                        <td>
+                        {% if ex.ubicacionLugar == 1 %}
+                            <i class="fa fa-check"></i>
+                        {% endif %}
+                        </td>
+                        <td>
+                        {% if ex.ubicacionLugar == 2 %}
+                            <i class="fa fa-check"></i>
+                        {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.sello == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.sello == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.nemotecnia == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.nemotecnia == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.ultimaCarga == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.ultimaCarga == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.obstaculos == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.obstaculos == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.ruedas == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.ruedas == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.senalamientos == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.senalamientos == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.danos == 1 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if ex.danos == 2 %}
+                                <i class="fa fa-check"></i>
+                            {% endif %}
+                        </td>
+                        <td>{{ ex.createdAt| date }}</td>
+                    {% endfor %}
+                </tr>
+
+
+
+
+
+
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+{% endblock %}

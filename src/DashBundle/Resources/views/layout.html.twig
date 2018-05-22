@@ -315,10 +315,6 @@
                                 <span class="icon-thumbnail">SCSPSP</span>
                             </li>
                             <li class="">
-                                <a href="">Listado de Proveedores</a>
-                                <span class="icon-thumbnail">LP</span>
-                            </li>
-                            <li class="">
                                 <a href="{{ path('es') }}">Evaluación a Servicio</a>
                                 <span class="icon-thumbnail">ES</span>
                             </li>
@@ -327,12 +323,8 @@
                                 <span class="icon-thumbnail">ACSPSP</span>
                             </li>
                             <li class="">
-                                <a href="#">Reporte de Mantenimiento</a>
+                                <a href="{{ path('rm') }}">Reporte de Mantenimiento</a>
                                 <span class="icon-thumbnail">RM</span>
-                            </li>
-                            <li class="">
-                                <a href="#">Permiso para Trabajos Peligrosos</a>
-                                <span class="icon-thumbnail">PTP</span>
                             </li>
                         </ul>
                     </li>
@@ -346,8 +338,48 @@
                 <span class="icon-thumbnail"><i class="pg-form"></i></span>
                 <ul class="sub-menu">
                     <li class="">
-                        <a href="form_elements.html">Preparación y Respuesta a Emergencias</a>
+                        <a href="javascript:;"><span class="tittle">Preparación y respuesta a Emergencias</span>
+                            <span class="arrow"></span></a>
                         <span class="icon-thumbnail">XIII</span>
+                        <ul class="sub-menu">
+                            <li class="">
+                                <a href="{{ path('ise') }}">Identificación de situaciones de emergencia</a>
+                                <span class="icon-thumbnail">ISE</span>
+                            </li>
+                            <li class="">
+                                <a href="{{ path('pae') }}">Plan de Atención a Emergencias</a>
+                                <span class="icon-thumbnail">PAE</span>
+                            </li>
+                            <li class="">
+                                <a href="">Reporte de Inspección Post Emergencia</a>
+                                <span class="icon-thumbnail">RIPE</span>
+                            </li>
+                            <li class="">
+                                <a href="">Observación y Evaluación de Simulacro</a>
+                                <span class="icon-thumbnail">OES</span>
+                            </li>
+                            <li class="">
+                                <a href="">Programa de Capacitación de Brigadas</a>
+                                <span class="icon-thumbnail">PCB</span>
+                            </li>
+                            <li class="">
+                                <a href="{{ path('iade') }}">Investigación y Análisis Después de la Emergencia</a>
+                                <span class="icon-thumbnail">IADE</span>
+                            </li>
+                            <li class="">
+                                <a href="">Programa de Simulacros</a>
+                                <span class="icon-thumbnail">PS</span>
+                            </li>
+                            <li class="">
+                                <a href="{{ path('reae') }}">Revisión de Equipo de Atención a Emergencias</a>
+                                <span class="icon-thumbnail">REAE</span>
+                            </li>
+                            <li class="">
+                                <a href="{{ path('rex') }}">Revisión Mensual de Extintores</a>
+                                <span class="icon-thumbnail">RME</span>
+                            </li>
+
+                        </ul>
                     </li>
                     <li class="">
                         <a href="form_layouts.html">Monitoreo, Verificación, Evaluación</a>

@@ -6,6 +6,8 @@ namespace DashBundle\Controller;
 //Use que funcionan para llamar los entitys y que funcionen las consultas, mandar llamar los controllers y las rutas
 //
 
+use CoreBundle\Entity\RecursosNecesarios;
+use CoreBundle\Entity\ReporteMantenimiento;
 use CoreBundle\Entity\DocumentosExternos;
 use CoreBundle\Entity\EvaluacionServicio;
 use CoreBundle\Entity\HojaEspecificacion;
@@ -13,8 +15,7 @@ use CoreBundle\Entity\ListaControl;
 use CoreBundle\Entity\ListaDistribucion;
 use CoreBundle\Entity\ListaEquiposNuevos;
 use CoreBundle\Entity\RevisionesExternas;
-use CoreBundle\Form\EvaluacionServcioType;
-use CoreBundle\Form\RevisionesExternasType;
+use CoreBundle\Entity\RevisionExtintores;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -887,6 +888,214 @@ class DefaultController extends Controller
         return $this->render('DashBundle:Default:evaluacion_servicios.html.twig', array('reporte' => $reporte));
     }
 
+    //Controlador para vista de Reporte mantenimiento (apartado XII)
+    /**
+     * @Route("/reporte-de-mantenimiento", name="rm")
+     * @Method({"GET", "POST"})
+     */
+    public function rmAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $mantenimiento = $em->getRepository('CoreBundle:ReporteMantenimiento')->findAll();
+        return $this->render('@Dash/Default/reporte_mantenimiento.twig', array('reporte' => $mantenimiento));
+    }
+    //Controlador para vista del formulario Reporte mantenimiento (apartado XII)
+
+    /**
+     * @Route("/insertar-reporte-de-mantenimiento", name="newrm")
+     * @Method({"GET", "POST"})
+     */
+    public function newrmAction(Request $request)
+    {
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2){
+            $mantenimiento = new ReporteMantenimiento();
+            $form = $this->createForm('CoreBundle\Form\ReporteMantenimientoType', $mantenimiento);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($mantenimiento);
+                $em->flush();
+                return $this->redirectToRoute('rm');
+            }
+
+            return $this->render('@Dash/Default/newreportemantenimiento.html.twig', array(
+                'mantenimiento' => $mantenimiento,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
+    }
+
+
+    //Controladores para ver cada formato de Reporte de mantenimiento (apartado XII)
+
+    /**
+     * @Route("/{id}/reporte-de-mantenimiento", name="viewrm")
+     * @Method({"GET", "POST"})
+     */
+    public function viewRmAction(Request $request, ReporteMantenimiento $mantenimiento)
+    {
+        $editForm = $this->createForm('CoreBundle\Form\ReporteMantenimientoType', $mantenimiento);
+        $editForm->handleRequest($request);
+
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist();
+            $em->flush();
+
+            return $this->redirectToRoute('rm');
+
+        }
+
+        return $this->render('@Dash/Default/viewreporte_mantenimiento.html.twig', array(
+            'mantenimiento' => $mantenimiento,
+            'edit_form' => $editForm->createView()
+        ));
+    }
+
+    //Controlador para vista del formulario recursos necesarios (apartado XII)
+    /**
+     * @Route("/{id}/insertar-recurso-reporte-de-mantenimiento", name="nwrn")
+     * @Method({"GET", "POST"})
+     */
+    public function nwrnAction(Request $request, $id)
+    {
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2) {
+
+            $recurso = new RecursosNecesarios();
+            $form = $this->createForm('CoreBundle\Form\RecursosNecesariosType', $recurso);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $doc = $em->getRepository('CoreBundle:ReporteMantenimiento')->findOneBy(array('idrm'=>$id));
+                $recurso->setReporteMantenimiento($doc);
+                $em->persist($recurso);
+                $em->flush();
+
+                return $this->redirectToRoute('rm');
+            }
+
+            return $this->render('@Dash/Default/newrecursos.html.twig', array(
+                'id' => $id,
+                'form' => $form->createView()
+            ));
+        } else {
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
+    }
+
+    //Controlador para vista del formulario recursos necesarios (apartado XII)
+
+    /**
+     * @Route("/insertar-recursos-necesarios", name="newrn")
+     * @Method({"GET", "POST"})
+     */
+    public function newrnAction(Request $request)
+    {
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2){
+            $recursos = new RecursosNecesarios();
+            $form = $this->createForm('CoreBundle\Form\RecursosNecesariosType', $recursos);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($recursos);
+                $em->flush();
+
+                return $this->redirectToRoute('rm');
+            }
+
+            return $this->render('@Dash/Default/newrecursos.html.twig', array(
+                'recursos' => $recursos,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
+    }
+
+    //Apartado XIII
+
+    //Controladores para las vistas de PDF del apartado XIII
+
+    /**
+    * @Route("/identificacion-de-situaciones-de-emergencia", name="ise")
+    */
+    public function iseAction()
+    {
+        return $this->render('@Dash/Default/apartadoXIII.html.twig', array('id' => 1));
+    }
+    /**
+     * @Route("/plan-de-atencion-a-emergencias", name="pae")
+     */
+    public function paeAction()
+    {
+        return $this->render('@Dash/Default/apartadoXIII.html.twig', array('id' => 2));
+    }
+    /**
+     * @Route("/investigacion-y-analisis-despues-de-la-emergencia", name="iade")
+     */
+    public function iadeAction()
+    {
+        return $this->render('@Dash/Default/apartadoXIII.html.twig', array('id' => 3));
+    }
+    /**
+     * @Route("/revision-de-equipo-de-atencion-de-emergencias", name="reae")
+     */
+    public function reaeAction()
+    {
+        return $this->render('@Dash/Default/apartadoXIII.html.twig', array('id' => 4));
+    }
+
+    //Controlador para formulario de revision de extintores
+
+    /**
+     * @Route("/insertar-revision-de-exintores", name="newrex")
+     * @Method({"GET", "POST"})
+     */
+    public function newrexAction(Request $request)
+    {
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if($user->getLevel()->getIdl()==1 || $user->getLevel()->getIdl()==2){
+            $extintor = new RevisionExtintores();
+            $form = $this->createForm('CoreBundle\Form\RevisionExtintoresType', $extintor);
+            $form->handleRequest($request);
+
+            if ($form->isSubmitted() && $form->isValid()) {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($extintor);
+                $em->flush();
+                return $this->redirectToRoute('rex');
+            }
+
+            return $this->render('@Dash/Default/newRevisionExtintores.html.twig', array(
+                'extintor' => $extintor,
+                'form' => $form->createView()
+            ));
+        }else{
+            return $this->redirect($this->generateUrl('dashboard'));
+        }
+    }
+    //Controlador para la vista de revision de Extintores
+    /**
+     * @Route("/revision-de-extintores", name="rex")
+     * @Method({"GET", "POST"})
+     */
+    public function rexAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $extintor = $em->getRepository('CoreBundle:RevisionExtintores')->findAll();
+        return $this->render('@Dash/Default/RevisionExtintores.html.twig', array('extintor' => $extintor));
+    }
 
 }
 
