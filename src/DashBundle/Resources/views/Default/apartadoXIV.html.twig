@@ -1,0 +1,23 @@
+{% extends('@Dash/layout.html.twig') %}
+
+{% block title %}{% if id==1 %}Política I{% elseif id==2 %}Legales{% elseif id==3 %}Manual{% endif %} | {{ parent() }}{% endblock %}
+
+{% block body %}
+	{% if id==1 %}
+		<embed src="{{asset('assets/documentos/MANUAL SASISOPA.pdf')}}" width="1050" height="650">
+	{% elseif id==2 %}
+		<embed src="{{asset('assets/documentos/Identificación-y-Evaluación.pdf')}}" width="1050" height="650">
+    {% elseif id==3 %}
+		<embed src="{{asset('assets/documentos/Gestión-de-Objetivos-y-Metas.pdf')}}" width="1050" height="650">
+    {% elseif id==4 %}
+		{% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
+			<p><a class="btn btn-default btn-cons m-t-10" href="{{ path('newfile') }}"><i class="fa fa-paperclip"> Adjuntar Carta</i></a></p>
+		{% endif %}
+
+		<embed src="{{asset('assets/documentos/CARTAPODER.pdf')}}" width="1050" height="650">
+
+
+	{% endif %}
+
+{% endblock %}
+
