@@ -367,6 +367,7 @@ class DefaultController extends Controller
 
     /**
      * @Route("/lista-de-distribucion-de-documentos-del-sistema-de-administracion", name="lddsa")
+     * @Method({"GET", "POST"})
      */
 
     public function lddsaAction()
@@ -1096,6 +1097,9 @@ class DefaultController extends Controller
         $extintor = $em->getRepository('CoreBundle:RevisionExtintores')->findAll();
         return $this->render('@Dash/Default/RevisionExtintores.html.twig', array('extintor' => $extintor));
     }
+
+    //Apartado XIV
+
 
 }
 
