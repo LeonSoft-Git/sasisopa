@@ -17,8 +17,9 @@
     		{% if app.user.level.idl == 1 or app.user.level.idl == 2 %}
 				<a class="btn btn-default btn-cons m-t-10" href="{{ path('new') }}"><i class="fa fa-plus"> Insertar</i></a>
 			{% endif %}
-			<div class="table-responsive">
-				<table class="table">
+		<div class='panel-body'>
+			<div class='table-responsive'>
+				<table class='table table-striped table-bordered table-hover' id='resultado'>
 					<tr>
 
 							<th>Dependencia</th>
@@ -68,7 +69,7 @@
 			</div>
 
 		</div>
-
+		</div>
 
 
 {% endblock %}
