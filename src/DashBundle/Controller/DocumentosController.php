@@ -21,15 +21,13 @@ class DocumentosController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $doc =  $em->getRepository('CoreBundle:Documentos')->findAll();
-        foreach ($doc as $doc){
 
-        $valor1 = $doc->getNoEstacion();
-
-        }
+        foreach ($doc as $i) {
             
+        }
             $templateWord = new TemplateProcessor('C:\xampp\htdocs\sasisopa\documentos\Apartado II.docx');
 
-            $templateWord->setValue('Value1', $valor1);
+            $templateWord->setValue('Value1', $i->getNoEstacion());
 
 
             $templateWord->saveAs('ApartadoII.docx');
