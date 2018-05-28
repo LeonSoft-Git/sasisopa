@@ -20,23 +20,23 @@ class DocumentosController extends Controller
     public function pruebaAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $query =  $em->getRepository('CoreBundle:Documentos')->findAll();
-        
+        $doc =  $em->getRepository('CoreBundle:Documentos')->findAll();
+        foreach ($doc as $doc){
+
+        $valor1 = $doc->getNoEstacion();
+
+        }
+            
+            $templateWord = new TemplateProcessor('C:\xampp\htdocs\sasisopa\documentos\Apartado II.docx');
+
+            $templateWord->setValue('Value1', $valor1);
 
 
+            $templateWord->saveAs('ApartadoII.docx');
 
-        $templateWord = new TemplateProcessor('C:\xampp\htdocs\sasisopa\documentos\Apartado II.docx');
+            header("Content-Disposition: attachment; filename=ApartadoII.docx; charset=iso-8859-1");
+            echo file_get_contents('ApartadoII prueba.docx');
 
-        $templateWord->setValue('Value1',);
-
-
-
-
-
-        $templateWord->saveAs('ApartadoII.docx');
-
-        header("Content-Disposition: attachment; filename=ApartadoII.docx; charset=iso-8859-1");
-        echo file_get_contents('ApartadoII prueba.docx');
 
         return $response;
 
