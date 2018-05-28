@@ -64,6 +64,10 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         array (
             'Incenteev\\ParameterHandler\\' => 27,
         ),
+        'G' => 
+        array (
+            'GGGGino\\WordBundle\\' => 19,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -191,6 +195,10 @@ class ComposerStaticInitd44fc61b89e2fba85b9a83682a281ca8
         'Incenteev\\ParameterHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
+        ),
+        'GGGGino\\WordBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ggggino/wordbundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

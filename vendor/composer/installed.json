@@ -979,6 +979,70 @@
         ]
     },
     {
+        "name": "ggggino/wordbundle",
+        "version": "v1.0.6",
+        "version_normalized": "1.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/GGGGino/WordBundle.git",
+            "reference": "f764fe668fce416008a5af841221b2a2c6ef6058"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/GGGGino/WordBundle/zipball/f764fe668fce416008a5af841221b2a2c6ef6058",
+            "reference": "f764fe668fce416008a5af841221b2a2c6ef6058",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6",
+            "phpoffice/phpword": "^0.14|dev-develop",
+            "symfony/framework-bundle": "~2.6|~3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.6",
+            "sensio/framework-extra-bundle": "~2.3|~3.0",
+            "symfony/browser-kit": "~2.6|~3.0",
+            "symfony/class-loader": "~2.6|~3.0",
+            "symfony/finder": "~2.6|~3.0",
+            "symfony/form": "~2.6|~3.0",
+            "symfony/validator": "~2.6|~3.0"
+        },
+        "time": "2017-11-05T23:34:51+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "exclude-from-classmap": [
+                "/Tests/"
+            ],
+            "psr-4": {
+                "GGGGino\\WordBundle\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "David Ginanni",
+                "email": "david.ginanni@gmail.com"
+            }
+        ],
+        "description": "This is a Symfony2 Bundle helps you to read and write Word files, thanks to the PHPWord library",
+        "homepage": "https://github.com/GGGGino",
+        "keywords": [
+            "Symfony2",
+            "bundle",
+            "office",
+            "word"
+        ]
+    },
+    {
         "name": "incenteev/composer-parameter-handler",
         "version": "v2.1.3",
         "version_normalized": "2.1.3.0",
@@ -1863,8 +1927,8 @@
     },
     {
         "name": "symfony/phpunit-bridge",
-        "version": "v3.4.10",
-        "version_normalized": "3.4.10.0",
+        "version": "v3.4.11",
+        "version_normalized": "3.4.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/phpunit-bridge.git",

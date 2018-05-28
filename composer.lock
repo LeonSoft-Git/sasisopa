@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b420dc29c96f9bffe1ebc58c6dbd1cfb",
+    "content-hash": "bceff4f3945926f9ea6e05367e8258c9",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -956,6 +956,68 @@
                 "uploadable"
             ],
             "time": "2018-04-12T10:01:27+00:00"
+        },
+        {
+            "name": "ggggino/wordbundle",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GGGGino/WordBundle.git",
+                "reference": "f764fe668fce416008a5af841221b2a2c6ef6058"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GGGGino/WordBundle/zipball/f764fe668fce416008a5af841221b2a2c6ef6058",
+                "reference": "f764fe668fce416008a5af841221b2a2c6ef6058",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "phpoffice/phpword": "^0.14|dev-develop",
+                "symfony/framework-bundle": "~2.6|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "sensio/framework-extra-bundle": "~2.3|~3.0",
+                "symfony/browser-kit": "~2.6|~3.0",
+                "symfony/class-loader": "~2.6|~3.0",
+                "symfony/finder": "~2.6|~3.0",
+                "symfony/form": "~2.6|~3.0",
+                "symfony/validator": "~2.6|~3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ],
+                "psr-4": {
+                    "GGGGino\\WordBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Ginanni",
+                    "email": "david.ginanni@gmail.com"
+                }
+            ],
+            "description": "This is a Symfony2 Bundle helps you to read and write Word files, thanks to the PHPWord library",
+            "homepage": "https://github.com/GGGGino",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "office",
+                "word"
+            ],
+            "time": "2017-11-05T23:34:51+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2511,7 +2573,7 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v3.4.10",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
@@ -2577,11 +2639,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "gedmo/doctrine-extensions": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.5.9"

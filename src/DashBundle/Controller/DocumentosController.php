@@ -2,11 +2,13 @@
 
 namespace DashBundle\Controller;
 
+use DashBundle\DashBundle;
+use PhpOffice\PhpWord\Exception\CopyFileException;
+use PhpOffice\PhpWord\Exception\CreateTemporaryFileException;
+use PhpOffice\PhpWord\TemplateProcessor;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
-// Include the requires classes of Phpword
-use PhpOffice\PhpWord\PhpWord;
+use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
 class DocumentosController extends Controller
 {
@@ -17,28 +19,26 @@ class DocumentosController extends Controller
      */
     public function pruebaAction()
     {
-        $wordTest = new \PhpOffice\phpWord\phpWord();
+        $em = $this->getDoctrine()->getManager();
+        $query =  $em->getRepository('CoreBundle:Documentos')->findAll();
+        
 
-        $newSection = $wordTest ->addSection();
 
-        $desc1 = "Hola mi nombre es Karem";
 
-        $desc2 = "Soy progranadora";
+        $templateWord = new TemplateProcessor('C:\xampp\htdocs\sasisopa\documentos\Apartado II.docx');
 
-        $newSection->addText($desc1);
-        $newSection->addText($desc2);
+        $templateWord->setValue('Value1',);
 
-        $objectWritter = \PhpOffice\phpWord\IOFactory::createWriter($wordTest, 'Word2016');
-        try{
-            $objectWritter->save(storage_path('Prueba.docx'));
-        }catch (\Exception $e){
 
-        }
-        return response()->download(storage_path('prueba.docx'));
 
-        return $this->render('@Dash/Default/prueba.php');
+
+
+        $templateWord->saveAs('ApartadoII.docx');
+
+        header("Content-Disposition: attachment; filename=ApartadoII.docx; charset=iso-8859-1");
+        echo file_get_contents('ApartadoII prueba.docx');
+
+        return $response;
+
     }
-
-
 }
-
