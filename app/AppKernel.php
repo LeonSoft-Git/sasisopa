@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new CoreBundle\CoreBundle(),
             new DashBundle\DashBundle(),
             new GGGGino\WordBundle\GGGGinoWordBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

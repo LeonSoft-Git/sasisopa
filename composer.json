@@ -31,7 +31,8 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "gedmo/doctrine-extensions": "dev-master",
-        "ggggino/wordbundle": "^1.0"
+        "ggggino/wordbundle": "^1.0",
+        "dompdf/dompdf": "^0.8.2"
 
 
     },
