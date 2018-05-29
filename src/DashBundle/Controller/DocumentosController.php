@@ -17,29 +17,25 @@ class DocumentosController extends Controller
     public function pruebaAction()
     {
         $query = $this->getDoctrine()->getManager();
-        $doc =  $query->getRepository('CoreBundle:Documentos')->findAll();
+        $doc =  $query->getRepository('CoreBundle:Documentos')->findOneBy(array('idc' => 1));
 
         $templateWord = new TemplateProcessor('C:\xampp\htdocs\sasisopa\documentos\Apartado II.docx');
 
-        foreach ($doc as $i){
-
-            $templateWord ->setValue('Value1' , $i->getNoEstacion());
-            $templateWord ->setValue('Value2', $i->getRazonSocial());
-            $templateWord ->setValue('Value3' , $i->getDireccion());
-            $templateWord ->setValue('Value4' , $i->getAlfanum());
-            $templateWord ->setValue('Value5' , $i->getFechaPublicacion()->format('d.m.Y'));
-            $templateWord ->setValue('Value6' , $i->getFechaInicio()->format('d.m.Y'));
-            $templateWord ->setValue('Value7' , $i->getNombreReviso());
-            $templateWord ->setValue('Value8' , $i->getPuestoReviso());
-            $templateWord ->setValue('Value9' , $i->getQuienAprobo());
-            $templateWord ->setValue('Value10' , $i->getPuestoAprobo());
-        }
+            $templateWord ->setValue('Value1' , $doc->getNoEstacion());
+            $templateWord ->setValue('Value2',  $doc->getRazonSocial());
+            $templateWord ->setValue('Value3' , $doc->getDireccion());
+            $templateWord ->setValue('Value4' , $doc->getAlfanum());
+            $templateWord ->setValue('Value5' , $doc->getFechaPublicacion()->format('d.m.Y'));
+            $templateWord ->setValue('Value6' , $doc->getFechaInicio()->format('d.m.Y'));
+            $templateWord ->setValue('Value7' , $doc->getNombreReviso());
+            $templateWord ->setValue('Value8' , $doc->getPuestoReviso());
+            $templateWord ->setValue('Value9' , $doc->getQuienAprobo());
+            $templateWord ->setValue('Value10', $doc->getPuestoAprobo());
 
         $templateWord->saveAs('ApartadoII.docx');
 
         header("Content-Disposition: attachment; filename=ApartadoII.docx; charset=iso-8859-1");
         echo file_get_contents('ApartadoII.docx');
-
 
         $source = $this->getParameter('test_directory')."/ApartadoII.docx";
         $phpWord = \PhpOffice\PhpWord\IOFactory::load($source);
